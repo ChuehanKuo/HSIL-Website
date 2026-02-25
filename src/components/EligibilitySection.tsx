@@ -1,5 +1,5 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 
 const requirements = [
   "大學生、研究生、博士生皆可報名",
@@ -14,23 +14,24 @@ const EligibilitySection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section id="eligibility" className="py-20 lg:py-28">
+    <section className="py-24 lg:py-32 section-subtle">
       <div
         ref={ref}
         className={`container mx-auto px-4 max-w-3xl transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-gradient-crimson">
-          誰可以參加？
-        </h2>
-        <p className="text-center text-foreground/80 mb-10 max-w-2xl mx-auto">
-          HSIL Hackathon 歡迎所有對健康系統創新有興趣的人參加，不限科系、不限年級、不需程式背景。
-        </p>
+        <div className="text-center mb-12">
+          <p className="text-sm font-semibold tracking-wider uppercase text-secondary mb-3">Eligibility</p>
+          <h2 className="text-3xl md:text-5xl font-black text-gradient-crimson mb-4">誰可以參加？</h2>
+          <p className="text-foreground/70 max-w-2xl mx-auto">
+            HSIL Hackathon 歡迎所有對健康系統創新有興趣的人參加，不限科系、不限年級、不需程式背景。
+          </p>
+        </div>
 
-        <div className="space-y-4">
+        <div className="space-y-3">
           {requirements.map((r, i) => (
-            <div key={i} className="flex items-start gap-3 bg-muted rounded-xl p-4">
-              <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
-              <span className="text-sm text-foreground">{r}</span>
+            <div key={i} className="card-elevated rounded-xl p-5 flex items-start gap-4">
+              <CheckCircle2 className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+              <span className="text-sm text-foreground font-medium">{r}</span>
             </div>
           ))}
         </div>
