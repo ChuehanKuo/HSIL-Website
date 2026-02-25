@@ -84,7 +84,7 @@ const HeroSection = () => {
         </motion.div>
 
         {/* CTA buttons */}
-        <motion.div {...fadeUp(0.5)} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+        <motion.div {...fadeUp(0.5)} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6 -mt-4">
           <a
             href={REGISTER_URL}
             target="_blank"
