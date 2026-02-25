@@ -82,17 +82,8 @@ const HeroSection = () => {
 
         <div className="flex-1" />
 
-        {/* Date / Location / Free — prominent treatment */}
-        <motion.div {...fadeUp(0.42)} className="flex items-center justify-center gap-3 text-sm md:text-base font-medium opacity-75 mb-6">
-          <span>📅 2026 年 4 月 10–11 日</span>
-          <span className="w-1 h-1 rounded-full bg-white/50" />
-          <span>📍 臺大公衛學院</span>
-          <span className="w-1 h-1 rounded-full bg-white/50" />
-          <span className="text-[hsl(170_85%_60%)] font-semibold">免費參加</span>
-        </motion.div>
-
         {/* CTA buttons */}
-        <motion.div {...fadeUp(0.5)} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+        <motion.div {...fadeUp(0.5)} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
           <a
             href={REGISTER_URL}
             target="_blank"
@@ -109,6 +100,15 @@ const HeroSection = () => {
             了解更多
             <ArrowDown className="w-5 h-5" />
           </a>
+        </motion.div>
+
+        {/* Date / Location / Free — prominent treatment */}
+        <motion.div {...fadeUp(0.55)} className="flex items-center justify-center gap-3 text-sm md:text-base font-medium opacity-75 mb-6">
+          <span>📅 2026 年 4 月 10–11 日</span>
+          <span className="w-1 h-1 rounded-full bg-white/50" />
+          <span>📍 臺大公衛學院</span>
+          <span className="w-1 h-1 rounded-full bg-white/50" />
+          <span className="text-[hsl(170_85%_60%)] font-semibold">免費參加</span>
         </motion.div>
 
         {/* Countdown / deadline urgency strip */}
