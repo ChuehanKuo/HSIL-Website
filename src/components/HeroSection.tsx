@@ -87,7 +87,7 @@ const HeroSection = () => {
           </motion.div>
         </div>
 
-        <div className="flex-1" />
+        <div className="flex-[0.6]" />
 
         {/* CTA buttons */}
         <motion.div {...fadeUp(0.5)} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
