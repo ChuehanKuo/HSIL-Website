@@ -80,7 +80,7 @@ const HeroSection = () => {
 
         </div>
 
-        <div className="flex-[0.6]" />
+        <div className="flex-1" />
 
         {/* Date / Location / Free — prominent treatment */}
         <motion.div {...fadeUp(0.42)} className="flex items-center justify-center gap-3 text-sm md:text-base font-medium opacity-75 mb-6">
