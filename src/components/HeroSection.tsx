@@ -77,11 +77,6 @@ const HeroSection = () => {
 
           </motion.p>
 
-          <motion.div {...fadeUp(0.35)} className="mb-6">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-[hsl(37_90%_44%/0.2)] border border-[hsl(37_90%_44%/0.3)] text-[hsl(37_90%_70%)] text-base md:text-lg font-semibold">
-
-            </span>
-          </motion.div>
 
           {/* Date / Location / Free — prominent treatment */}
           <motion.div {...fadeUp(0.42)} className="flex items-center justify-center gap-3 text-sm md:text-base font-medium opacity-75 mb-10">
