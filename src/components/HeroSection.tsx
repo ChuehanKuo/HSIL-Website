@@ -10,7 +10,7 @@ const fadeUp = (delay = 0) => ({
 });
 
 const HeroSection = () => (
-  <section className="relative min-h-screen flex items-center justify-center gradient-hero overflow-hidden">
+  <section className="relative min-h-screen flex items-center justify-center gradient-hero overflow-hidden pb-20">
     {/* Grid overlay */}
     <div className="absolute inset-0 hero-grid" />
 
@@ -99,7 +99,7 @@ const HeroSection = () => (
     </div>
 
     {/* Bottom fade */}
-    <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[hsl(220_14%_96%)] to-transparent" />
+    <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[hsl(220_14%_96%)] to-transparent" />
   </section>
 );
 
