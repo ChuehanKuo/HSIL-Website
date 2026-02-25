@@ -63,10 +63,10 @@ const HeroSection = () => {
           <motion.h1
             {...fadeUp(0.15)}
             className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 leading-[1.1] tracking-tight">
-            HSIL 全球健康系統
+            哈佛 × 臺大
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(37_90%_65%)] via-[hsl(37_90%_75%)] to-[hsl(170_85%_55%)]">
-              創新黑客松 2026
+              全球健康創新黑客松 2026
             </span>
           </motion.h1>
 
