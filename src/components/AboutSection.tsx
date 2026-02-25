@@ -43,7 +43,7 @@ const AboutSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-          <div className="space-y-6 text-foreground/80 leading-relaxed text-base">
+          <div className="space-y-4 text-foreground/80 leading-relaxed text-base">
             
 
 
