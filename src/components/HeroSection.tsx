@@ -87,6 +87,8 @@ const HeroSection = () => {
           </motion.div>
         </div>
 
+        <div className="flex-1" />
+
         {/* CTA buttons */}
         <motion.div {...fadeUp(0.5)} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
           <a
@@ -116,7 +118,6 @@ const HeroSection = () => {
             <strong className="text-[hsl(37_90%_70%)] opacity-100">{countdown.days}</strong> 天 <strong className="text-[hsl(37_90%_70%)] opacity-100">{countdown.hours}</strong> 時 <strong className="text-[hsl(37_90%_70%)] opacity-100">{countdown.mins}</strong> 分</span>
         </motion.div>
 
-        <div className="flex-1" />
       </div>
 
       {/* Bottom fade */}
