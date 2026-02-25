@@ -67,7 +67,7 @@ const HeroSection = () => {
               全球健康創新黑客松 2026
             </span>
             <br />
-            哈佛 × 臺大
+            HSIL Hackathon 2026 — Taiwan Hub
           </motion.h1>
 
           <motion.p {...fadeUp(0.25)} className="text-base md:text-lg font-light opacity-70 max-w-xl mx-auto mb-5">
