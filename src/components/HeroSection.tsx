@@ -114,8 +114,7 @@ const HeroSection = () => {
           <CalendarClock className="w-4 h-4" />
           <span>報名截止：3/31</span>
           <span className="mx-1">—</span>
-          <span>倒數 33 天 23 時 36 分
-            <strong className="text-[hsl(37_90%_70%)] opacity-100">{countdown.days}</strong> 天 <strong className="text-[hsl(37_90%_70%)] opacity-100">{countdown.hours}</strong> 時 <strong className="text-[hsl(37_90%_70%)] opacity-100">{countdown.mins}</strong> 分</span>
+          <span>倒數 <strong className="text-[hsl(37_90%_70%)] opacity-100">{countdown.days}</strong> 天 <strong className="text-[hsl(37_90%_70%)] opacity-100">{countdown.hours}</strong> 時 <strong className="text-[hsl(37_90%_70%)] opacity-100">{countdown.mins}</strong> 分</span>
         </motion.div>
 
       </div>
