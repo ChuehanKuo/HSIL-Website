@@ -4,7 +4,7 @@ import posterImg from "@/assets/hackathon-poster.png";
 
 const features = [
   { icon: Globe, title: "全球 30+ 城市同步舉辦" },
-  { icon: GraduationCap, title: "哈佛大學主辦，頂尖學術支持" },
+  { icon: GraduationCap, title: "HSIL 主辦，哈佛頂尖學術支持" },
   { icon: Users, title: "跨領域團隊，不限科系背景" },
   { icon: Trophy, title: "優勝隊伍獲哈佛 Bootcamp 培訓機會" },
 ];
@@ -25,7 +25,7 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div className="space-y-5 text-foreground/85 leading-relaxed">
             <p>
-              HSIL Hackathon 是由哈佛大學 T.H. Chan 公共衛生學院旗下 Health Systems Innovation Lab (HSIL) 主辦的年度全球黑客松。2026 年已是第七屆，活動在全球超過 30 個城市同步舉辦。
+              HSIL Hackathon 是由 Health Systems Innovation Lab (HSIL) 主辦的年度全球黑客松。HSIL 隸屬於哈佛大學 T.H. Chan 公共衛生學院。2026 年已是第七屆，活動在全球超過 30 個城市同步舉辦。
             </p>
             <p>
               這不是一般的程式競賽。HSIL Hackathon 著重跨領域團隊合作，結合醫學、公共衛生、商管、設計、工程、法律、社會科學等背景的參賽者，一起針對真實的健康系統問題提出創新方案。

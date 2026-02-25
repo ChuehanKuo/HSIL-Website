@@ -1,6 +1,6 @@
 import { Calendar, MapPin, DollarSign } from "lucide-react";
 
-const REGISTER_URL = "https://airtable.com/appfJOsPFhsOlgBWL/shrVoYBfKbCbFSNaO";
+const REGISTER_URL = "https://airtable.com/app06PiI7r4PVqBdt/pagFJFqJW3xFqnRFw/form";
 
 const HeroSection = () => (
   <section className="relative min-h-screen flex items-center justify-center gradient-hero overflow-hidden">
@@ -49,7 +49,7 @@ const HeroSection = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
         {[
           { icon: Calendar, label: "日期", value: "2026 年 4 月 10–11 日（週五、六）" },
-          { icon: MapPin, label: "地點", value: "國立臺灣大學（詳細場地待公布）" },
+          { icon: MapPin, label: "地點", value: "國立臺灣大學公共衛生學院" },
           { icon: DollarSign, label: "費用", value: "完全免費" },
         ].map(({ icon: Icon, label, value }) => (
           <div key={label} className="bg-white/15 backdrop-blur-sm rounded-xl p-5 border border-white/20">
