@@ -71,7 +71,9 @@ const HeroSection = () => {
           </motion.h1>
 
           <motion.p {...fadeUp(0.25)} className="text-base md:text-lg font-light opacity-70 max-w-xl mx-auto mb-5">
-            台灣首次加入全球 30+ 城市同步舉辦的健康創新盛會——由國立臺灣大學與哈佛大學攜手呈現
+            台灣首次加入全球 30+ 城市同步舉辦的健康創新盛會
+            <br />
+            由國立臺灣大學與哈佛大學攜手呈現
           </motion.p>
 
           <motion.div {...fadeUp(0.3)} className="flex items-center justify-center gap-3">
