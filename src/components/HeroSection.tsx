@@ -2,7 +2,7 @@ import { ArrowDown, ArrowRight, CalendarClock } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const REGISTER_URL = "https://airtable.com/app06PiI7r4PVqBdt/pagFJFqJW3xFqnRFw/form";
+const REGISTER_URL = "https://airtable.com/appfJOsPFhsOlgBWL/shrVoYBfKbCbFSNaO";
 const DEADLINE = new Date("2026-03-31T23:59:59+08:00");
 
 const fadeUp = (delay = 0) => ({
@@ -74,7 +74,7 @@ const HeroSection = () => {
 
         <div className="flex-1" />
 
-        <motion.div {...fadeUp(0.45)} className="max-w-xl mx-auto mb-6 mt-4 text-center">
+        <motion.div {...fadeUp(0.45)} className="max-w-xl mx-auto mb-6 text-center">
           <p className="text-sm md:text-base font-light opacity-70 tracking-wide mb-2">
             台灣首次加入全球 30+ 城市同步舉辦的健康創新盛會
           </p>
@@ -103,7 +103,8 @@ const HeroSection = () => {
 
         {/* Date / Location / Free — prominent treatment */}
         <motion.div {...fadeUp(0.55)} className="flex items-center justify-center gap-3 text-sm md:text-base font-medium opacity-75 mb-6">
-          <span>📅 2026 年 4 月 10–11 日</span>
+          <span>📅 2026 年
+ 4 月 10–11 日</span>
           <span className="w-1 h-1 rounded-full bg-white/50" />
           <span>📍 國立臺灣大學 公共衛生學院</span>
           <span className="w-1 h-1 rounded-full bg-white/50" />
@@ -122,7 +123,6 @@ const HeroSection = () => {
 
       {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[hsl(220_14%_96%)] to-transparent" />
-    </section>);
-};
+    </section>);};
 
 export default HeroSection;
