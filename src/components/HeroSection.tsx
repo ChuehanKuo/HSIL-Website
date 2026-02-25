@@ -56,15 +56,23 @@ const HeroSection = () => {
         <div>
           <motion.p
             {...fadeUp(0)}
-            className="text-xs md:text-sm font-medium tracking-[0.2em] opacity-60 mb-8 uppercase">
-
+            className="text-xs md:text-sm font-medium tracking-[0.2em] opacity-60 mb-4 uppercase">
             Harvard T.H. Chan School of Public Health — Health Systems Innovation Lab
           </motion.p>
 
-          <motion.h1
-            {...fadeUp(0.15)}
-            className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 leading-[1.1] tracking-tight">
+          <motion.div {...fadeUp(0.1)} className="flex items-center justify-center gap-3 mb-6">
+            <span className="bg-[hsl(37_90%_50%/0.15)] border border-[hsl(37_90%_50%/0.3)] text-[hsl(37_90%_75%)] text-xs md:text-sm font-bold px-4 py-1.5 rounded-full tracking-wide">
+              🇹🇼 台灣首屆
+            </span>
+            <span className="text-white/40 text-sm">×</span>
+            <span className="bg-white/5 border border-white/10 text-white/80 text-xs md:text-sm font-medium px-4 py-1.5 rounded-full">
+              台大 × 哈佛 聯合主辦
+            </span>
+          </motion.div>
 
+          <motion.h1
+            {...fadeUp(0.2)}
+            className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 leading-[1.1] tracking-tight">
             HSIL 全球健康系統
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(37_90%_65%)] via-[hsl(37_90%_75%)] to-[hsl(170_85%_55%)]">
@@ -72,8 +80,8 @@ const HeroSection = () => {
             </span>
           </motion.h1>
 
-          <motion.p {...fadeUp(0.25)} className="text-lg md:text-2xl font-light mb-4 opacity-80">
-
+          <motion.p {...fadeUp(0.3)} className="text-base md:text-lg font-light opacity-70 max-w-xl mx-auto">
+            台灣首次加入全球 30+ 城市同步舉辦的健康創新盛會——由國立臺灣大學與哈佛大學攜手呈現
           </motion.p>
 
 

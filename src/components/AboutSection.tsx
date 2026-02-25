@@ -44,11 +44,14 @@ const AboutSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div className="space-y-6 text-foreground/80 leading-relaxed text-base">
+            <div className="inline-block bg-accent/10 border border-accent/20 text-accent font-bold text-sm px-4 py-2 rounded-full mb-2">
+              🇹🇼 2026 年，台灣首次加入全球行列
+            </div>
             <p>
               HSIL Hackathon 是由哈佛大學 T.H. Chan 公共衛生學院旗下 Health Systems Innovation Lab (HSIL) 主辦的年度全球黑客松。2026 年已是第七屆，活動在全球超過 30 個城市同步舉辦。
             </p>
             <p>
-              這不是一般的程式競賽。HSIL Hackathon 著重跨領域團隊合作，結合醫學、公共衛生、商管、設計、工程、法律、社會科學等背景的參賽者，一起針對真實的健康系統問題提出創新方案。
+              今年，<strong className="text-foreground">國立臺灣大學</strong>正式成為台灣站主辦單位，攜手哈佛將這場全球健康創新盛會首次帶進台灣。無論你的背景是醫學、公衛、商管、設計、工程或社會科學，都能在這裡發揮所長。
             </p>
             <div className="relative pl-5 border-l-4 border-primary/60">
               <p className="font-bold text-primary text-lg">
