@@ -53,7 +53,7 @@ const HeroSection = () => {
 
       <div className="relative z-10 container mx-auto px-4 pt-24 pb-28 text-center text-white flex flex-col items-center min-h-screen">
 
-        <div className="mt-16">
+        <div className="mt-8">
           <motion.p
             {...fadeUp(0)}
             className="text-xs md:text-sm font-medium tracking-[0.2em] opacity-60 mb-12 uppercase">
