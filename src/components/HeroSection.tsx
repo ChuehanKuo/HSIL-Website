@@ -89,14 +89,14 @@ const HeroSection = () => {
             href={REGISTER_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-accent text-accent-foreground px-8 py-4 rounded-2xl text-lg font-bold glow-accent hover:scale-105 transition-all duration-300 flex items-center gap-2">
+            className="group bg-accent text-accent-foreground px-6 py-3 rounded-xl text-base font-bold glow-accent hover:scale-105 transition-all duration-300 flex items-center gap-2">
 
             立即報名
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
           <a
             href="#about"
-            className="border border-white/30 text-white px-8 py-4 rounded-2xl text-lg font-medium hover:bg-white/10 transition-all duration-300 flex items-center gap-2">
+            className="border border-white/30 text-white px-6 py-3 rounded-xl text-base font-medium hover:bg-white/10 transition-all duration-300 flex items-center gap-2">
 
             了解更多
             <ArrowDown className="w-5 h-5" />
