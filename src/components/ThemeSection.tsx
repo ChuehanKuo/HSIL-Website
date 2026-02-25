@@ -27,8 +27,11 @@ const ThemeSection = () => {
         <p className="text-center text-muted-foreground mb-4 italic">
           Building High-Value Health Systems: Leveraging AI
         </p>
-        <p className="text-center text-foreground/80 max-w-3xl mx-auto mb-12">
-          今年的黑客松聚焦於如何運用人工智慧 (AI) 技術來改善健康系統。參賽團隊將針對以下領域的挑戰提出創新解方：
+        <p className="text-center text-foreground/80 max-w-3xl mx-auto mb-4">
+          今年的黑客松聚焦於如何運用人工智慧 (AI) 技術來改善健康系統。團隊可針對任何健康系統 + AI 相關議題提出創新方案。以下為 HSIL 提供的參考挑戰方向：
+        </p>
+        <p className="text-center text-sm text-muted-foreground mb-12">
+          *以下主題為選擇性參考方向，並非強制限定。團隊可自由發揮任何健康系統相關議題。
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">

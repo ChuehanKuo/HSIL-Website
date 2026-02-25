@@ -1,6 +1,6 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
-const REGISTER_URL = "https://airtable.com/appfJOsPFhsOlgBWL/shrVoYBfKbCbFSNaO";
+const REGISTER_URL = "https://airtable.com/app06PiI7r4PVqBdt/pagFJFqJW3xFqnRFw/form";
 
 const CTASection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -31,7 +31,10 @@ const CTASection = () => {
           立即報名 →
         </a>
         <p className="text-sm text-white/60 mt-6">
-          如有任何問題，請聯繫主辦單位
+          如有任何問題，請聯繫{" "}
+          <a href="mailto:hsilhackathon.taiwan@gmail.com" className="underline hover:text-white/80 transition-colors">
+            hsilhackathon.taiwan@gmail.com
+          </a>
         </p>
       </div>
     </section>

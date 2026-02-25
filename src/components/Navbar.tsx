@@ -8,10 +8,11 @@ const navLinks = [
   { label: "主題挑戰", href: "#theme" },
   { label: "時程表", href: "#schedule" },
   { label: "評審標準", href: "#judging" },
+  { label: "報名資格", href: "#eligibility" },
   { label: "常見問題", href: "#faq" },
 ];
 
-const REGISTER_URL = "https://airtable.com/appfJOsPFhsOlgBWL/shrVoYBfKbCbFSNaO";
+const REGISTER_URL = "https://airtable.com/app06PiI7r4PVqBdt/pagFJFqJW3xFqnRFw/form";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
