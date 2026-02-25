@@ -1,4 +1,4 @@
-import { Instagram } from "lucide-react";
+import { Instagram, Mail } from "lucide-react";
 import hsilLogo from "@/assets/hsil-logo.png";
 import ntuLogo from "@/assets/ntu-logo.svg";
 
@@ -21,14 +21,21 @@ const Footer = () =>
           <img src={ntuLogo} alt="國立臺灣大學 Logo" className="h-8 brightness-200" />
         </div>
 
-        <div className="flex items-center justify-center md:justify-end gap-4">
+        <div className="flex items-center justify-center md:justify-end gap-4 flex-wrap">
           <a
-
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 hover:text-white transition-colors text-sm" href="https://www.instagram.com/hsilhackathon.taiwan/">
-          <Instagram className="w-5 h-5" />
+            href="https://www.instagram.com/hsilhackathon.taiwan/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 hover:text-white transition-colors text-sm">
+            <Instagram className="w-5 h-5" />
             @hsilhackathon.taiwan
+          </a>
+          <span className="text-muted-foreground hidden md:inline">|</span>
+          <a
+            href="mailto:hsilhackathon.taiwan@gmail.com"
+            className="flex items-center gap-2 hover:text-white transition-colors text-sm">
+            <Mail className="w-5 h-5" />
+            hsilhackathon.taiwan@gmail.com
           </a>
         </div>
       </div>
