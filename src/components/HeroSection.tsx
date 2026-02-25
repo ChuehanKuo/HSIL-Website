@@ -51,50 +51,40 @@ const HeroSection = () => {
         <div className="absolute top-[45%] left-[35%] w-48 h-48 border border-white rotate-45 animate-[spin_50s_linear_infinite]" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 pt-32 pb-28 text-center text-white flex flex-col items-center justify-center min-h-screen">
-        <div className="flex-1" />
+      <div className="relative z-10 container mx-auto px-4 pt-24 pb-28 text-center text-white flex flex-col items-center min-h-screen">
 
-        <div>
+        <div className="mt-8">
           <motion.p
             {...fadeUp(0)}
-            className="text-xs md:text-sm font-medium tracking-[0.2em] opacity-60 mb-8 uppercase">
-
+            className="text-xs md:text-sm font-medium tracking-[0.2em] opacity-60 mb-12 uppercase">
             Harvard T.H. Chan School of Public Health — Health Systems Innovation Lab
           </motion.p>
 
           <motion.h1
             {...fadeUp(0.15)}
-            className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 leading-[1.1] tracking-tight">
-
-            HSIL 全球健康系統
+            className="text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-[1.1] tracking-tight">
+            全球健康創新黑客松 2026
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(37_90%_65%)] via-[hsl(37_90%_75%)] to-[hsl(170_85%_55%)]">
-              創新黑客松 2026
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(37_90%_65%)] via-[hsl(37_90%_75%)] to-[hsl(170_85%_55%)] text-xl md:text-3xl lg:text-4xl">
+              HSIL Hackathon 2026 — Taiwan Hub
             </span>
           </motion.h1>
 
-          <motion.p {...fadeUp(0.25)} className="text-lg md:text-2xl font-light mb-4 opacity-80">
-
-          </motion.p>
-
-          <motion.div {...fadeUp(0.35)} className="mb-6">
-            
-
-
-          </motion.div>
-
-          {/* Date / Location / Free — prominent treatment */}
-          <motion.div {...fadeUp(0.42)} className="flex items-center justify-center gap-3 text-sm md:text-base font-medium opacity-75 mb-10">
-            <span>📅 2026 年 4 月 10–11 日</span>
-            <span className="w-1 h-1 rounded-full bg-white/50" />
-            <span>📍 臺大公衛學院</span>
-            <span className="w-1 h-1 rounded-full bg-white/50" />
-            <span className="text-[hsl(170_85%_60%)] font-semibold">免費參加</span>
-          </motion.div>
         </div>
 
+        <div className="flex-1" />
+
+        <motion.div {...fadeUp(0.4)} className="max-w-xl mx-auto mb-6 text-center">
+          <p className="text-sm md:text-base font-light opacity-70 tracking-wide mb-2">
+            台灣首次加入全球 30+ 城市同步舉辦的健康創新盛會
+          </p>
+          <p className="text-base md:text-lg font-semibold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[hsl(37_90%_70%)] to-[hsl(170_85%_60%)]">
+            國立臺灣大學 × 哈佛大學
+          </p>
+        </motion.div>
+
         {/* CTA buttons */}
-        <motion.div {...fadeUp(0.5)} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+        <motion.div {...fadeUp(0.5)} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
           <a
             href={REGISTER_URL}
             target="_blank"
@@ -113,16 +103,23 @@ const HeroSection = () => {
           </a>
         </motion.div>
 
+        {/* Date / Location / Free — prominent treatment */}
+        <motion.div {...fadeUp(0.55)} className="flex items-center justify-center gap-3 text-sm md:text-base font-medium opacity-75 mb-6">
+          <span>📅 2026 年 4 月 10–11 日</span>
+          <span className="w-1 h-1 rounded-full bg-white/50" />
+          <span>📍 國立臺灣大學 公共衛生學院</span>
+          <span className="w-1 h-1 rounded-full bg-white/50" />
+          <span className="text-[hsl(170_85%_60%)] font-semibold">免費參加</span>
+        </motion.div>
+
         {/* Countdown / deadline urgency strip */}
         <motion.div {...fadeUp(0.6)} className="flex items-center gap-2 text-xs md:text-sm opacity-60">
           <CalendarClock className="w-4 h-4" />
           <span>報名截止：3/31</span>
           <span className="mx-1">—</span>
-          <span>倒數 33 天 23 時 36 分
-            <strong className="text-[hsl(37_90%_70%)] opacity-100">{countdown.days}</strong> 天 <strong className="text-[hsl(37_90%_70%)] opacity-100">{countdown.hours}</strong> 時 <strong className="text-[hsl(37_90%_70%)] opacity-100">{countdown.mins}</strong> 分</span>
+          <span>倒數 <strong className="text-[hsl(37_90%_70%)] opacity-100">{countdown.days}</strong> 天 <strong className="text-[hsl(37_90%_70%)] opacity-100">{countdown.hours}</strong> 時 <strong className="text-[hsl(37_90%_70%)] opacity-100">{countdown.mins}</strong> 分</span>
         </motion.div>
 
-        <div className="flex-1" />
       </div>
 
       {/* Bottom fade */}
