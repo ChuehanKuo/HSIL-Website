@@ -25,17 +25,17 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-background/80 backdrop-blur-xl ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
       scrolled ?
-      "shadow-[0_1px_3px_hsl(0_0%_0%/0.06)] border-b border-border/50" :
-      ""}`
+      "bg-background/80 backdrop-blur-xl shadow-[0_1px_3px_hsl(0_0%_0%/0.06)] border-b border-border/50" :
+      "bg-transparent"}`
       }>
 
       <div className="container mx-auto flex items-center justify-between py-3 px-4">
         <a href="#" className="flex items-center gap-3">
           <img src={hsilLogo} alt="HSIL Logo" className="h-9" />
-          <span className="hidden sm:block text-sm font-semibold text-foreground">
-            HSIL Hackathon 2026 | 台灣站
+          <span className={`hidden sm:block text-sm font-semibold transition-colors duration-300 ${scrolled ? "text-foreground" : "text-white"}`}>     HSIL Hackathon 2026 | 台灣站
+
           </span>
         </a>
 
@@ -45,8 +45,12 @@ const Navbar = () => {
           <a
             key={l.href}
             href={l.href}
-            className="text-sm font-medium px-3 py-2 rounded-lg transition-all duration-200 text-muted-foreground hover:text-foreground hover:bg-muted"
-            >
+            className={`text-sm font-medium px-3 py-2 rounded-lg transition-all duration-200 ${
+            scrolled ?
+            "text-muted-foreground hover:text-foreground hover:bg-muted" :
+            "text-white/70 hover:text-white hover:bg-white/10"}`
+            }>
+
               {l.label}
             </a>
           )}
@@ -55,18 +59,21 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="ml-2 bg-accent text-accent-foreground px-5 py-2 rounded-xl text-sm font-bold hover:opacity-90 transition-opacity shadow-sm">
+
             立即報名
           </a>
         </div>
 
         {/* Mobile toggle */}
         <button
-          className="lg:hidden p-2 rounded-lg hover:bg-muted transition-colors"
+          className="lg:hidden p-2 rounded-lg hover:bg-white/10 transition-colors"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu">
+
           {mobileOpen ?
-          <X className="text-foreground" /> :
-          <Menu className="text-foreground" />
+          <X className={scrolled ? "text-foreground" : "text-white"} /> :
+
+          <Menu className={scrolled ? "text-foreground" : "text-white"} />
           }
         </button>
       </div>
@@ -80,6 +87,7 @@ const Navbar = () => {
           href={l.href}
           onClick={() => setMobileOpen(false)}
           className="block py-3 text-sm font-medium text-foreground hover:text-accent transition-colors border-b border-border/30">
+
               {l.label}
             </a>
         )}
@@ -88,6 +96,7 @@ const Navbar = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="block mt-4 text-center bg-accent text-accent-foreground px-5 py-3 rounded-xl text-sm font-bold">
+
             立即報名
           </a>
         </div>
