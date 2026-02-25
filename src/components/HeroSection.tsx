@@ -76,8 +76,8 @@ const HeroSection = () => {
         <div className="flex-1" />
 
         {/* Hackathon poster */}
-        <motion.div {...fadeUp(0.4)} className="max-w-md mx-auto mb-6">
-          <img src={hackathonPoster} alt="HSIL Hackathon 7th Edition" className="w-full rounded-2xl shadow-2xl" />
+        <motion.div {...fadeUp(0.4)} className="max-w-xs mx-auto mb-4">
+          <img src={hackathonPoster} alt="HSIL Hackathon 7th Edition" className="w-full rounded-xl shadow-2xl" />
         </motion.div>
 
         {/* CTA button */}
