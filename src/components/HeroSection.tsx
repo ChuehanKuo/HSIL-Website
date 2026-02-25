@@ -76,15 +76,6 @@ const HeroSection = () => {
             由國立臺灣大學與哈佛大學攜手呈現
           </motion.p>
 
-          <motion.div {...fadeUp(0.3)} className="flex items-center justify-center gap-3">
-            <span className="bg-[hsl(37_90%_50%/0.15)] border border-[hsl(37_90%_50%/0.3)] text-[hsl(37_90%_75%)] text-xs md:text-sm font-bold px-4 py-1.5 rounded-full tracking-wide">
-              🇹🇼 台灣首屆
-            </span>
-            <span className="text-white/40 text-sm">×</span>
-            <span className="bg-white/5 border border-white/10 text-white/80 text-xs md:text-sm font-medium px-4 py-1.5 rounded-full">
-              台大 × 哈佛 聯合主辦
-            </span>
-          </motion.div>
 
 
           {/* Date / Location / Free — prominent treatment */}
