@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import hsilLogo from "@/assets/hsil-logo.png";
+import ntuLogo from "@/assets/ntu-logo.svg";
 
 const navLinks = [
 { label: "關於活動", href: "#about" },
@@ -34,9 +35,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between py-3 px-4">
         <a href="#" className="flex items-center gap-3">
           <img src={hsilLogo} alt="HSIL Logo" className="h-9" />
-          <span className={`hidden sm:block text-sm font-semibold transition-colors duration-300 ${scrolled ? "text-foreground" : "text-white"}`}>     HSIL Hackathon 2026 | 台灣站
-
-          </span>
+          <img src={ntuLogo} alt="NTU Logo" className="hidden sm:block h-9" />
         </a>
 
         {/* Desktop */}
