@@ -74,8 +74,17 @@ const HeroSection = () => {
 
         <div className="flex-1" />
 
+        <motion.div {...fadeUp(0.45)} className="max-w-xl mx-auto mb-6 text-center">
+          <p className="text-sm md:text-base font-light opacity-70 tracking-wide mb-2">
+            台灣首次加入全球 30+ 城市同步舉辦的健康創新盛會
+          </p>
+          <p className="text-sm md:text-base font-light opacity-70 tracking-wide">
+            國立臺灣大學 × 哈佛大學
+          </p>
+        </motion.div>
+
         {/* CTA buttons */}
-        <motion.div {...fadeUp(0.45)} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+        <motion.div {...fadeUp(0.5)} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
           <a
             href={REGISTER_URL}
             target="_blank"
@@ -90,15 +99,6 @@ const HeroSection = () => {
             了解更多
             <ArrowDown className="w-5 h-5" />
           </a>
-        </motion.div>
-
-        <motion.div {...fadeUp(0.5)} className="max-w-xl mx-auto mb-6 text-center">
-          <p className="text-sm md:text-base font-light opacity-70 tracking-wide mb-2">
-            台灣首次加入全球 30+ 城市同步舉辦的健康創新盛會
-          </p>
-          <p className="text-sm md:text-base font-light opacity-70 tracking-wide">
-            國立臺灣大學 × 哈佛大學
-          </p>
         </motion.div>
 
         {/* Date / Location / Free — prominent treatment */}
