@@ -106,7 +106,7 @@ const HeroSection = () => {
         <motion.div {...fadeUp(0.55)} className="flex items-center justify-center gap-3 text-sm md:text-base font-medium opacity-75 mb-6">
           <span>📅 2026 年 4 月 10–11 日</span>
           <span className="w-1 h-1 rounded-full bg-white/50" />
-          <span>📍 臺大公衛學院</span>
+          <span>📍 國立臺灣大學 公共衛生學院</span>
           <span className="w-1 h-1 rounded-full bg-white/50" />
           <span className="text-[hsl(170_85%_60%)] font-semibold">免費參加</span>
         </motion.div>
