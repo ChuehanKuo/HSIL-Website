@@ -1,8 +1,9 @@
 import { Instagram } from "lucide-react";
 import hsilLogo from "@/assets/hsil-logo.png";
+import ntuLogo from "@/assets/ntu-logo.svg";
 
-const Footer = () => (
-  <footer className="bg-[hsl(220_26%_10%)] text-white/60 py-12">
+const Footer = () =>
+<footer className="bg-[hsl(220_26%_10%)] text-white/60 py-12">
     <div className="container mx-auto px-4">
       <div className="grid md:grid-cols-3 gap-8 items-center">
         <div className="flex items-center gap-3">
@@ -13,21 +14,21 @@ const Footer = () => (
           </div>
         </div>
 
-        <div className="text-center">
+        <div className="flex flex-col items-center gap-2">
           <p className="text-sm">
             台灣站由<span className="font-semibold text-white/90">國立臺灣大學</span>主辦
           </p>
+          <img src={ntuLogo} alt="國立臺灣大學 Logo" className="h-8 brightness-200" />
         </div>
 
         <div className="flex items-center justify-center md:justify-end gap-4">
           <a
-            href="https://www.instagram.com/hsil_hackathon_taiwan"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 hover:text-white transition-colors text-sm"
-          >
-            <Instagram className="w-5 h-5" />
-            @hsil_hackathon_taiwan
+
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 hover:text-white transition-colors text-sm" href="https://www.instagram.com/hsilhackathon.taiwan/">
+          <Instagram className="w-5 h-5" />
+            @hsilhackathon.taiwan
           </a>
         </div>
       </div>
@@ -36,7 +37,7 @@ const Footer = () => (
         <p className="text-xs opacity-40">© 2026 HSIL Hackathon Taiwan Hub. All rights reserved.</p>
       </div>
     </div>
-  </footer>
-);
+  </footer>;
+
 
 export default Footer;
