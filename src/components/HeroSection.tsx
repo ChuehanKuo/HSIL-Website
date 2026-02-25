@@ -82,12 +82,12 @@ const HeroSection = () => {
 
         {/* CTA button */}
         <motion.div {...fadeUp(0.5)} className="mb-6 -mt-4">
-          <a
-            href="#about"
-            className="border border-white/30 text-white px-8 py-4 rounded-2xl text-lg font-medium hover:bg-white/10 transition-all duration-300 flex items-center gap-2">
-            了解更多
-            <ArrowDown className="w-5 h-5" />
-          </a>
+          
+
+
+
+
+
         </motion.div>
 
         {/* Date / Location / Free — prominent treatment */}
