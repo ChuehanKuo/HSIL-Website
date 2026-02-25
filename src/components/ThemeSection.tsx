@@ -32,7 +32,7 @@ const ThemeSection = () => {
           <p className="text-[hsl(170_85%_55%)] italic mb-4 text-sm">
             Building High-Value Health Systems: Leveraging AI
           </p>
-          <p className="text-white/60 max-w-3xl mx-auto">
+          <p className="text-white/60 max-w-5xl mx-auto">
             今年的黑客松聚焦於如何運用人工智慧 (AI) 技術來改善健康系統。參賽團隊將針對以下領域的挑戰提出創新解方：
           </p>
         </div>
