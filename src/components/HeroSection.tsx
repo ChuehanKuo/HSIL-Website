@@ -47,8 +47,11 @@ const HeroSection = () => (
         </span>
       </motion.h1>
 
-      <motion.p {...fadeUp(0.3)} className="text-lg md:text-2xl font-light mb-2 opacity-80">
-        第七屆 · 台灣站 — 國立臺灣大學
+      <motion.p {...fadeUp(0.3)} className="text-base md:text-lg font-light mb-1 opacity-70">
+        台灣首度響應 · 串聯全球 30+ 城市
+      </motion.p>
+      <motion.p {...fadeUp(0.35)} className="text-base md:text-lg font-medium mb-3 opacity-80">
+        國立臺灣大學 × 哈佛大學聯合主辦
       </motion.p>
 
       <motion.div {...fadeUp(0.4)} className="mb-2">
