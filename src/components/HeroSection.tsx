@@ -29,27 +29,37 @@ const HeroSection = () => (
       <div className="absolute top-[45%] left-[35%] w-48 h-48 border border-white rotate-45 animate-[spin_50s_linear_infinite]" />
     </div>
 
-    <div className="relative z-10 container mx-auto px-4 pt-32 pb-20 text-center text-white">
+    <div className="relative z-10 container mx-auto px-4 pt-28 pb-20 text-center text-white">
       <motion.p
         {...fadeUp(0)}
-        className="text-[10px] md:text-xs font-medium tracking-[0.25em] opacity-40 mb-8 uppercase"
+        className="text-xs md:text-sm font-medium tracking-[0.2em] opacity-60 mb-6 uppercase"
       >
-        Harvard · Health Systems Innovation Lab
+        Harvard T.H. Chan School of Public Health — Health Systems Innovation Lab
       </motion.p>
 
       <motion.h1
         {...fadeUp(0.15)}
-        className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-[1.05] tracking-tight"
+        className="text-4xl md:text-6xl lg:text-7xl font-black mb-5 leading-[1.1] tracking-tight"
       >
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(37_90%_65%)] via-[hsl(37_90%_75%)] to-[hsl(170_85%_55%)]">
-          HSIL 黑客松
-        </span>
+        HSIL 全球健康系統
         <br />
-        <span className="text-white">2026 台灣站</span>
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(37_90%_65%)] via-[hsl(37_90%_75%)] to-[hsl(170_85%_55%)]">
+          創新黑客松 2026
+        </span>
       </motion.h1>
 
-      <motion.p {...fadeUp(0.3)} className="text-base md:text-xl font-light opacity-60 mb-16 max-w-md mx-auto">
-        第七屆 · 國立臺灣大學 · AI × 高價值醫療體系
+      <motion.p {...fadeUp(0.3)} className="text-lg md:text-2xl font-light mb-2 opacity-80">
+        第七屆 · 台灣站 — 國立臺灣大學
+      </motion.p>
+
+      <motion.div {...fadeUp(0.4)} className="mb-2">
+        <span className="inline-block px-4 py-1.5 rounded-full bg-[hsl(37_90%_44%/0.2)] border border-[hsl(37_90%_44%/0.3)] text-[hsl(37_90%_70%)] text-base md:text-lg font-semibold">
+          打造高價值醫療體系：運用人工智慧
+        </span>
+      </motion.div>
+
+      <motion.p {...fadeUp(0.45)} className="text-sm md:text-base font-light opacity-50 italic mb-12">
+        Building High-Value Health Systems: Leveraging AI
       </motion.p>
 
       <motion.div {...fadeUp(0.55)} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
