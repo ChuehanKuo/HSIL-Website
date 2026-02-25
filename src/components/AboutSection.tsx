@@ -1,6 +1,23 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Globe, GraduationCap, Users, Trophy } from "lucide-react";
+import { Globe, GraduationCap, Users, Trophy, Calendar, MapPin, Clock, UsersRound, Presentation, BrainCircuit } from "lucide-react";
 import posterImg from "@/assets/hackathon-poster.png";
+
+const quickFacts = [
+  { icon: Calendar, label: "活動日期", value: "2026 年 4 月 10–11 日（週五、六）" },
+  { icon: MapPin, label: "活動地點", value: "國立臺灣大學公共衛生學院" },
+  { icon: Clock, label: "活動時長", value: "兩天（每天約 8 小時）" },
+  { icon: UsersRound, label: "團隊人數", value: "3–5 人一組（可個人報名，現場組隊）" },
+  { icon: Presentation, label: "最終產出", value: "3 分鐘 Pitch 簡報（不需要寫程式或做原型）" },
+  { icon: BrainCircuit, label: "活動語言", value: "中文為主、部分資料為英文" },
+];
+
+const steps = [
+  { num: "1", title: "線上報名", desc: "填寫 Airtable 報名表單，截止日為 3/31" },
+  { num: "2", title: "錄取通知", desc: "4 月初公布錄取名單，寄送行前指南" },
+  { num: "3", title: "兩天黑客松", desc: "4/10–11 現場組隊、腦力激盪、導師指導、方案發想" },
+  { num: "4", title: "團隊 Pitch", desc: "每組 3 分鐘簡報 + 2 分鐘評審 Q&A" },
+  { num: "5", title: "全球 Bootcamp", desc: "前兩名進入 HSIL 培訓計畫，代表台灣參加哈佛 Demo Day" },
+];
 
 const features = [
   { icon: Globe, title: "全球 30+ 城市同步舉辦", color: "text-secondary" },
@@ -52,6 +69,52 @@ const AboutSection = () => {
           </div>
         </div>
 
+        {/* Quick facts grid */}
+        <div className="mb-16">
+          <h3 className="text-xl font-bold text-center mb-6 text-foreground">
+            活動快速資訊
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {quickFacts.map(({ icon: Icon, label, value }) => (
+              <div key={label} className="bg-card border rounded-xl p-5 flex items-start gap-4">
+                <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center flex-shrink-0">
+                  <Icon className="w-5 h-5 text-secondary" />
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">{label}</p>
+                  <p className="text-sm font-medium text-foreground mt-0.5">{value}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* How it works - step by step */}
+        <div className="mb-16">
+          <h3 className="text-xl font-bold text-center mb-8 text-foreground">
+            參賽流程
+          </h3>
+          <div className="flex flex-col md:flex-row gap-3 md:gap-0 items-stretch">
+            {steps.map((step, i) => (
+              <div key={step.num} className="flex-1 relative">
+                <div className="bg-card border rounded-xl p-5 h-full md:mx-1">
+                  <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold mb-3">
+                    {step.num}
+                  </div>
+                  <h4 className="font-bold text-sm mb-1 text-foreground">{step.title}</h4>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{step.desc}</p>
+                </div>
+                {i < steps.length - 1 && (
+                  <div className="hidden md:block absolute top-1/2 -right-1 transform -translate-y-1/2 text-muted-foreground/40 text-lg z-10">
+                    →
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Feature cards */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {features.map(({ icon: Icon, title, color }) => (
             <div key={title} className="card-elevated rounded-2xl p-6 text-center">
