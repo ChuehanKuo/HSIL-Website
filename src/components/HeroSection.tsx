@@ -1,4 +1,4 @@
-import { Calendar, MapPin, DollarSign, ArrowDown, ArrowRight } from "lucide-react";
+import { ArrowDown, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 const REGISTER_URL = "https://airtable.com/appfJOsPFhsOlgBWL/shrVoYBfKbCbFSNaO";
@@ -58,11 +58,15 @@ const HeroSection = () => (
         </span>
       </motion.div>
 
-      <motion.p {...fadeUp(0.45)} className="text-sm md:text-base font-light opacity-50 italic mb-12">
+      <motion.p {...fadeUp(0.45)} className="text-sm md:text-base font-light opacity-50 italic mb-6">
         Building High-Value Health Systems: Leveraging AI
       </motion.p>
 
-      <motion.div {...fadeUp(0.55)} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
+      <motion.p {...fadeUp(0.5)} className="text-sm md:text-base opacity-50 mb-12">
+        2026 年 4 月 10–11 日 · 臺大公衛學院 · 免費參加
+      </motion.p>
+
+      <motion.div {...fadeUp(0.55)} className="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a
           href={REGISTER_URL}
           target="_blank"
@@ -79,23 +83,6 @@ const HeroSection = () => (
           了解更多
           <ArrowDown className="w-5 h-5" />
         </a>
-      </motion.div>
-
-      <motion.div
-        {...fadeUp(0.7)}
-        className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto"
-      >
-        {[
-          { icon: Calendar, label: "日期", value: "2026 年 4 月 10–11 日（週五、六）" },
-          { icon: MapPin, label: "地點", value: "國立臺灣大學公共衛生學院" },
-          { icon: DollarSign, label: "費用", value: "完全免費" },
-        ].map(({ icon: Icon, label, value }) => (
-          <div key={label} className="glass-card rounded-2xl p-6 hover:bg-[hsl(0_0%_100%/0.1)] transition-colors">
-            <Icon className="w-6 h-6 mx-auto mb-2 text-[hsl(37_90%_65%)]" />
-            <p className="text-xs font-semibold tracking-wider uppercase opacity-60 mb-1">{label}</p>
-            <p className="text-sm font-medium">{value}</p>
-          </div>
-        ))}
       </motion.div>
     </div>
 
