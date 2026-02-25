@@ -79,7 +79,7 @@ const HeroSection = () => {
 
 
           {/* Date / Location / Free — prominent treatment */}
-          <motion.div {...fadeUp(0.42)} className="flex items-center justify-center gap-3 text-sm md:text-base font-medium opacity-75 mb-10">
+          <motion.div {...fadeUp(0.42)} className="flex items-center justify-center gap-3 text-sm md:text-base font-medium opacity-75 mt-4 mb-10">
             <span>📅 2026 年 4 月 10–11 日</span>
             <span className="w-1 h-1 rounded-full bg-white/50" />
             <span>📍 臺大公衛學院</span>
