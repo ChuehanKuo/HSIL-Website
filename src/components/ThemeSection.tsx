@@ -16,35 +16,38 @@ const ThemeSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section id="theme" className="py-20 lg:py-28 bg-muted">
+    <section id="theme" className="py-24 lg:py-32 section-dark relative overflow-hidden">
+      {/* Subtle grid */}
+      <div className="absolute inset-0 hero-grid opacity-50" />
+
       <div
         ref={ref}
-        className={`container mx-auto px-4 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        className={`container mx-auto px-4 relative z-10 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 text-gradient-crimson">
-          2026 年主題：運用 AI 打造高價值醫療體系
-        </h2>
-        <p className="text-center text-muted-foreground mb-4 italic">
-          Building High-Value Health Systems: Leveraging AI
-        </p>
-        <p className="text-center text-foreground/80 max-w-3xl mx-auto mb-4">
-          今年的黑客松聚焦於如何運用人工智慧 (AI) 技術來改善健康系統。團隊可針對任何健康系統 + AI 相關議題提出創新方案。以下為 HSIL 提供的參考挑戰方向：
-        </p>
-        <p className="text-center text-sm text-muted-foreground mb-12">
-          *以下主題為選擇性參考方向，並非強制限定。團隊可自由發揮任何健康系統相關議題。
-        </p>
+        <div className="text-center mb-16">
+          <p className="text-sm font-semibold tracking-wider uppercase text-[hsl(170_85%_55%)] mb-3">2026 Theme</p>
+          <h2 className="text-3xl md:text-5xl font-black text-white mb-3">
+            運用 AI 打造高價值醫療體系
+          </h2>
+          <p className="text-[hsl(170_85%_55%)] italic mb-4 text-sm">
+            Building High-Value Health Systems: Leveraging AI
+          </p>
+          <p className="text-white/60 max-w-3xl mx-auto">
+            今年的黑客松聚焦於如何運用人工智慧 (AI) 技術來改善健康系統。參賽團隊將針對以下領域的挑戰提出創新解方：
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {challenges.map(({ icon: Icon, title, desc }) => (
             <div
               key={title}
-              className="bg-card border rounded-2xl p-6 hover:shadow-lg hover:border-secondary/30 transition-all duration-300"
+              className="glass-card rounded-2xl p-6 hover:bg-[hsl(0_0%_100%/0.1)] transition-all duration-300 group"
             >
-              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                <Icon className="w-5 h-5 text-primary" />
+              <div className="w-10 h-10 rounded-xl bg-[hsl(170_85%_32%/0.2)] flex items-center justify-center mb-4 group-hover:bg-[hsl(170_85%_32%/0.3)] transition-colors">
+                <Icon className="w-5 h-5 text-[hsl(170_85%_55%)]" />
               </div>
-              <h3 className="font-bold text-sm mb-1.5 text-foreground">{title}</h3>
-              <p className="text-xs text-muted-foreground leading-relaxed">{desc}</p>
+              <h3 className="font-bold text-sm mb-2 text-white">{title}</h3>
+              <p className="text-xs text-white/50 leading-relaxed">{desc}</p>
             </div>
           ))}
         </div>
