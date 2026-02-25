@@ -15,8 +15,8 @@ const Footer = () =>
         </div>
 
         <div className="flex flex-col items-center gap-2">
-          <p className="text-sm">
-            台灣站由<span className="font-semibold text-white/90">國立臺灣大學</span>主辦
+          <p className="text-sm font-bold">
+            台灣站由國立臺灣大學主辦
           </p>
           <img src={ntuLogo} alt="國立臺灣大學 Logo" className="h-8 brightness-200" />
         </div>
