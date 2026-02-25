@@ -52,7 +52,7 @@ const AboutSection = () => {
             </p>
             <div className="relative pl-5 border-l-4 border-primary/60">
               <p className="font-bold text-primary text-lg">
-                國立臺灣大學<br />只需要你對健康議題的熱情和創新思維。
+                國立臺灣大學 × 哈佛大學聯合主辦<br />不需要程式背景，只需要你對健康議題的熱情和創新思維。
               </p>
             </div>
           </div>
