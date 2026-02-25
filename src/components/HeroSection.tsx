@@ -70,11 +70,15 @@ const HeroSection = () => {
             </span>
           </motion.h1>
 
-          <motion.p {...fadeUp(0.25)} className="text-base md:text-lg font-light opacity-70 max-w-xl mx-auto mb-5">
-            台灣首次加入全球 30+ 城市同步舉辦的健康創新盛會
-            <br />
-            國立臺灣大學 × 哈佛大學
-          </motion.p>
+          <motion.div {...fadeUp(0.25)} className="max-w-xl mx-auto mb-5 backdrop-blur-md bg-white/[0.07] border border-white/[0.12] rounded-2xl px-8 py-4 shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
+            <p className="text-sm md:text-base font-light opacity-80 tracking-wide">
+              台灣首次加入全球 30+ 城市同步舉辦的健康創新盛會
+            </p>
+            <div className="w-12 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent mx-auto my-2" />
+            <p className="text-base md:text-lg font-semibold tracking-widest">
+              國立臺灣大學 × 哈佛大學
+            </p>
+          </motion.div>
 
 
 
