@@ -16,13 +16,14 @@ const HeroSection = () => (
 
     {/* Floating orbs */}
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      <div className="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-[hsl(170_85%_40%/0.08)] blur-[100px]" />
-      <div className="absolute -bottom-48 -right-48 w-[600px] h-[600px] rounded-full bg-[hsl(37_90%_44%/0.06)] blur-[120px]" />
-      <div className="absolute top-1/3 right-1/4 w-[300px] h-[300px] rounded-full bg-[hsl(352_72%_40%/0.05)] blur-[80px]" />
+      <div className="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-[hsl(352_72%_40%/0.15)] blur-[120px]" />
+      <div className="absolute -bottom-48 -right-48 w-[600px] h-[600px] rounded-full bg-[hsl(37_90%_44%/0.1)] blur-[120px]" />
+      <div className="absolute top-1/4 right-1/3 w-[400px] h-[400px] rounded-full bg-[hsl(170_85%_32%/0.08)] blur-[100px]" />
+      <div className="absolute bottom-1/3 left-1/4 w-[300px] h-[300px] rounded-full bg-[hsl(352_72%_50%/0.06)] blur-[80px]" />
     </div>
 
     {/* Geometric shapes */}
-    <div className="absolute inset-0 pointer-events-none opacity-[0.07]">
+    <div className="absolute inset-0 pointer-events-none opacity-[0.06]">
       <div className="absolute top-20 left-[8%] w-72 h-72 border border-white rounded-full animate-[spin_60s_linear_infinite]" />
       <div className="absolute bottom-24 right-[12%] w-96 h-96 border border-white rounded-full animate-[spin_80s_linear_infinite_reverse]" />
       <div className="absolute top-[45%] left-[35%] w-48 h-48 border border-white rotate-45 animate-[spin_50s_linear_infinite]" />
@@ -42,7 +43,7 @@ const HeroSection = () => (
       >
         HSIL 全球健康系統
         <br />
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-[hsl(37_90%_65%)]">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(37_90%_65%)] via-[hsl(37_90%_75%)] to-[hsl(170_85%_55%)]">
           創新黑客松 2026
         </span>
       </motion.h1>
