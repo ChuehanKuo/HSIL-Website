@@ -70,20 +70,18 @@ const HeroSection = () => {
             </span>
           </motion.h1>
 
-          <motion.div {...fadeUp(0.25)} className="max-w-xl mx-auto mb-5 text-center">
-            <p className="text-sm md:text-base font-light opacity-70 tracking-wide mb-2">
-              台灣首次加入全球 30+ 城市同步舉辦的健康創新盛會
-            </p>
-            <p className="text-base md:text-lg font-semibold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[hsl(37_90%_70%)] to-[hsl(170_85%_60%)]">
-              國立臺灣大學 × 哈佛大學
-            </p>
-          </motion.div>
-
-
-
         </div>
 
         <div className="flex-1" />
+
+        <motion.div {...fadeUp(0.4)} className="max-w-xl mx-auto mb-6 text-center">
+          <p className="text-sm md:text-base font-light opacity-70 tracking-wide mb-2">
+            台灣首次加入全球 30+ 城市同步舉辦的健康創新盛會
+          </p>
+          <p className="text-base md:text-lg font-semibold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[hsl(37_90%_70%)] to-[hsl(170_85%_60%)]">
+            國立臺灣大學 × 哈佛大學
+          </p>
+        </motion.div>
 
         {/* CTA buttons */}
         <motion.div {...fadeUp(0.5)} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
