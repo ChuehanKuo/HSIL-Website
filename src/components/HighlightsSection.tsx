@@ -2,12 +2,12 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { DollarSign, Code, GraduationCap, Users, Handshake, HeartPulse } from "lucide-react";
 
 const highlights = [
-  { icon: DollarSign, title: "完全免費", desc: "無任何報名費或參加費用" },
-  { icon: Code, title: "不需程式背景", desc: "重視創意思維與跨領域合作，不需寫 code" },
-  { icon: GraduationCap, title: "哈佛 Bootcamp 機會", desc: "優勝隊伍將獲邀參加哈佛大學 Demo Day 及 Bootcamp 培訓計畫" },
-  { icon: Users, title: "專業導師指導", desc: "活動期間配有來自醫療、科技、商業領域的專業導師全程指導" },
-  { icon: Handshake, title: "跨領域交流", desc: "認識來自醫學、設計、工程、商管、法律等不同領域的優秀夥伴" },
-  { icon: HeartPulse, title: "解決真實問題", desc: "針對台灣及全球健康系統面臨的真實挑戰提出解方" },
+  { icon: DollarSign, title: "完全免費", desc: "零報名費、零參加費，活動兩天提供午餐、點心與飲料" },
+  { icon: Code, title: "不需程式背景", desc: "不需要寫程式碼或做原型產品。你需要的只有創意思維和團隊合作能力" },
+  { icon: GraduationCap, title: "哈佛 Bootcamp 機會", desc: "台灣站前兩名將進入 HSIL 全球 Bootcamp，經篩選後可於哈佛 Demo Day 向全球評審與投資人展示方案" },
+  { icon: Users, title: "專業導師全程指導", desc: "活動期間有來自醫療、科技、商業等領域的專業導師協助你的團隊打磨方案" },
+  { icon: Handshake, title: "跨領域交流", desc: "認識來自醫學、公衛、設計、工程、商管、法律等不同領域的優秀夥伴，拓展你的人脈" },
+  { icon: HeartPulse, title: "解決真實問題", desc: "不是紙上談兵——你將針對台灣及全球健康系統面臨的真實挑戰，提出有影響力的解方" },
 ];
 
 const HighlightsSection = () => {
