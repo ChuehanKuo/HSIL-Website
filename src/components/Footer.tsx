@@ -1,5 +1,6 @@
 import { Instagram } from "lucide-react";
 import hsilLogo from "@/assets/hsil-logo.png";
+import ntuLogo from "@/assets/ntu-logo.svg";
 
 const Footer = () => (
   <footer className="bg-[hsl(220_26%_10%)] text-white/60 py-12">
@@ -13,10 +14,11 @@ const Footer = () => (
           </div>
         </div>
 
-        <div className="text-center">
+        <div className="flex flex-col items-center gap-2">
           <p className="text-sm">
             台灣站由<span className="font-semibold text-white/90">國立臺灣大學</span>主辦
           </p>
+          <img src={ntuLogo} alt="國立臺灣大學 Logo" className="h-8 brightness-200" />
         </div>
 
         <div className="flex items-center justify-center md:justify-end gap-4">
