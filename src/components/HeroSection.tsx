@@ -56,7 +56,7 @@ const HeroSection = () => {
         <div className="mt-8">
           <motion.p
             {...fadeUp(0)}
-            className="text-xs md:text-sm font-medium tracking-[0.2em] opacity-60 mb-8 uppercase">
+            className="text-xs md:text-sm font-medium tracking-[0.2em] opacity-60 mb-12 uppercase">
             Harvard T.H. Chan School of Public Health — Health Systems Innovation Lab
           </motion.p>
 
