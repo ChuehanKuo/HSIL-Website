@@ -26,10 +26,9 @@ const Footer = () =>
 
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 hover:text-white transition-colors text-sm" href="https://www.instagram.com/hsilhackathon.taiwan/">@hsilhackathon.taiwan
-
+          className="flex items-center gap-2 hover:text-white transition-colors text-sm" href="https://www.instagram.com/hsilhackathon.taiwan/">
           <Instagram className="w-5 h-5" />
-            @hsil_hackathon_taiwan
+            @hsilhackathon.taiwan
           </a>
         </div>
       </div>
