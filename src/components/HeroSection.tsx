@@ -2,7 +2,7 @@ import { ArrowDown, ArrowRight, CalendarClock } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const REGISTER_URL = "https://airtable.com/appfJOsPFhsOlgBWL/shrVoYBfKbCbFSNaO";
+const REGISTER_URL = "https://airtable.com/app06PiI7r4PVqBdt/pagFJFqJW3xFqnRFw/form";
 const DEADLINE = new Date("2026-03-31T23:59:59+08:00");
 
 const fadeUp = (delay = 0) => ({
@@ -53,7 +53,7 @@ const HeroSection = () => {
 
       <div className="relative z-10 container mx-auto px-4 pt-24 pb-28 text-center text-white flex flex-col items-center min-h-screen">
 
-        <div className="mt-16">
+        <div className="mt-8">
           <motion.p
             {...fadeUp(0)}
             className="text-xs md:text-sm font-medium tracking-[0.2em] opacity-60 mb-12 uppercase">
@@ -74,11 +74,11 @@ const HeroSection = () => {
 
         <div className="flex-1" />
 
-        <motion.div {...fadeUp(0.4)} className="max-w-xl mx-auto mb-6 text-center">
+        <motion.div {...fadeUp(0.45)} className="max-w-xl mx-auto mb-6 text-center">
           <p className="text-sm md:text-base font-light opacity-70 tracking-wide mb-2">
             台灣首次加入全球 30+ 城市同步舉辦的健康創新盛會
           </p>
-          <p className="text-base md:text-lg font-semibold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[hsl(37_90%_70%)] to-[hsl(170_85%_60%)]">
+          <p className="text-sm md:text-base font-light opacity-70 tracking-wide">
             國立臺灣大學 × 哈佛大學
           </p>
         </motion.div>
@@ -89,15 +89,21 @@ const HeroSection = () => {
             href={REGISTER_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-accent text-accent-foreground px-8 py-4 rounded-2xl text-lg font-bold glow-accent hover:scale-105 transition-all duration-300 flex items-center gap-2">
-
+            className="group bg-accent text-accent-foreground px-6 py-3 rounded-xl text-base font-bold glow-accent hover:scale-105 transition-all duration-300 flex items-center gap-2">
             立即報名
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
           <a
-            href="#about"
-            className="border border-white/30 text-white px-8 py-4 rounded-2xl text-lg font-medium hover:bg-white/10 transition-all duration-300 flex items-center gap-2">
 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group bg-[hsl(170_85%_32%)] text-white px-6 py-3 rounded-xl text-base font-bold hover:scale-105 transition-all duration-300 flex items-center gap-2" href="https://hsph.harvard.edu/research/health-systems-innovation-lab/work/hsil-hackathon-2026-building-high-value-health-systems-leveraging-ai/">
+            HSIL 官網
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </a>
+          <a
+            href="#about"
+            className="border border-white/30 text-white px-6 py-3 rounded-xl text-base font-medium hover:bg-white/10 transition-all duration-300 flex items-center gap-2">
             了解更多
             <ArrowDown className="w-5 h-5" />
           </a>
@@ -105,7 +111,8 @@ const HeroSection = () => {
 
         {/* Date / Location / Free — prominent treatment */}
         <motion.div {...fadeUp(0.55)} className="flex items-center justify-center gap-3 text-sm md:text-base font-medium opacity-75 mb-6">
-          <span>📅 2026 年 4 月 10–11 日</span>
+          <span>📅 2026 年
+ 4 月 10–11 日</span>
           <span className="w-1 h-1 rounded-full bg-white/50" />
           <span>📍 國立臺灣大學 公共衛生學院</span>
           <span className="w-1 h-1 rounded-full bg-white/50" />
@@ -124,7 +131,6 @@ const HeroSection = () => {
 
       {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[hsl(220_14%_96%)] to-transparent" />
-    </section>);
-};
+    </section>);};
 
 export default HeroSection;
