@@ -98,7 +98,7 @@ const HeroSection = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="group bg-[hsl(170_85%_32%)] text-white px-6 py-3 rounded-xl text-base font-bold hover:scale-105 transition-all duration-300 flex items-center gap-2">
-            HSIL 官網
+            黑客松官網
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </a>
           <a
