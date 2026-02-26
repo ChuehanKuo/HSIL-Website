@@ -99,7 +99,7 @@ const HeroSection = () => {
             rel="noopener noreferrer"
             className="group bg-[hsl(170_85%_32%)] text-white px-6 py-3 rounded-xl text-base font-bold hover:scale-105 transition-all duration-300 flex items-center gap-2" href="https://hsph.harvard.edu/research/health-systems-innovation-lab/work/hsil-hackathon-2026-building-high-value-health-systems-leveraging-ai/">
             HSIL 官網
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
           <a
             href="#about"
