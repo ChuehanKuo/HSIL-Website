@@ -35,7 +35,8 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between py-3 px-4">
         <a href="#" className="flex items-center gap-3">
           <img src={hsilLogo} alt="HSIL Logo" className="h-9" />
-          <img src={ntuLogo} alt="NTU Logo" className="hidden sm:block h-9 ml-2" />
+          <span className={`w-px h-6 transition-colors duration-300 ${scrolled ? "bg-border" : "bg-white/30"}`} />
+          <img src={ntuLogo} alt="NTU Logo" className="h-9" />
         </a>
 
         {/* Desktop */}
