@@ -2,7 +2,7 @@ import { ArrowDown, ArrowRight, CalendarClock } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const REGISTER_URL = "https://airtable.com/appfJOsPFhsOlgBWL/shrVoYBfKbCbFSNaO";
+const REGISTER_URL = "https://airtable.com/app06PiI7r4PVqBdt/pagFJFqJW3xFqnRFw/form";
 const DEADLINE = new Date("2026-03-31T23:59:59+08:00");
 
 const fadeUp = (delay = 0) => ({
