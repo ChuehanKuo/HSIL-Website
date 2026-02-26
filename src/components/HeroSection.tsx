@@ -99,6 +99,14 @@ const HeroSection = () => {
             了解更多
             <ArrowDown className="w-5 h-5" />
           </a>
+          <a
+            href="https://www.hsph.harvard.edu/health-systems-innovation-lab/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-white/30 text-white px-6 py-3 rounded-xl text-base font-medium hover:bg-white/10 transition-all duration-300 flex items-center gap-2">
+            HSIL 官網
+            <ArrowRight className="w-4 h-4" />
+          </a>
         </motion.div>
 
         {/* Date / Location / Free — prominent treatment */}
