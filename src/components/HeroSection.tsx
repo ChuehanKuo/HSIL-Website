@@ -103,9 +103,9 @@ const HeroSection = () => {
             href="https://www.hsph.harvard.edu/health-systems-innovation-lab/"
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-white/30 text-white px-6 py-3 rounded-xl text-base font-medium hover:bg-white/10 transition-all duration-300 flex items-center gap-2">
+            className="group bg-white text-background px-6 py-3 rounded-xl text-base font-bold hover:scale-105 transition-all duration-300 flex items-center gap-2">
             HSIL 官網
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </a>
         </motion.div>
 
