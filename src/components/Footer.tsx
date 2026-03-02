@@ -2,6 +2,7 @@ import { Instagram, Mail } from "lucide-react";
 import hsilLogo from "@/assets/hsil-logo.png";
 import ntuLogo from "@/assets/ntu-logo.svg";
 import labLogo from "@/assets/lab-logo.svg";
+import ntuCphLogo from "@/assets/ntu-cph-logo.png";
 
 const Footer = () =>
 <footer className="bg-[hsl(220_26%_10%)] text-white/60 py-12">
@@ -9,6 +10,7 @@ const Footer = () =>
       <div className="grid md:grid-cols-3 gap-8 items-center">
         <div className="flex items-center gap-3">
           <img src={hsilLogo} alt="HSIL Logo" className="h-10 brightness-200" />
+          <img src={ntuCphLogo} alt="NTU College of Public Health" className="h-10 w-auto" />
           <div>
             
             
