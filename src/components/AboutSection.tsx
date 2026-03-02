@@ -52,11 +52,11 @@ const AboutSection = () => {
             <p className="mt-4 font-medium text-base">你會得到什麼？</p>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li>參賽者皆可獲得 HSIL Hackathon 證書（可用於履歷）</li>
-              <li>獲勝</li>
-              <li>導師輔導＋最終 Pitch：把想法做成有說服力的方案並上台展示</li>
+              <li>優勝團隊將有機會晉級 HSIL 後續 Venture Building Program（培訓與輔導），並於最終 Demo Day 向投資人／產業夥伴進行發表（以 HSIL 官方公告為準）。</li>
+              <li>跨域交流與組隊：認識不同領域夥伴，把想法從「點子」推進到「可落地的方案」並上台 Pitch，獲得評審具體回饋</li>
             </ul>
 
-            <p className="text-sm mt-4">主辦：Harvard HSIL｜台灣賽區：NTU College of Public Health（Health Economics and Artificial Intelligence Lab 統籌執行）</p>
+            <p className="mt-4 text-xs">主辦：Harvard HSIL｜台灣賽區：NTU College of Public Health（Health Economics and Artificial Intelligence Lab 統籌執行）</p>
             <div className="relative pl-5 border-l-4 border-primary/60">
               <p className="font-bold text-primary text-lg">免費參加　4/10–4/11（台大公衛）　報名截止 3/31
                 <br />不需要程式背景，只需要你對健康議題的熱情和創新思維。
