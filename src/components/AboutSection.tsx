@@ -47,9 +47,18 @@ const AboutSection = () => {
             
 
 
-            <p>
-              HSIL Hackathon 是由哈佛大學公共衛生學院 Health Systems Innovation Lab 發起的全球健康創新黑客松，每年在世界各地 30 多個城市同步舉辦，匯集數千名來自不同領域的參與者，共同探索健康系統的未來。2026 年，台灣首度響應，由國立臺灣大學擔任在地主辦方。這不是一般的程式競賽——我們著重跨領域團隊合作，結合醫學、公共衛生、商管、設計、工程、法律、社會科學等背景的參賽者，在 48 小時內針對真實的全球健康挑戰，運用數據與 AI 工具提出可落地的創新解方。
-            </p>
+            <p>HSIL Hackathon 是由哈佛大學陳曾熙公共衛生學院 Health Systems Innovation Lab（HSIL）發起的全球健康系統創新黑客松。
+今年台灣首度加入，Taiwan Hub 將於國立臺灣大學公共衛生學院舉辦，邀請跨領域團隊在 48 小時內提出可落地的 AI 健康系統解方。
+
+你會得到什麼？
+
+不需程式設計、也不需可運作原型：概念階段提案也歡迎
+
+跨域組隊（3–5 人）：醫學、公衛、工程/資工、設計、商管、政策都適合
+
+導師輔導＋最終 Pitch：把想法做成有說服力的方案並上台展示
+
+主辦：Harvard HSIL｜台灣賽區：NTU College of Public Health（Health Economics and Artificial Intelligence Lab 統籌執行）</p>
             <div className="relative pl-5 border-l-4 border-primary/60">
               <p className="font-bold text-primary text-lg">
                 國立臺灣大學 × 哈佛大學聯合主辦<br />不需要程式背景，只需要你對健康議題的熱情和創新思維。
@@ -59,11 +68,7 @@ const AboutSection = () => {
           <div className="flex justify-center">
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-secondary/20 to-primary/10 rounded-3xl blur-xl" />
-              <img
-                src={posterImg}
-                alt="HSIL Hackathon 7th Edition 海報"
-                className="relative rounded-2xl shadow-2xl max-w-sm w-full"
-                loading="lazy" />
+              <img src={posterImg} alt="HSIL Hackathon 7th Edition 海報" className="relative rounded-2xl shadow-2xl max-w-sm w-full" loading="lazy" />
 
             </div>
           </div>
@@ -75,8 +80,7 @@ const AboutSection = () => {
             活動快速資訊
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {quickFacts.map(({ icon: Icon, label, value }) =>
-            <div key={label} className="bg-card border rounded-xl p-5 flex items-start gap-4">
+            {quickFacts.map(({ icon: Icon, label, value }) => <div key={label} className="bg-card border rounded-xl p-5 flex items-start gap-4">
                 <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center flex-shrink-0">
                   <Icon className="w-5 h-5 text-secondary" />
                 </div>
@@ -84,8 +88,7 @@ const AboutSection = () => {
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">{label}</p>
                   <p className="text-sm font-medium text-foreground mt-0.5">{value}</p>
                 </div>
-              </div>
-            )}
+              </div>)}
           </div>
         </div>
 
@@ -95,8 +98,7 @@ const AboutSection = () => {
             參賽流程
           </h3>
           <div className="flex flex-col md:flex-row gap-3 md:gap-2 items-stretch">
-            {steps.map((step, i) =>
-            <div key={step.num} className="flex-1 flex items-stretch">
+            {steps.map((step, i) => <div key={step.num} className="flex-1 flex items-stretch">
                 <div className="bg-card border rounded-xl p-5 flex-1">
                   <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold mb-3">
                     {step.num}
@@ -104,11 +106,9 @@ const AboutSection = () => {
                   <h4 className="font-bold text-sm mb-1 text-foreground">{step.title}</h4>
                   <p className="text-xs text-muted-foreground leading-relaxed">{step.desc}</p>
                 </div>
-                {i < steps.length - 1 &&
-                  <div className="hidden md:flex items-center px-1 text-muted-foreground/40 text-lg shrink-0">
+                {i < steps.length - 1 && <div className="hidden md:flex items-center px-1 text-muted-foreground/40 text-lg shrink-0">
                     →
-                  </div>
-                }
+                  </div>}
               </div>
             )}
           </div>
