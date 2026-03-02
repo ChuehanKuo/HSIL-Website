@@ -51,8 +51,9 @@ const AboutSection = () => {
 
             <p className="mt-4 font-medium text-base">你會得到什麼？</p>
             <ul className="list-disc pl-5 space-y-1 text-sm">
-              <li>不需程式設計、也不需可運作原型：概念階段提案也歡迎</li>
-              <li>跨域組隊（3–5 人）：醫學、公衛、工程/資工、設計、商管、政策都適合</li>
+              <li>參賽者皆可獲得 HSIL Hackathon 證書（可用於履歷）</li>
+              <li>
+</li>
               <li>導師輔導＋最終 Pitch：把想法做成有說服力的方案並上台展示</li>
             </ul>
 
@@ -122,7 +123,6 @@ const AboutSection = () => {
         </div>
       </div>
     </section>);
-
 };
 
 export default AboutSection;
