@@ -10,7 +10,7 @@ const Footer = () =>
         <div className="flex items-center gap-3">
           <img src={hsilLogo} alt="HSIL Logo" className="h-10 brightness-200" />
           <div>
-            <p className="text-xs font-semibold text-white/90">Harvard T.H. Chan School of Public Health</p>
+            
             <p className="text-xs opacity-50">Health Systems Innovation Lab</p>
           </div>
         </div>
