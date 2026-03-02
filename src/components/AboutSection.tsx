@@ -67,7 +67,7 @@ const AboutSection = () => {
           <div className="flex justify-center">
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-secondary/20 to-primary/10 rounded-3xl blur-xl" />
-              <img src={posterImg} alt="HSIL Hackathon 7th Edition 海報" className="relative rounded-2xl shadow-2xl max-w-sm w-full" loading="lazy" />
+              <img src={posterImg} alt="HSIL Hackathon 7th Edition 海報" className="relative rounded-2xl shadow-2xl max-w-md w-full" loading="lazy" />
 
             </div>
           </div>
