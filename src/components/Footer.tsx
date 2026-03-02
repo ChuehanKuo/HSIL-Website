@@ -18,7 +18,7 @@ const Footer = () =>
           <p className="text-sm font-bold">台灣站由國立臺灣大學 620 Health Economics and Artificial Intelligence Lab 主辦
 
         </p>
-          <img src={ntuLogo} alt="國立臺灣大學 Logo" className="h-8 brightness-200" />
+          
         </div>
 
         <div className="flex items-center justify-center md:justify-end gap-4 flex-wrap">
