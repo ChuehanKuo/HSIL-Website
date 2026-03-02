@@ -11,7 +11,7 @@ const Footer = () =>
           <img src={hsilLogo} alt="HSIL Logo" className="h-10 brightness-200" />
           <div>
             
-            <p className="text-xs opacity-50">Health Systems Innovation Lab</p>
+            
           </div>
         </div>
 
