@@ -8,13 +8,10 @@ const Footer = () =>
 <footer className="bg-[hsl(220_26%_10%)] text-white/60 py-12">
     <div className="container mx-auto px-4">
       <div className="grid md:grid-cols-3 gap-8 items-center">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-4">
           <img src={hsilLogo} alt="HSIL Logo" className="h-10 brightness-200" />
+          <span className="text-white/20">|</span>
           <img src={ntuCphLogo} alt="NTU College of Public Health" className="h-10 w-auto" />
-          <div>
-            
-            
-          </div>
         </div>
 
         <div className="flex flex-col items-center gap-2">
