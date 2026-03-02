@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const REGISTER_URL = "https://airtable.com/app06PiI7r4PVqBdt/pagFJFqJW3xFqnRFw/form";
-const DEADLINE = new Date("2026-03-31T23:59:59+08:00");
+const DEADLINE = new Date("2026-03-27T23:59:59+08:00");
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 30 },
@@ -122,7 +122,7 @@ const HeroSection = () => {
         {/* Countdown / deadline urgency strip */}
         <motion.div {...fadeUp(0.6)} className="flex items-center gap-2 text-xs md:text-sm opacity-60">
           <CalendarClock className="w-4 h-4" />
-          <span>報名截止：3/31</span>
+          <span>報名截止：3/27</span>
           <span className="mx-1">—</span>
           <span>倒數 <strong className="text-[hsl(37_90%_70%)] opacity-100">{countdown.days}</strong> 天 <strong className="text-[hsl(37_90%_70%)] opacity-100">{countdown.hours}</strong> 時 <strong className="text-[hsl(37_90%_70%)] opacity-100">{countdown.mins}</strong> 分</span>
         </motion.div>
