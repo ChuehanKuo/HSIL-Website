@@ -94,10 +94,10 @@ const AboutSection = () => {
           <h3 className="text-xl font-bold text-center mb-8 text-foreground">
             參賽流程
           </h3>
-          <div className="flex flex-col md:flex-row gap-3 md:gap-0 items-stretch">
+          <div className="flex flex-col md:flex-row gap-3 md:gap-2 items-stretch">
             {steps.map((step, i) =>
-            <div key={step.num} className="flex-1 relative">
-                <div className="bg-card border rounded-xl p-5 h-full md:mx-1">
+            <div key={step.num} className="flex-1 flex items-stretch">
+                <div className="bg-card border rounded-xl p-5 flex-1">
                   <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold mb-3">
                     {step.num}
                   </div>
@@ -105,10 +105,10 @@ const AboutSection = () => {
                   <p className="text-xs text-muted-foreground leading-relaxed">{step.desc}</p>
                 </div>
                 {i < steps.length - 1 &&
-              <div className="hidden md:block absolute top-1/2 -right-1 transform -translate-y-1/2 text-muted-foreground/40 text-lg z-10">
+                  <div className="hidden md:flex items-center px-1 text-muted-foreground/40 text-lg shrink-0">
                     →
                   </div>
-              }
+                }
               </div>
             )}
           </div>
