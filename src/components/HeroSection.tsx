@@ -79,7 +79,8 @@ const HeroSection = () => {
 
           
           <p className="text-sm md:text-base font-light opacity-70 tracking-wide">哈佛大學 Health System Innovation Lab 主辦
-台大公衛學院 Health Economics and Artificial Intelligence Lab 承辦
+            <br />
+            台大公衛學院 Health Economics and Artificial Intelligence Lab 承辦
           </p>
         </motion.div>
 
