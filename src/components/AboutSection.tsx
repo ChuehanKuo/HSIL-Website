@@ -97,7 +97,7 @@ const AboutSection = () => {
             參賽流程
           </h3>
           <div className="flex flex-col md:flex-row gap-3 md:gap-2 items-stretch">
-            {steps.map((step, i) => <div key={step.num} className="flex-1 flex items-stretch">
+            {steps.map((step, i) => <div key={step.num} className="flex-1 flex items-center">
                 <div className="bg-card border rounded-xl p-5 flex-1">
                   <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold mb-3">
                     {step.num}
