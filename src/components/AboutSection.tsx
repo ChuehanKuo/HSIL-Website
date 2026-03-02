@@ -56,7 +56,8 @@ const AboutSection = () => {
               <li>跨域交流與組隊：認識不同領域夥伴，把想法從「點子」推進到「可落地的方案」並上台 Pitch，獲得評審具體回饋</li>
             </ul>
 
-            <p className="mt-4 text-xs">主辦：Harvard HSIL｜台灣賽區：NTU College of Public Health（Health Economics and Artificial Intelligence Lab 統籌執行）</p>
+            <p className="mt-4 text-xs">
+</p>
             <div className="relative pl-5 border-l-4 border-primary/60">
               <p className="font-bold text-primary text-lg">免費參加　4/10–4/11（台大公衛）　報名截止 3/31
                 <br />不需要程式背景，只需要你對健康議題的熱情和創新思維。
@@ -121,7 +122,6 @@ const AboutSection = () => {
             </div>)}
         </div>
       </div>
-    </section>);
-};
+    </section>);};
 
 export default AboutSection;
