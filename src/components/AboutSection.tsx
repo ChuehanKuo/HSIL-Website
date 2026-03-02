@@ -49,7 +49,7 @@ const AboutSection = () => {
 
             <p>HSIL Hackathon 是由哈佛大學陳曾熙公共衛生學院 Health Systems Innovation Lab（HSIL）發起的全球健康系統創新黑客松。今年台灣首度加入，Taiwan Hub 將於國立臺灣大學公共衛生學院舉辦，邀請跨領域團隊在 48 小時內提出可落地的 AI 健康系統解方。</p>
 
-            <p className="font-semibold mt-4">你會得到什麼？</p>
+            <p className="mt-4 text-sm font-medium">你會得到什麼？</p>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li>不需程式設計、也不需可運作原型：概念階段提案也歡迎</li>
               <li>跨域組隊（3–5 人）：醫學、公衛、工程/資工、設計、商管、政策都適合</li>
