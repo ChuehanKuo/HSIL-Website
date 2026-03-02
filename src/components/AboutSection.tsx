@@ -47,21 +47,24 @@ const AboutSection = () => {
             
 
 
-            <p>HSIL Hackathon 是由哈佛大學陳曾熙公共衛生學院 Health Systems Innovation Lab（HSIL）發起的全球健康系統創新黑客松。
-今年台灣首度加入，Taiwan Hub 將於國立臺灣大學公共衛生學院舉辦，邀請跨領域團隊在 48 小時內提出可落地的 AI 健康系統解方。
-
-你會得到什麼？
-
+            <p className="font-semibold">HSIL Hackathon 是由哈佛大學陳曾熙公共衛生學院 Health Systems Innovation Lab（HSIL）發起的全球健康系統創新黑客松。 今年台灣首度加入，Taiwan Hub 將於國立臺灣大學公共衛生學院舉辦，邀請跨領域團隊在 48 小時內提出可落地的 AI 健康系統解方。
+你會得到什麼？ 
 不需程式設計、也不需可運作原型：概念階段提案也歡迎
-
 跨域組隊（3–5 人）：醫學、公衛、工程/資工、設計、商管、政策都適合
-
 導師輔導＋最終 Pitch：把想法做成有說服力的方案並上台展示
+主辦：Harvard HSIL｜台灣賽區：NTU College of Public Health（Health Economics and Artificial Intelligence Lab 統籌執行）
 
-主辦：Harvard HSIL｜台灣賽區：NTU College of Public Health（Health Economics and Artificial Intelligence Lab 統籌執行）</p>
+
+
+
+
+
+
+
+            </p>
             <div className="relative pl-5 border-l-4 border-primary/60">
-              <p className="font-bold text-primary text-lg">
-                國立臺灣大學 × 哈佛大學聯合主辦<br />不需要程式背景，只需要你對健康議題的熱情和創新思維。
+              <p className="font-bold text-primary text-lg">免費參加　4/10–4/11（台大公衛）　報名截止 3/31
+                <br />不需要程式背景，只需要你對健康議題的熱情和創新思維。
               </p>
             </div>
           </div>
@@ -109,21 +112,18 @@ const AboutSection = () => {
                 {i < steps.length - 1 && <div className="hidden md:flex items-center px-1 text-muted-foreground/40 text-lg shrink-0">
                     →
                   </div>}
-              </div>
-            )}
+              </div>)}
           </div>
         </div>
 
         {/* Feature cards */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {features.map(({ icon: Icon, title, color }) =>
-          <div key={title} className="card-elevated rounded-2xl p-6 text-center">
+          {features.map(({ icon: Icon, title, color }) => <div key={title} className="card-elevated rounded-2xl p-6 text-center">
               <div className={`w-12 h-12 mx-auto mb-4 rounded-xl bg-muted flex items-center justify-center`}>
                 <Icon className={`w-6 h-6 ${color}`} />
               </div>
               <p className="text-sm font-semibold text-foreground">{title}</p>
-            </div>
-          )}
+            </div>)}
         </div>
       </div>
     </section>);
