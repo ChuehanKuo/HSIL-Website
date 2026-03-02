@@ -12,7 +12,7 @@ const navLinks = [
 { label: "常見問題", href: "#faq" }];
 
 
-const REGISTER_URL = "https://airtable.com/appfJOsPFhsOlgBWL/shrVoYBfKbCbFSNaO";
+const REGISTER_URL = "https://airtable.com/app06PiI7r4PVqBdt/pagFJFqJW3xFqnRFw/form";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
