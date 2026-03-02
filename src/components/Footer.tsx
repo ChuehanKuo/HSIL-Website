@@ -16,7 +16,7 @@ const Footer = () =>
         </div>
 
         <div className="flex flex-col items-center gap-2">
-          <img alt="620 Health Economics & AI Lab" className="h-12 w-auto max-w-[280px] object-cover" src="/lovable-uploads/b25897d1-43e6-419d-900d-e4f4492df1c2.png" />
+          
         </div>
 
         <div className="flex items-center justify-center md:justify-end gap-4 flex-wrap">
