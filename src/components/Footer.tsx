@@ -15,25 +15,25 @@ const Footer = () =>
         </div>
 
         <div className="flex flex-col items-center gap-2">
-          <p className="text-sm font-bold">
-            台灣站由國立臺灣大學主辦
-          </p>
+          <p className="text-sm font-bold">台灣站由國立臺灣大學 620 Health Economics and Artificial Intelligence Lab 主辦
+
+        </p>
           <img src={ntuLogo} alt="國立臺灣大學 Logo" className="h-8 brightness-200" />
         </div>
 
         <div className="flex items-center justify-center md:justify-end gap-4 flex-wrap">
           <a
-            href="https://www.instagram.com/hsilhackathon.taiwan/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 hover:text-white transition-colors text-sm">
+          href="https://www.instagram.com/hsilhackathon.taiwan/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 hover:text-white transition-colors text-sm">
             <Instagram className="w-5 h-5" />
             @hsilhackathon.taiwan
           </a>
           <span className="text-muted-foreground hidden md:inline">|</span>
           <a
-            href="mailto:hsilhackathon.taiwan@gmail.com"
-            className="flex items-center gap-2 hover:text-white transition-colors text-sm">
+          href="mailto:hsilhackathon.taiwan@gmail.com"
+          className="flex items-center gap-2 hover:text-white transition-colors text-sm">
             <Mail className="w-5 h-5" />
             hsilhackathon.taiwan@gmail.com
           </a>
