@@ -1,6 +1,7 @@
 import { Instagram, Mail } from "lucide-react";
 import hsilLogo from "@/assets/hsil-logo.png";
 import ntuLogo from "@/assets/ntu-logo.svg";
+import labLogo from "@/assets/lab-logo.svg";
 
 const Footer = () =>
 <footer className="bg-[hsl(220_26%_10%)] text-white/60 py-12">
@@ -15,10 +16,7 @@ const Footer = () =>
         </div>
 
         <div className="flex flex-col items-center gap-2">
-          <p className="text-sm font-bold">台灣站由國立臺灣大學 620 Health Economics and Artificial Intelligence Lab 主辦
-
-        </p>
-          
+          <img src={labLogo} alt="620 Health Economics & AI Lab" className="h-16 brightness-200" />
         </div>
 
         <div className="flex items-center justify-center md:justify-end gap-4 flex-wrap">
