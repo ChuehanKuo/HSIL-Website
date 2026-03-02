@@ -16,7 +16,7 @@ const Footer = () =>
         </div>
 
         <div className="flex flex-col items-center gap-2">
-          <img src={labLogo} alt="620 Health Economics & AI Lab" className="h-16 brightness-200" />
+          <img alt="620 Health Economics & AI Lab" className="h-16 brightness-200" src="/lovable-uploads/99c3b9a1-34f2-457b-980b-f9deea053ccf.png" />
         </div>
 
         <div className="flex items-center justify-center md:justify-end gap-4 flex-wrap">
