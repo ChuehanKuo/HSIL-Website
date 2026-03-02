@@ -52,8 +52,7 @@ const AboutSection = () => {
             <p className="mt-4 font-medium text-base">你會得到什麼？</p>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li>參賽者皆可獲得 HSIL Hackathon 證書（可用於履歷）</li>
-              <li>
-</li>
+              <li>獲勝</li>
               <li>導師輔導＋最終 Pitch：把想法做成有說服力的方案並上台展示</li>
             </ul>
 
