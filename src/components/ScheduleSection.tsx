@@ -15,7 +15,7 @@ const schedule: TimelineGroup[] = [
   {
     label: "報名階段",
     dotColor: "bg-accent",
-    items: [{ time: "即日起 — 2026/3/31", title: "線上報名（Airtable 表單）" }],
+    items: [{ time: "即日起 — 2026/3/27", title: "線上報名（Airtable 表單）" }],
   },
   {
     label: "活動前",
