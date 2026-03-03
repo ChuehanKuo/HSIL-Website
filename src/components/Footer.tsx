@@ -27,7 +27,7 @@ const Footer = () =>
             <Instagram className="w-5 h-5" />
             @hsilhackathon.taiwan
           </a>
-          <span className="text-muted-foreground hidden md:inline">|</span>
+          
           <a
           href="mailto:hsilhackathon.taiwan@gmail.com"
           className="flex items-center gap-2 hover:text-white transition-colors text-sm">
