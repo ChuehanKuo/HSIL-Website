@@ -10,7 +10,7 @@ const Footer = () =>
       <div className="grid md:grid-cols-3 gap-8 items-center">
         <div className="flex items-center gap-4">
           <img src={hsilLogo} alt="HSIL Logo" className="h-10 brightness-200" />
-          <span className="text-white/20">|</span>
+          
           <img src={ntuCphLogo} alt="NTU College of Public Health" className="h-10 w-auto" />
         </div>
 
