@@ -21,7 +21,7 @@ const schedule: TimelineGroup[] = [
     label: "活動前",
     dotColor: "bg-secondary",
     items: [
-      { time: "2026 年 4 月初", title: "公布錄取名單並發送確認信" },
+      { time: "2026 年 4/1~4/2", title: "公布錄取名單並發送確認信" },
       { time: "活動前一週", title: "寄送行前通知與參賽者指南" },
     ],
   },
