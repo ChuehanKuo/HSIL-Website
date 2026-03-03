@@ -60,7 +60,7 @@ const AboutSection = () => {
 </p>
             <div className="relative pl-5 border-l-4 border-primary/60">
               <p className="font-bold text-primary text-lg">免費參加　4/10–4/11（台大公衛）　報名截止 3/27
-不需要程式背景，只需要你對健康議題的熱情和創新思維。<br />不需要程式背景，只需要你對健康議題的熱情和創新思維。
+                <br />不需要程式背景，只需要你對健康議題的熱情和創新思維。
               </p>
             </div>
           </div>
