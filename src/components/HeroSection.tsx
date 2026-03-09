@@ -111,12 +111,11 @@ const HeroSection = () => {
         </motion.div>
 
         {/* Date / Location / Free — prominent treatment */}
-        <motion.div {...fadeUp(0.55)} className="flex items-center justify-center gap-3 text-sm md:text-base font-medium opacity-75 mb-6">
-          <span>📅 2026 年
- 4 月 10–11 日</span>
-          <span className="w-1 h-1 rounded-full bg-white/50" />
-          <span>📍 國立臺灣大學 公共衛生學院</span>
-          <span className="w-1 h-1 rounded-full bg-white/50" />
+        <motion.div {...fadeUp(0.55)} className="flex flex-wrap items-center justify-center gap-2 md:gap-3 text-xs md:text-base font-medium opacity-75 mb-6 px-2">
+          <span>📅 2026 年 4 月 10–11 日</span>
+          <span className="hidden sm:inline w-1 h-1 rounded-full bg-white/50" />
+          <span>📍 台大公衛學院</span>
+          <span className="hidden sm:inline w-1 h-1 rounded-full bg-white/50" />
           <span className="text-[hsl(170_85%_60%)] font-semibold">免費參加</span>
         </motion.div>
 
