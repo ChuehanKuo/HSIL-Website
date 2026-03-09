@@ -90,8 +90,8 @@ const ScheduleSection = () => {
                 </div>
                 <div className="ml-14 md:ml-16 space-y-2.5">
                   {group.items.map((item, i) => (
-                    <div key={i} className="flex gap-4 items-start bg-background/60 rounded-xl px-4 py-3 border border-border/50">
-                      <span className="text-xs font-mono text-muted-foreground whitespace-nowrap min-w-[100px] pt-0.5">
+                    <div key={i} className="flex flex-col sm:flex-row gap-1 sm:gap-4 items-start bg-background/60 rounded-xl px-4 py-3 border border-border/50">
+                      <span className="text-xs font-mono text-muted-foreground whitespace-nowrap sm:min-w-[100px] pt-0.5">
                         {item.time}
                       </span>
                       <span className="text-sm text-foreground font-medium">{item.title}</span>
