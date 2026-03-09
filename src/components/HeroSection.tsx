@@ -51,7 +51,7 @@ const HeroSection = () => {
         <div className="absolute top-[45%] left-[35%] w-48 h-48 border border-white rotate-45 animate-[spin_50s_linear_infinite]" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 pt-24 pb-28 text-center text-white flex flex-col items-center min-h-screen">
+      <div className="relative z-10 container mx-auto px-4 pt-20 pb-16 md:pt-24 md:pb-28 text-center text-white flex flex-col items-center min-h-[100svh]">
 
         <div className="mt-8">
           <motion.p
@@ -62,7 +62,7 @@ const HeroSection = () => {
 
           <motion.h1
             {...fadeUp(0.15)}
-            className="text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-[1.1] tracking-tight">
+            className="text-3xl md:text-6xl lg:text-7xl font-black mb-6 md:mb-8 leading-[1.1] tracking-tight">
             全球健康創新黑客松 2026
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(37_90%_65%)] via-[hsl(37_90%_75%)] to-[hsl(170_85%_55%)] text-xl md:text-3xl lg:text-4xl">
@@ -111,12 +111,11 @@ const HeroSection = () => {
         </motion.div>
 
         {/* Date / Location / Free — prominent treatment */}
-        <motion.div {...fadeUp(0.55)} className="flex items-center justify-center gap-3 text-sm md:text-base font-medium opacity-75 mb-6">
-          <span>📅 2026 年
- 4 月 10–11 日</span>
-          <span className="w-1 h-1 rounded-full bg-white/50" />
-          <span>📍 國立臺灣大學 公共衛生學院</span>
-          <span className="w-1 h-1 rounded-full bg-white/50" />
+        <motion.div {...fadeUp(0.55)} className="flex flex-wrap items-center justify-center gap-2 md:gap-3 text-xs md:text-base font-medium opacity-75 mb-6 px-2">
+          <span>📅 2026 年 4 月 10–11 日</span>
+          <span className="hidden sm:inline w-1 h-1 rounded-full bg-white/50" />
+          <span>📍 台大公衛學院</span>
+          <span className="hidden sm:inline w-1 h-1 rounded-full bg-white/50" />
           <span className="text-[hsl(170_85%_60%)] font-semibold">免費參加</span>
         </motion.div>
 

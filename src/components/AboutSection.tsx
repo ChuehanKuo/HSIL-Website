@@ -74,7 +74,7 @@ const AboutSection = () => {
         </div>
 
         {/* Quick facts grid */}
-        <div className="mb-16 mt-36">
+        <div className="mb-16 mt-16 lg:mt-36">
           <h3 className="text-xl font-bold text-center mb-6 text-foreground">
             活動快速資訊
           </h3>
