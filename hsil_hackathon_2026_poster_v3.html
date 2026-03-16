@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #dde8e4; display: flex; justify-content: center; padding: 32px 16px; }
+
+  .poster {
+    width: 700px;
+    background: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    overflow: hidden;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.13);
+  }
+
+  .top-bar {
+    height: 7px;
+    background: linear-gradient(90deg, #A41034 50%, #0f6e56 50%);
+  }
+
+  /* ── Header ── */
+  .header {
+    background: #fff;
+    padding: 20px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e8e4dc;
+  }
+  .org-block { display: flex; align-items: center; }
+  .org-logo { max-height: 42px; max-width: 240px; width: auto; object-fit: contain; display: block; }
+  .org-logo.ntu { max-height: 56px; max-width: 370px; }
+  .divider-v { width: 1px; height: 52px; background: #ddd; flex-shrink: 0; }
+
+  /* ── Hero ── */
+  .hero {
+    background: linear-gradient(135deg, #d4143f 0%, #8a0b2a 100%);
+    padding: 46px 36px 42px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-accent {
+    position: absolute; top: -80px; right: -80px;
+    width: 380px; height: 380px;
+    border-radius: 50%;
+    border: 55px solid rgba(255,255,255,0.08);
+    opacity: 1;
+  }
+  .hero-accent2 {
+    position: absolute; bottom: -60px; left: -60px;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    border: 45px solid rgba(255,255,255,0.05);
+  }
+  .hero-accent3 {
+    position: absolute; top: 30px; right: 140px;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    border: 30px solid rgba(255,255,255,0.04);
+  }
+  .event-tag {
+    display: inline-block;
+    border: 1.5px solid #5DCAA5;
+    color: #5DCAA5;
+    font-size: 10px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    padding: 5px 14px; margin-bottom: 22px;
+  }
+  .hero-zh-main {
+    font-family: 'EB Garamond', serif;
+    font-size: 46px; font-weight: 700;
+    color: #fff; line-height: 1.1;
+    margin-bottom: 8px; position: relative;
+  }
+  .hero-en-title {
+    font-family: 'EB Garamond', serif;
+    font-size: 22px; font-weight: 600; font-style: italic;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 22px; position: relative; line-height: 1.3;
+  }
+  .hero-tagline {
+    font-size: 12px; font-weight: 300;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.8; max-width: 540px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255,255,255,0.25);
+    position: relative;
+  }
+  .hero-tagline strong { color: #fff; font-weight: 500; }
+
+  /* ── Prize banner ── */
+  .prize-banner {
+    background: linear-gradient(135deg, #0d9472 0%, #085c45 100%);
+    padding: 18px 36px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .prize-icon {
+    font-size: 26px; flex-shrink: 0;
+  }
+  .prize-label {
+    font-size: 9px; font-weight: 500;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: #5DCAA5; margin-bottom: 4px;
+  }
+  .prize-value {
+    font-family: 'EB Garamond', serif;
+    font-size: 18px; font-weight: 600; color: #fff; line-height: 1.3;
+  }
+  .prize-sub {
+    font-size: 11px; color: rgba(255,255,255,0.55);
+    margin-top: 2px; font-weight: 300;
+  }
+  .prize-divider {
+    width: 1px; height: 52px; background: rgba(255,255,255,0.2); flex-shrink: 0; margin: 0 8px;
+  }
+
+  /* ── Fast info band ── */
+  .info-band {
+    background: #fff;
+    padding: 28px 36px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-bottom: 1px solid #e8e4dc;
+  }
+  .band-item {
+    padding: 0 22px;
+    border-right: 1px solid #e8e4dc;
+  }
+  .band-item:first-child { padding-left: 0; }
+  .band-item:last-child  { border-right: none; }
+  .band-label {
+    font-size: 9px; font-weight: 500;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: #A41034; margin-bottom: 6px;
+  }
+  .band-value {
+    font-family: 'EB Garamond', serif;
+    font-size: 18px; font-weight: 600; color: #1a1a1a; line-height: 1.25;
+  }
+  .band-sub {
+    font-size: 11px; color: #888;
+    margin-top: 3px; font-weight: 300; line-height: 1.5;
+  }
+
+  /* ── Detail grid ── */
+  .info-section {
+    padding: 30px 36px 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    background: #faf9f6;
+    border-bottom: 1px solid #e8e4dc;
+  }
+  .info-col { display: flex; flex-direction: column; gap: 20px; }
+  .info-col:first-child { padding-right: 28px; border-right: 1px solid #e8e4dc; }
+  .info-col:last-child  { padding-left: 28px; }
+  .info-label {
+    font-size: 9px; font-weight: 500;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: #A41034; margin-bottom: 4px;
+  }
+  .info-value {
+    font-family: 'EB Garamond', serif;
+    font-size: 17px; font-weight: 600; color: #1a1a1a; line-height: 1.3;
+  }
+  .info-sub {
+    font-size: 11px; color: #777;
+    margin-top: 2px; font-weight: 300; line-height: 1.5;
+  }
+
+  /* ── Eligibility strip ── */
+  .eligibility {
+    background: #f4f0e8;
+    border-top: 1px solid #e8e4dc;
+    border-bottom: 1px solid #e8e4dc;
+    padding: 14px 36px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .elig-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #0f6e56; flex-shrink: 0;
+  }
+  .elig-text {
+    font-size: 12.5px; color: #2a2a2a; font-weight: 400;
+    line-height: 1.6;
+  }
+  .elig-text strong { color: #0f6e56; font-weight: 500; }
+
+  /* ── Deadline ── */
+  .deadline-band {
+    background: linear-gradient(135deg, #0d6b53 0%, #074535 100%);
+    padding: 16px 36px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .deadline-label-txt {
+    font-size: 9px; font-weight: 500;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: #5DCAA5; margin-bottom: 4px;
+  }
+  .deadline-date {
+    font-family: 'EB Garamond', serif;
+    font-size: 24px; font-weight: 700; color: #fff;
+  }
+  .deadline-note {
+    font-size: 11px; color: rgba(255,255,255,0.5); font-style: italic;
+  }
+
+  /* ── Register ── */
+  .register-band {
+    background: #fff;
+    padding: 20px 36px;
+    display: flex; align-items: center; justify-content: space-between;
+    border-bottom: 1px solid #e8e4dc;
+  }
+  .reg-label {
+    font-size: 9px; font-weight: 500;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: #A41034; margin-bottom: 5px;
+  }
+  .reg-url {
+    font-family: 'EB Garamond', serif;
+    font-size: 22px; font-weight: 600; color: #A41034;
+  }
+  .qr-box {
+    width: 56px; height: 56px;
+    border: 2px solid #A41034;
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0.35;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    background: #faf9f6;
+    padding: 16px 36px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .footer-org {
+    font-size: 10.5px; color: #999;
+    line-height: 1.9; font-weight: 300;
+  }
+  .footer-org strong { color: #444; font-weight: 500; }
+  .footer-right {
+    text-align: right; font-size: 9px;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: #0f6e56; line-height: 1.8;
+  }
+
+  .bottom-bar {
+    height: 5px;
+    background: linear-gradient(90deg, #0f6e56 50%, #A41034 50%);
+  }
+</style>
+</head>
+<body>
+<div class="poster">
+  <div class="top-bar"></div>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="org-block">
+      <img class="org-logo" src="HSPH_HSIL_logo_horiz_1_RGB.png" alt="Harvard T.H. Chan School of Public Health – HSIL">
+    </div>
+    <div class="divider-v"></div>
+    <div class="org-block">
+      <img class="org-logo ntu" src="National Taiwan University College of Public Health.png" alt="National Taiwan University College of Public Health">
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-accent"></div>
+    <div class="hero-accent2"></div>
+    <div class="event-tag">HSIL Hackathon 2026 &nbsp;·&nbsp; 第七屆 &nbsp;·&nbsp; 臺灣賽區</div>
+    <div class="hero-zh-main">全球健康創新黑客松 2026</div>
+    <div class="hero-en-title">Building High-Value Health Systems: Leveraging AI</div>
+    <div class="hero-tagline">
+      <strong>不是程式比賽</strong>——而是針對健康、醫療、公衛問題，提出「可落地」的解決方案。<br>
+      電子病歷分析、AI 診斷工具、臨床對話機器人、醫療人力短缺……用創新思維解決真實問題。<br>
+      <strong>全球第七屆</strong>·&nbsp;42 個國家同步舉辦&nbsp;·&nbsp;10,000+ 報名人次
+    </div>
+  </div>
+
+  <!-- Prize banner -->
+  <div class="prize-banner">
+    <div class="prize-icon">🏆</div>
+    <div class="prize-text">
+      <div class="prize-label">獎勵 · Benefits</div>
+      <div class="prize-value">獲邀參加哈佛 Demo Day · 晉級 HSIL Venture Building Program</div>
+      <div class="prize-sub">Top teams present at Harvard Demo Day & join the HSIL Venture Building Program</div>
+    </div>
+    <div class="prize-divider"></div>
+    <div class="prize-icon">📜</div>
+    <div class="prize-text">
+      <div class="prize-label">全員獲得 · All Participants</div>
+      <div class="prize-value">哈佛 HSIL 官方證書</div>
+      <div class="prize-sub">Official certificate issued by Harvard T.H. Chan School of Public Health – HSIL</div>
+    </div>
+  </div>
+
+  <!-- Fast info -->
+  <div class="info-band">
+    <div class="band-item">
+      <div class="band-label">日期 · Date</div>
+      <div class="band-value">4/10（五）– 4/11（六）</div>
+      <div class="band-sub">April 10–11, 2026 · 兩天共 16 小時</div>
+    </div>
+    <div class="band-item">
+      <div class="band-label">地點 · Venue</div>
+      <div class="band-value">臺大公共衛生學院</div>
+      <div class="band-sub">徐州路 17 號，臺北市中正區</div>
+    </div>
+    <div class="band-item">
+      <div class="band-label">費用 · Cost</div>
+      <div class="band-value">完全免費</div>
+      <div class="band-sub">Free of charge · No registration fee</div>
+    </div>
+  </div>
+
+  <!-- Detail grid -->
+  <div class="info-section">
+    <div class="info-col">
+      <div>
+        <div class="info-label">組隊 · Team Size</div>
+        <div class="info-value">3 – 5 人 / 隊</div>
+        <div class="info-sub">個人報名可由主辦方協助現場媒合</div>
+      </div>
+      <div>
+        <div class="info-label">最終產出 · Deliverable</div>
+        <div class="info-value">3 分鐘 Pitch + 2 分鐘 Q&A</div>
+        <div class="info-sub">不需可運作成品，重視創意與可行性</div>
+      </div>
+    </div>
+    <div class="info-col">
+      <div>
+        <div class="info-label">活動語言 · Language</div>
+        <div class="info-value">中文為主</div>
+        <div class="info-sub">部分資料為英文，全球 42 個國家同步舉辦</div>
+      </div>
+      <div>
+        <div class="info-label">指導課程 · Course</div>
+        <div class="info-value">HPM7117</div>
+        <div class="info-sub">人工智慧在健康照護概論 · 李達宇老師</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Eligibility -->
+  <div class="eligibility">
+    <div class="elig-dot"></div>
+    <div class="elig-text">
+      <strong>不限背景</strong>——醫學、公衛、商管、設計、工程、法律、社會科學、業界人士皆歡迎參加。學生、研究生、業界專業人士均可報名。
+    </div>
+  </div>
+
+  <!-- Deadline -->
+  <div class="deadline-band">
+    <div>
+      <div class="deadline-label-txt">報名截止 · Registration Deadline</div>
+      <div class="deadline-date">2026 / 3 / 27</div>
+    </div>
+    <div class="deadline-note">額滿截止 &nbsp;·&nbsp; Closes when full</div>
+  </div>
+
+  <!-- Register -->
+  <div class="register-band">
+    <div>
+      <div class="reg-label">報名連結 · Register at</div>
+      <div class="reg-url">hsilhackathontaiwan.com</div>
+    </div>
+    <div class="qr-box">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#A41034" stroke-width="1.5">
+        <rect x="3" y="3" width="7" height="7" rx="1"/>
+        <rect x="14" y="3" width="7" height="7" rx="1"/>
+        <rect x="3" y="14" width="7" height="7" rx="1"/>
+        <rect x="14" y="14" width="3" height="3"/>
+        <rect x="18" y="18" width="3" height="3"/>
+        <rect x="18" y="14" width="3" height="3"/>
+        <rect x="14" y="18" width="3" height="3"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-org">
+      <strong>全球主辦</strong>　Harvard T.H. Chan School of Public Health – HSIL<br>
+      <strong>臺灣賽區承辦</strong>　國立臺灣大學公共衛生學院 Health Economics and Artificial Intelligence Lab
+    </div>
+    <div class="footer-right">Taiwan Hub · April 2026<br>hsilhackathon.taiwan@gmail.com</div>
+  </div>
+
+  <div class="bottom-bar"></div>
+</div>
+</body>
+</html>
