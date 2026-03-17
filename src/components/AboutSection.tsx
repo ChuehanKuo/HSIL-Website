@@ -17,7 +17,7 @@ const steps = [
 { num: "2", title: "錄取通知", desc: "4/1–4/2 通知錄取結果，並提供行前資訊" },
 { num: "3", title: "兩天黑客松", desc: "4/10–11 組隊共創、腦力激盪、方案打磨與實作推進" },
 { num: "4", title: "團隊 Pitch", desc: "每組 3 分鐘簡報 + 2 分鐘評審 Q&A" },
-{ num: "5", title: "全球 Bootcamp", desc: "前兩名進入 HSIL 培訓計畫，代表台灣參加哈佛 Demo Day" }];
+{ num: "5", title: "全球 Bootcamp", desc: "前兩名進入 HSIL 培訓計畫，有機會代表台灣參加哈佛 Demo Day" }];
 
 
 const features = [
