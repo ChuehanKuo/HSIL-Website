@@ -32,11 +32,10 @@ const Navbar = () => {
       "bg-transparent"}`
       }>
 
-      <div className="container mx-auto flex items-center justify-between py-3 px-4">
-        <a href="#" className="flex items-center gap-2 sm:gap-3 shrink-0">
-          <img src={hsilLogo} alt="HSIL Logo" className="h-7 sm:h-9" />
-          
-          <img alt="NTU Logo" className="h-7 sm:h-9" src="/lovable-uploads/452a84e7-add3-4a4e-9cd5-424e38658fad.png" />
+      <div className="container mx-auto flex items-center justify-between py-3 px-3 sm:px-4">
+        <a href="#" className="flex items-center gap-1.5 sm:gap-3 min-w-0 flex-1 lg:flex-none">
+          <img src={hsilLogo} alt="HSIL Logo" className="h-6 sm:h-9 w-auto max-w-[42vw] sm:max-w-none object-contain" />
+          <img alt="NTU Logo" className="h-5 sm:h-9 w-auto max-w-[36vw] sm:max-w-none object-contain" src={ntuLogo} />
         </a>
 
         {/* Desktop */}
@@ -66,7 +65,7 @@ const Navbar = () => {
 
         {/* Mobile toggle */}
         <button
-          className="lg:hidden p-2 rounded-lg hover:bg-white/10 transition-colors"
+          className="lg:hidden shrink-0 ml-2 p-2 rounded-lg hover:bg-white/10 transition-colors"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu">
 
