@@ -92,12 +92,12 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* Original teal poster */}
+        {/* Global HSIL poster */}
         <div className="mb-16 flex justify-center">
           <img
-            src={posterImg}
-            alt="HSIL Hackathon 2026 台灣賽區海報"
-            className="rounded-2xl shadow-xl max-w-lg w-full"
+            src={globalPosterImg}
+            alt="HSIL Hackathon 7th Edition — Global"
+            className="rounded-2xl shadow-xl max-w-3xl w-full"
             loading="lazy"
           />
         </div>
