@@ -1,6 +1,7 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Globe, GraduationCap, Users, Trophy, Calendar, MapPin, Clock, UsersRound, Presentation, BrainCircuit } from "lucide-react";
 import posterImg from "@/assets/hackathon-poster.png";
+import globalPosterImg from "@/assets/hsil-hackathon-global.png";
 
 const quickFacts = [
 { icon: Calendar, label: "活動日期", value: "2026 年 4 月 10–11 日（週五、六）" },
@@ -91,12 +92,12 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* Original teal poster */}
+        {/* Global HSIL poster */}
         <div className="mb-16 flex justify-center">
           <img
-            src={posterImg}
-            alt="HSIL Hackathon 2026 台灣賽區海報"
-            className="rounded-2xl shadow-xl max-w-lg w-full"
+            src={globalPosterImg}
+            alt="HSIL Hackathon 7th Edition — Global"
+            className="rounded-2xl shadow-xl max-w-3xl w-full"
             loading="lazy"
           />
         </div>
