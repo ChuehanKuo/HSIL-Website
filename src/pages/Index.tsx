@@ -17,6 +17,7 @@ const Index = () => (
     <main>
       <HeroSection />
       <AboutSection />
+      <FlowchartSection />
       <HighlightsSection />
       <ThemeSection />
       <ScheduleSection />
