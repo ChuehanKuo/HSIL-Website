@@ -1,7 +1,22 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import microsoftLogo from "@/assets/partners/microsoft.svg";
+import pathLogo from "@/assets/partners/path.png";
+import discoveryLogo from "@/assets/partners/discovery.svg";
+import orrickLogo from "@/assets/partners/orrick.svg";
+import tntLogo from "@/assets/partners/tnt.png";
+import intersystemsLogo from "@/assets/partners/intersystems.svg";
 
-const topPartners = ["Microsoft", "PATH", "Discovery"];
-const otherPartners = ["Orrick", "TNT", "InterSystems"];
+const topPartners = [
+  { name: "Microsoft", logo: microsoftLogo },
+  { name: "PATH", logo: pathLogo },
+  { name: "Discovery", logo: discoveryLogo },
+];
+
+const otherPartners = [
+  { name: "Orrick", logo: orrickLogo },
+  { name: "TNT", logo: tntLogo },
+  { name: "InterSystems", logo: intersystemsLogo },
+];
 
 const PartnersSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -26,28 +41,32 @@ const PartnersSection = () => {
 
         {/* Top-tier partners */}
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-14 mb-10">
-          {topPartners.map((name) => (
+          {topPartners.map(({ name, logo }) => (
             <div
               key={name}
-              className="card-elevated rounded-2xl px-10 py-6 flex items-center justify-center group hover:scale-105 transition-transform duration-300"
+              className="card-elevated rounded-2xl px-8 py-5 flex items-center justify-center group hover:scale-105 transition-transform duration-300"
             >
-              <span className="text-2xl md:text-3xl font-bold text-foreground/80 group-hover:text-primary transition-colors duration-300">
-                {name}
-              </span>
+              <img
+                src={logo}
+                alt={name}
+                className="h-10 md:h-12 w-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+              />
             </div>
           ))}
         </div>
 
         {/* Other partners */}
         <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 mb-8">
-          {otherPartners.map((name) => (
+          {otherPartners.map(({ name, logo }) => (
             <div
               key={name}
-              className="rounded-xl bg-background/60 border border-border/50 px-7 py-4 hover:border-secondary/40 transition-colors duration-300"
+              className="rounded-xl bg-background/60 border border-border/50 px-6 py-4 hover:border-secondary/40 transition-colors duration-300 flex items-center justify-center"
             >
-              <span className="text-lg font-semibold text-foreground/70">
-                {name}
-              </span>
+              <img
+                src={logo}
+                alt={name}
+                className="h-7 md:h-9 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
+              />
             </div>
           ))}
         </div>
