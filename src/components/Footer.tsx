@@ -1,6 +1,6 @@
 import { Instagram, Mail } from "lucide-react";
 import hsilLogo from "@/assets/hsil-logo.png";
-import ntuCphLogo from "@/assets/ntu-cph-logo.png";
+
 
 const Footer = () => (
   <footer className="bg-[hsl(220_26%_10%)] text-white/50 pt-14 pb-8">
@@ -10,8 +10,6 @@ const Footer = () => (
         {/* Logos */}
         <div className="flex items-center gap-5 flex-wrap">
           <img src={hsilLogo} alt="HSIL Logo" className="h-9 brightness-200" />
-          
-          <img src={ntuCphLogo} alt="NTU College of Public Health" className="h-9 w-auto" />
         </div>
 
         {/* Contact */}
