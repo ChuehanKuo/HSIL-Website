@@ -44,24 +44,35 @@ const AboutSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-          <div className="space-y-4 text-foreground/80 leading-relaxed text-base">
-            
+          <div className="space-y-6">
+            <p className="text-foreground/85 text-base md:text-lg leading-[1.85] tracking-wide">
+              HSIL Hackathon 是由哈佛大學陳曾熙公共衛生學院 Health Systems Innovation Lab（HSIL）發起的全球健康系統創新黑客松。今年台灣首度加入，Taiwan Hub 將於國立臺灣大學公共衛生學院舉辦，邀請跨領域團隊在 48 小時內提出可落地的 AI 健康系統解方。
+            </p>
 
+            <div className="space-y-4">
+              <h3 className="text-lg md:text-xl font-bold text-foreground">你會得到什麼？</h3>
+              <ul className="space-y-3">
+                <li className="flex gap-3 text-foreground/80 text-sm md:text-base leading-relaxed">
+                  <span className="mt-1.5 w-2 h-2 rounded-full bg-secondary flex-shrink-0" />
+                  參賽者皆可獲得 HSIL Hackathon 證書（可用於履歷）
+                </li>
+                <li className="flex gap-3 text-foreground/80 text-sm md:text-base leading-relaxed">
+                  <span className="mt-1.5 w-2 h-2 rounded-full bg-secondary flex-shrink-0" />
+                  獲勝團隊可晉級 HSIL 後續 Venture Building Program（培訓與輔導），並於最終 Demo Day 向投資人／產業夥伴進行發表（以 HSIL 官方公告為準）。
+                </li>
+                <li className="flex gap-3 text-foreground/80 text-sm md:text-base leading-relaxed">
+                  <span className="mt-1.5 w-2 h-2 rounded-full bg-secondary flex-shrink-0" />
+                  跨域交流與組隊：認識不同領域夥伴，把想法從「點子」推進到「可落地的方案」並上台 Pitch，獲得評審具體回饋
+                </li>
+              </ul>
+            </div>
 
-            <p>HSIL Hackathon 是由哈佛大學陳曾熙公共衛生學院 Health Systems Innovation Lab（HSIL）發起的全球健康系統創新黑客松。今年台灣首度加入，Taiwan Hub 將於國立臺灣大學公共衛生學院舉辦，邀請跨領域團隊在 48 小時內提出可落地的 AI 健康系統解方。</p>
-
-            <p className="mt-4 font-medium text-base">你會得到什麼？</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
-              <li>參賽者皆可獲得 HSIL Hackathon 證書（可用於履歷）</li>
-              <li>獲勝團隊可晉級 HSIL 後續 Venture Building Program（培訓與輔導），並於最終 Demo Day 向投資人／產業夥伴進行發表（以 HSIL 官方公告為準）。</li>
-              <li>跨域交流與組隊：認識不同領域夥伴，把想法從「點子」推進到「可落地的方案」並上台 Pitch，獲得評審具體回饋</li>
-            </ul>
-
-            <p className="mt-4 text-xs">
-</p>
-            <div className="relative pl-5 border-l-4 border-primary">
-              <p className="font-bold text-primary text-lg">免費參加　4/10–4/11（台大公衛）　報名截止 3/27
-                <br />不需要程式背景，只需要你對健康議題的熱情和創新思維。
+            <div className="relative pl-6 border-l-4 border-primary mt-8 py-2">
+              <p className="font-bold text-primary text-base md:text-lg leading-loose tracking-wide">
+                免費參加　4/10–4/11（台大公衛）　報名截止 3/27
+              </p>
+              <p className="text-foreground/70 text-sm md:text-base mt-1">
+                不需要程式背景，只需要你對健康議題的熱情和創新思維。
               </p>
             </div>
           </div>
@@ -69,7 +80,6 @@ const AboutSection = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-secondary/20 to-primary/10 rounded-3xl blur-xl" />
               <img src={posterImg} alt="HSIL Hackathon 7th Edition 海報" className="relative rounded-2xl shadow-2xl max-w-md w-full" loading="lazy" />
-
             </div>
           </div>
         </div>
