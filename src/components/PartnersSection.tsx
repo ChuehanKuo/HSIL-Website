@@ -45,7 +45,7 @@ const PartnersSection = () => {
               <img
                 src={logo}
                 alt={name}
-                className="max-h-14 md:max-h-16 w-auto max-w-[80%] object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                className="max-h-20 md:max-h-24 w-auto max-w-[85%] object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300"
               />
             </div>
           ))}
