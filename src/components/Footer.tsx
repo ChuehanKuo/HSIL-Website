@@ -12,8 +12,6 @@ const Footer = () => (
           <img src={hsilLogo} alt="HSIL Logo" className="h-9 brightness-200" />
           <div className="w-px h-8 bg-white/15" />
           <img src={ntuCphLogo} alt="NTU College of Public Health" className="h-9 w-auto" />
-          <div className="w-px h-8 bg-white/15" />
-          <img src={labLogo} alt="Health Economics & AI Lab" className="h-9 w-auto max-w-[220px] brightness-200" />
         </div>
 
         {/* Contact */}
