@@ -51,7 +51,7 @@ const PartnersSection = () => {
           ))}
         </div>
 
-        <p className="text-center text-sm text-muted-foreground mt-8">
+        <p className="text-center text-xs font-light tracking-wide text-foreground/40 mt-10">
           及 20+ 全球產業合作夥伴
         </p>
       </div>
