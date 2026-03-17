@@ -93,9 +93,9 @@ const ScheduleSection = () => {
                   <div className={`w-3 h-3 rounded-full ${group.dotColor} relative z-10 ml-[14px] md:ml-[18px] ring-4 ring-background`} />
                   <h3 className="font-bold text-base text-foreground">{group.label}</h3>
                 </div>
-                <div className="ml-14 md:ml-16 space-y-2.5">
+                <div className="ml-10 md:ml-16 space-y-2.5">
                   {group.items.map((item, i) => (
-                    <div key={i} className="flex flex-col sm:flex-row gap-1 sm:gap-4 items-start bg-background/60 rounded-xl px-4 py-3 border border-border/50">
+                    <div key={i} className="flex flex-col sm:flex-row gap-1 sm:gap-4 items-start bg-background/60 rounded-2xl px-4 py-3 border border-border/50 hover:border-secondary/40 hover:shadow-sm transition-all duration-300">
                       <span className="text-xs font-mono text-muted-foreground whitespace-nowrap sm:min-w-[100px] pt-0.5">
                         {item.time}
                       </span>

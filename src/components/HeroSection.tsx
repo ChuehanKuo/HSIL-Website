@@ -38,10 +38,10 @@ const HeroSection = () => {
 
       {/* Floating orbs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-[hsl(352_72%_40%/0.15)] blur-[120px]" />
-        <div className="absolute -bottom-48 -right-48 w-[600px] h-[600px] rounded-full bg-[hsl(37_90%_44%/0.1)] blur-[120px]" />
-        <div className="absolute top-1/4 right-1/3 w-[400px] h-[400px] rounded-full bg-[hsl(170_85%_32%/0.08)] blur-[100px]" />
-        <div className="absolute bottom-1/3 left-1/4 w-[300px] h-[300px] rounded-full bg-[hsl(352_72%_50%/0.06)] blur-[80px]" />
+        <div className="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-[hsl(352_72%_40%/0.15)] blur-[120px] animate-float-slow" />
+        <div className="absolute -bottom-48 -right-48 w-[600px] h-[600px] rounded-full bg-[hsl(37_90%_44%/0.1)] blur-[120px] animate-float-slow-reverse" />
+        <div className="absolute top-1/4 right-1/3 w-[400px] h-[400px] rounded-full bg-[hsl(170_85%_32%/0.08)] blur-[100px] animate-float-slow" style={{ animationDelay: '2s' }} />
+        <div className="absolute bottom-1/3 left-1/4 w-[300px] h-[300px] rounded-full bg-[hsl(352_72%_50%/0.06)] blur-[80px] animate-float-slow-reverse" style={{ animationDelay: '4s' }} />
       </div>
 
       {/* Geometric shapes */}
@@ -90,7 +90,7 @@ const HeroSection = () => {
             href={REGISTER_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-accent text-accent-foreground px-6 py-3 rounded-xl text-base font-bold glow-accent hover:scale-105 transition-all duration-300 flex items-center gap-2">
+            className="group bg-accent text-accent-foreground px-6 py-3 rounded-xl text-base font-bold glow-accent hover:scale-105 transition-all duration-300 flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-accent/50">
             立即報名
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
@@ -98,13 +98,13 @@ const HeroSection = () => {
 
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-[hsl(170_85%_32%)] text-white px-6 py-3 rounded-xl text-base font-bold hover:scale-105 transition-all duration-300 flex items-center gap-2" href="https://hsph.harvard.edu/research/health-systems-innovation-lab/work/hsil-hackathon-2026-building-high-value-health-systems-leveraging-ai/">
+            className="group bg-[hsl(170_85%_32%)] text-white px-6 py-3 rounded-xl text-base font-bold hover:scale-105 transition-all duration-300 flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-[hsl(170_85%_55%)]/50" href="https://hsph.harvard.edu/research/health-systems-innovation-lab/work/hsil-hackathon-2026-building-high-value-health-systems-leveraging-ai/">
             HSIL 官網
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
           <a
             href="#about"
-            className="border border-white/30 text-white px-6 py-3 rounded-xl text-base font-medium hover:bg-white/10 transition-all duration-300 flex items-center gap-2">
+            className="border border-white/30 text-white px-6 py-3 rounded-xl text-base font-medium hover:bg-white/10 transition-all duration-300 flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-white/30">
             了解更多
             <ArrowDown className="w-5 h-5" />
           </a>

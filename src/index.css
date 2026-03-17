@@ -107,7 +107,7 @@
 
   .card-elevated:hover {
     box-shadow: 0 4px 12px hsl(0 0% 0% / 0.08), 0 8px 32px hsl(0 0% 0% / 0.08);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
   }
 
   .section-dark {

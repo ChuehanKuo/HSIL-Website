@@ -45,7 +45,7 @@ const Navbar = () => {
           <a
             key={l.href}
             href={l.href}
-            className={`text-sm font-medium px-3 py-2 rounded-lg transition-all duration-200 ${
+            className={`text-sm font-medium px-3 py-2 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-ring/50 ${
             scrolled ?
             "text-muted-foreground hover:text-foreground hover:bg-muted" :
             "text-white/70 hover:text-white hover:bg-white/10"}`
@@ -58,7 +58,7 @@ const Navbar = () => {
             href={REGISTER_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-2 bg-accent text-accent-foreground px-5 py-2 rounded-xl text-sm font-bold hover:opacity-90 transition-opacity shadow-sm">
+            className="ml-2 bg-accent text-accent-foreground px-5 py-2.5 rounded-xl text-sm font-bold hover:opacity-90 transition-all shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-accent/50">
 
             立即報名
           </a>
