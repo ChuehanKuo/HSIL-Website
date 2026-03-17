@@ -74,13 +74,12 @@ const HeroSection = () => {
 
         <div className="flex-1" />
 
-        <motion.div {...fadeUp(0.45)} className="max-w-xl mx-auto mb-6 text-center">
-          
-
-          
-          <p className="text-sm md:text-base font-light opacity-70 tracking-wide">哈佛大學 Health System Innovation Lab 主辦
-            <br />
-            台大公衛學院 Health Economics and Artificial Intelligence Lab 承辦
+        <motion.div {...fadeUp(0.45)} className="max-w-xl mx-auto mb-6 text-center space-y-1">
+          <p className="text-xs md:text-sm font-light opacity-60 tracking-wide">
+            主辦｜哈佛大學 Health Systems Innovation Lab
+          </p>
+          <p className="text-xs md:text-sm font-light opacity-60 tracking-wide">
+            承辦｜台大公衛學院 Health Economics & AI Lab
           </p>
         </motion.div>
 
