@@ -4,7 +4,7 @@ import { DollarSign, Code, GraduationCap, Users, Handshake, HeartPulse } from "l
 const highlights = [
   { icon: DollarSign, title: "完全免費", desc: "無任何報名費或參加費用", accent: "from-secondary to-secondary/70" },
   { icon: Code, title: "不需要會寫程式", desc: "重視創意思維與跨領域合作，不需會寫程式", accent: "from-primary to-primary/70" },
-  { icon: GraduationCap, title: "哈佛 Bootcamp 機會", desc: "優勝隊伍將獲邀參加哈佛大學 Demo Day 及 Bootcamp 培訓計畫", accent: "from-accent to-accent/70" },
+  { icon: GraduationCap, title: "哈佛 Bootcamp 機會", desc: "優勝隊伍可參加 Bootcamp 培訓計畫，並獲得進一步晉升哈佛大學 Demo Day 的機會", accent: "from-accent to-accent/70" },
   { icon: Users, title: "專業導師指導", desc: "活動期間配有來自醫療、科技、商業領域的專業導師全程指導", accent: "from-secondary to-secondary/70" },
   { icon: Handshake, title: "跨領域交流", desc: "認識來自醫學、設計、工程、商管、法律等不同領域的優秀夥伴", accent: "from-primary to-primary/70" },
   { icon: HeartPulse, title: "解決真實問題", desc: "針對台灣及全球健康系統面臨的真實挑戰提出解方", accent: "from-accent to-accent/70" },
