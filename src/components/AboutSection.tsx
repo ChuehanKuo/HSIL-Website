@@ -21,7 +21,7 @@ const steps = [
 
 
 const features = [
-{ icon: Globe, title: "全球 30+ 城市同步舉辦", color: "text-secondary" },
+{ icon: Globe, title: "全球 42+ 國家同步舉辦", color: "text-secondary" },
 { icon: GraduationCap, title: "哈佛大學主辦，頂尖學術支持", color: "text-primary" },
 { icon: Users, title: "跨領域團隊，不限身份與背景", color: "text-secondary" },
 { icon: Trophy, title: "優勝隊伍獲哈佛 Bootcamp 培訓機會", color: "text-accent" }];
