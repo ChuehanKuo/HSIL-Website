@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
+import FlowchartSection from "@/components/FlowchartSection";
 import HighlightsSection from "@/components/HighlightsSection";
 import ThemeSection from "@/components/ThemeSection";
 import ScheduleSection from "@/components/ScheduleSection";
