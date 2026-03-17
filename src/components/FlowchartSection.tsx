@@ -12,7 +12,7 @@ const FlowchartSection = () => {
       >
         <div className="text-center mb-10">
           <p className="text-sm md:text-base font-semibold tracking-widest uppercase text-secondary mb-2">Timeline</p>
-          <h2 className="text-2xl md:text-4xl font-bold text-foreground">賽事完整時程</h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-foreground">完整時程</h2>
         </div>
         <img
           src={flowchart}
