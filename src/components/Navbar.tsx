@@ -34,8 +34,8 @@ const Navbar = () => {
 
       <div className="container mx-auto flex items-center justify-between py-3 px-3 sm:px-4">
         <a href="#" className="flex items-center gap-1 sm:gap-3 min-w-0 flex-1 lg:flex-none">
-          <img src={hsilLogo} alt="HSIL Logo" className="h-5 sm:h-7 md:h-9 w-auto object-contain" />
-          <img alt="NTU Logo" className="h-4 sm:h-7 md:h-9 w-auto object-contain ml-1 sm:ml-0" src="/lovable-uploads/452a84e7-add3-4a4e-9cd5-424e38658fad.png" />
+          <img src={hsilLogo} alt="HSIL Logo" className="h-4 sm:h-7 md:h-9 w-auto object-contain" />
+          <img alt="NTU Logo" className="h-[18px] sm:h-7 md:h-9 w-auto object-contain ml-1 sm:ml-0" src="/lovable-uploads/452a84e7-add3-4a4e-9cd5-424e38658fad.png" />
         </a>
 
         {/* Desktop */}
