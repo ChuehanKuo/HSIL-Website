@@ -1,6 +1,7 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Globe, GraduationCap, Users, Trophy, Calendar, MapPin, Clock, UsersRound, Presentation, BrainCircuit } from "lucide-react";
 import posterImg from "@/assets/hackathon-poster.png";
+import globalPosterImg from "@/assets/hsil-hackathon-global.png";
 
 const quickFacts = [
 { icon: Calendar, label: "活動日期", value: "2026 年 4 月 10–11 日（週五、六）" },
