@@ -16,7 +16,7 @@ const Footer = () => (
         {/* Contact */}
         <div className="flex flex-col gap-2.5">
           <a
-            href="https://www.instagram.com/hsilhackathon.taiwan/"
+            href="https://www.instagram.com/hsilhackathon.taiwan"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2.5 hover:text-white/90 transition-colors text-sm font-medium"
