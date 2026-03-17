@@ -7,7 +7,7 @@ import tntLogo from "@/assets/partners/tnt.png";
 import intersystemsLogo from "@/assets/partners/intersystems.svg";
 
 const partners = [
-  { name: "Microsoft", logo: microsoftLogo },
+  { name: "Microsoft", logo: microsoftLogo, className: "max-h-28 md:max-h-32" },
   { name: "PATH", logo: pathLogo },
   { name: "Discovery", logo: discoveryLogo },
   { name: "Orrick", logo: orrickLogo },
@@ -37,7 +37,7 @@ const PartnersSection = () => {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-3xl mx-auto">
-          {partners.map(({ name, logo }) => (
+          {partners.map(({ name, logo, className }) => (
             <div
               key={name}
               className="card-elevated rounded-2xl px-6 py-8 flex items-center justify-center group hover:scale-105 transition-transform duration-300 aspect-[3/2]"
@@ -45,7 +45,7 @@ const PartnersSection = () => {
               <img
                 src={logo}
                 alt={name}
-                className="max-h-20 md:max-h-24 w-auto max-w-[85%] object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                className={`${className || "max-h-20 md:max-h-24"} w-auto max-w-[85%] object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300`}
               />
             </div>
           ))}
