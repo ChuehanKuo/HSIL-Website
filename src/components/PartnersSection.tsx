@@ -7,7 +7,7 @@ import tntLogo from "@/assets/partners/tnt.png";
 import intersystemsLogo from "@/assets/partners/intersystems.svg";
 
 const partners = [
-  { name: "Microsoft", logo: microsoftLogo },
+  { name: "Microsoft", logo: microsoftLogo, className: "max-h-28 md:max-h-32" },
   { name: "PATH", logo: pathLogo },
   { name: "Discovery", logo: discoveryLogo },
   { name: "Orrick", logo: orrickLogo },
