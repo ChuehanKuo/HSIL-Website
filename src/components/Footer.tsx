@@ -10,7 +10,7 @@ const Footer = () => (
         {/* Logos */}
         <div className="flex items-center gap-5 flex-wrap">
           <img src={hsilLogo} alt="HSIL Logo" className="h-9 brightness-200" />
-          <div className="w-px h-8 bg-white/15" />
+          
           <img src={ntuCphLogo} alt="NTU College of Public Health" className="h-9 w-auto" />
         </div>
 
