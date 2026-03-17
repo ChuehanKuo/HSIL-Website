@@ -8,7 +8,7 @@ import intersystemsLogo from "@/assets/partners/intersystems.svg";
 
 const partners = [
   { name: "Microsoft", logo: microsoftLogo, className: "max-h-20 md:max-h-24 scale-[1.3]" },
-  { name: "PATH", logo: pathLogo },
+  { name: "PATH", logo: pathLogo, className: "max-h-20 md:max-h-24 scale-[0.8]" },
   { name: "Discovery", logo: discoveryLogo },
   { name: "Orrick", logo: orrickLogo },
   { name: "TNT", logo: tntLogo },
