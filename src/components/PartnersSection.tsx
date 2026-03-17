@@ -1,7 +1,7 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import microsoftLogo from "@/assets/partners/microsoft.svg";
 import pathLogo from "@/assets/partners/path.png";
-import discoveryLogo from "@/assets/partners/discovery.svg";
+import discoveryLogo from "@/assets/partners/discovery.png";
 import orrickLogo from "@/assets/partners/orrick.svg";
 import tntLogo from "@/assets/partners/tnt.png";
 import intersystemsLogo from "@/assets/partners/intersystems.svg";
