@@ -91,6 +91,16 @@ const AboutSection = () => {
           </div>
         </div>
 
+        {/* Original teal poster */}
+        <div className="mb-16 flex justify-center">
+          <img
+            src={posterImg}
+            alt="HSIL Hackathon 2026 台灣賽區海報"
+            className="rounded-2xl shadow-xl max-w-lg w-full"
+            loading="lazy"
+          />
+        </div>
+
         {/* How it works - step by step */}
         <div className="mb-16">
           <h3 className="text-xl font-bold text-center mb-8 text-foreground">
