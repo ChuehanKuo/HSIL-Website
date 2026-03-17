@@ -6,7 +6,7 @@ const quickFacts = [
 { icon: Calendar, label: "活動日期", value: "2026 年 4 月 10–11 日（週五、六）" },
 { icon: MapPin, label: "活動地點", value: "國立臺灣大學 公共衛生學院" },
 { icon: Clock, label: "活動時長", value: "兩天（每天約 8 小時）" },
-{ icon: UsersRound, label: "團隊人數", value: "3–5 人一組（可個人報名，現場組隊）" },
+{ icon: UsersRound, label: "團隊人數", value: "3–5 人一組（可個人報名，活動前透過 Slack 群組認識彼此，現場組隊或調整）" },
 { icon: Presentation, label: "最終產出", value: "3 分鐘 Pitch 成果發表｜不需可運作成品" },
 { icon: BrainCircuit, label: "活動語言", value: "中文為主、部分資料為英文" }];
 
@@ -22,7 +22,7 @@ const steps = [
 const features = [
 { icon: Globe, title: "全球 30+ 城市同步舉辦", color: "text-secondary" },
 { icon: GraduationCap, title: "哈佛大學主辦，頂尖學術支持", color: "text-primary" },
-{ icon: Users, title: "跨領域團隊，不限科系背景", color: "text-secondary" },
+{ icon: Users, title: "跨領域團隊，不限身份與背景", color: "text-secondary" },
 { icon: Trophy, title: "優勝隊伍獲哈佛 Bootcamp 培訓機會", color: "text-accent" }];
 
 
