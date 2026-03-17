@@ -5,6 +5,7 @@ import HighlightsSection from "@/components/HighlightsSection";
 import ThemeSection from "@/components/ThemeSection";
 import ScheduleSection from "@/components/ScheduleSection";
 import JudgingSection from "@/components/JudgingSection";
+import PartnersSection from "@/components/PartnersSection";
 import EligibilitySection from "@/components/EligibilitySection";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
@@ -20,6 +21,7 @@ const Index = () => (
       <ThemeSection />
       <ScheduleSection />
       <JudgingSection />
+      <PartnersSection />
       <EligibilitySection />
       <FAQSection />
       <CTASection />
