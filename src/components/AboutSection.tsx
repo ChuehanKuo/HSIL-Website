@@ -102,16 +102,6 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* Global HSIL poster */}
-        <div className="mb-16 flex justify-center">
-          <img
-            src={globalPosterImg}
-            alt="HSIL Hackathon 7th Edition — Global"
-            className="rounded-2xl shadow-xl max-w-3xl w-full"
-            loading="lazy"
-          />
-        </div>
-
         {/* How it works - step by step */}
         <div className="mb-16">
           <h3 className="text-xl font-bold text-center mb-8 text-foreground">
@@ -131,6 +121,16 @@ const AboutSection = () => {
                   </div>}
               </div>)}
           </div>
+        </div>
+
+        {/* Global HSIL poster */}
+        <div className="mb-16 flex justify-center">
+          <img
+            src={globalPosterImg}
+            alt="HSIL Hackathon 7th Edition — Global"
+            className="rounded-2xl shadow-xl max-w-3xl w-full"
+            loading="lazy"
+          />
         </div>
 
         {/* Feature cards */}
