@@ -1,6 +1,6 @@
 import { Instagram, Mail } from "lucide-react";
 import hsilLogo from "@/assets/hsil-logo.png";
-
+import ntuCphLogo from "@/assets/ntu-cph-logo.png";
 
 const Footer = () => (
   <footer className="bg-[hsl(220_26%_10%)] text-white/50 pt-14 pb-8">
