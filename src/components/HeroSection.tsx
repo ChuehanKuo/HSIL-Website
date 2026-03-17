@@ -51,7 +51,7 @@ const HeroSection = () => {
         <div className="absolute top-[45%] left-[35%] w-48 h-48 border border-white rotate-45 animate-[spin_50s_linear_infinite]" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 pt-20 pb-16 md:pt-24 md:pb-28 text-center text-white flex flex-col items-center min-h-[100svh]">
+      <div className="relative z-10 container mx-auto px-4 pt-20 pb-24 md:pt-24 md:pb-28 text-center text-white flex flex-col items-center min-h-[100svh]">
 
         <div className="mt-8">
           <motion.p
