@@ -30,7 +30,7 @@ const CTASection = () => {
           href={REGISTER_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="group inline-flex items-center gap-2 bg-accent text-accent-foreground px-10 py-4 rounded-2xl text-lg font-bold glow-accent hover:scale-105 transition-all duration-300">
+          className="group inline-flex items-center gap-2 bg-accent text-accent-foreground px-10 py-4 rounded-2xl text-lg font-bold glow-accent hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-accent/50">
 
           立即報名
           <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

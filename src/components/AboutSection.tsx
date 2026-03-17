@@ -58,7 +58,7 @@ const AboutSection = () => {
 
             <p className="mt-4 text-xs">
 </p>
-            <div className="relative pl-5 border-l-4 border-primary/60">
+            <div className="relative pl-5 border-l-4 border-primary">
               <p className="font-bold text-primary text-lg">免費參加　4/10–4/11（台大公衛）　報名截止 3/27
                 <br />不需要程式背景，只需要你對健康議題的熱情和創新思維。
               </p>
@@ -79,8 +79,8 @@ const AboutSection = () => {
             活動快速資訊
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {quickFacts.map(({ icon: Icon, label, value }) => <div key={label} className="bg-card border rounded-xl p-5 flex items-start gap-4">
-                <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center flex-shrink-0">
+            {quickFacts.map(({ icon: Icon, label, value }) => <div key={label} className="card-elevated rounded-2xl p-5 flex items-start gap-4">
+                <div className="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
                   <Icon className="w-5 h-5 text-secondary" />
                 </div>
                 <div>
@@ -98,7 +98,7 @@ const AboutSection = () => {
           </h3>
           <div className="flex flex-col md:flex-row gap-3 md:gap-2 items-stretch">
             {steps.map((step, i) => <div key={step.num} className="flex-1 flex items-center">
-                <div className="bg-card border rounded-xl p-5 h-full w-full">
+                <div className="card-elevated rounded-2xl p-5 h-full w-full">
                   <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold mb-3">
                     {step.num}
                   </div>

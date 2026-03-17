@@ -41,7 +41,7 @@ const ThemeSection = () => {
           {challenges.map(({ icon: Icon, title, desc }) => (
             <div
               key={title}
-              className="glass-card rounded-2xl p-6 hover:bg-[hsl(0_0%_100%/0.1)] transition-all duration-300 group"
+              className="glass-card rounded-2xl p-6 hover:bg-[hsl(0_0%_100%/0.1)] hover:-translate-y-1 transition-all duration-300 group"
             >
               <div className="w-10 h-10 rounded-xl bg-[hsl(170_85%_32%/0.2)] flex items-center justify-center mb-4 group-hover:bg-[hsl(170_85%_32%/0.3)] transition-colors">
                 <Icon className="w-5 h-5 text-[hsl(170_85%_55%)]" />

@@ -29,7 +29,7 @@ const EligibilitySection = () => {
 
         <div className="space-y-3">
           {requirements.map((r, i) => (
-            <div key={i} className="card-elevated rounded-xl p-5 flex items-start gap-4">
+            <div key={i} className="card-elevated rounded-2xl p-5 flex items-start gap-4">
               <CheckCircle2 className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
               <span className="text-sm text-foreground font-medium">{r}</span>
             </div>
