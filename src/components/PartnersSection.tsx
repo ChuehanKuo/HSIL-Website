@@ -11,7 +11,7 @@ const partners = [
   { name: "PATH", logo: pathLogo, className: "max-h-20 md:max-h-24 scale-[0.8]" },
   { name: "Discovery", logo: discoveryLogo },
   { name: "Orrick", logo: orrickLogo },
-  { name: "TNT", logo: tntLogo },
+  { name: "TNT", logo: tntLogo, className: "max-h-16 md:max-h-24" },
   { name: "InterSystems", logo: intersystemsLogo },
 ];
 
