@@ -16,12 +16,12 @@ const steps = [
 { num: "1", title: "線上報名", desc: "填寫 Airtable 報名表單，截止日為 3/27" },
 { num: "2", title: "錄取通知", desc: "4/1–4/2 通知錄取結果，並提供行前資訊" },
 { num: "3", title: "兩天黑客松", desc: "4/10–11 組隊共創、腦力激盪、方案打磨與實作推進" },
-{ num: "4", title: "團隊 Pitch", desc: "每組 3 分鐘簡報 + 2 分鐘評審 Q&A" },
-{ num: "5", title: "全球 Bootcamp", desc: "前兩名進入 HSIL 培訓計畫，有機會代表台灣參加哈佛 Demo Day" }];
+{ num: "4", title: "團隊 Pitch", desc: "每組 3 分鐘簡報 + 評審 Q&A" },
+{ num: "5", title: "全球培訓計畫", desc: "前兩名進入 HSIL Bootcamp（八週），表現優異者晉級 Venture Building Immersion 與 Demo Day" }];
 
 
 const features = [
-{ icon: Globe, title: "全球 42+ 國家同步舉辦", color: "text-secondary" },
+{ icon: Globe, title: "全球 37+ 國家同步舉辦", color: "text-secondary" },
 { icon: GraduationCap, title: "哈佛大學主辦，頂尖學術支持", color: "text-primary" },
 { icon: Users, title: "跨領域團隊，不限身份與背景", color: "text-secondary" },
 { icon: Trophy, title: "優勝隊伍獲哈佛 Bootcamp 培訓機會", color: "text-accent" }];
@@ -58,7 +58,7 @@ const AboutSection = () => {
                 </li>
                 <li className="flex gap-3 text-foreground/80 text-sm md:text-base leading-relaxed">
                   <span className="mt-1.5 w-2 h-2 rounded-full bg-secondary flex-shrink-0" />
-                  獲勝團隊可晉級 HSIL 後續 Venture Building Program（培訓與輔導），並於最終 Demo Day 向投資人／產業夥伴進行發表（以 HSIL 官方公告為準）。
+                  獲勝團隊進入 HSIL 全球 Bootcamp 培訓計畫（八週，全程線上），經三階段篩選後，表現優異者晉級 Venture Building Immersion 與 Demo Day，向投資人與產業領袖發表方案。
                 </li>
                 <li className="flex gap-3 text-foreground/80 text-sm md:text-base leading-relaxed">
                   <span className="mt-1.5 w-2 h-2 rounded-full bg-secondary flex-shrink-0" />

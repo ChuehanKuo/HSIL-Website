@@ -1,15 +1,18 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { FileText, Stethoscope, MessageSquare, UserCog, Heart, Ribbon, Brain, ShieldAlert } from "lucide-react";
+import { FileText, Stethoscope, MessageSquare, UserCog, Link2, Database, Route, BookOpen, HeartPulse, Languages, Baby } from "lucide-react";
 
 const challenges = [
-  { icon: FileText, title: "電子病歷 (EHR) 數據分析", desc: "利用 AI 分析電子病歷，改善臨床決策支持" },
-  { icon: Stethoscope, title: "AI 診斷工具", desc: "開發輔助診斷工具，提升早期疾病偵測能力" },
-  { icon: MessageSquare, title: "臨床對話機器人", desc: "建立智慧健康諮詢系統，改善醫病溝通" },
-  { icon: UserCog, title: "醫療人力短缺", desc: "運用 AI 優化人力配置，解決醫護人力不足問題" },
-  { icon: Heart, title: "心血管疾病", desc: "運用數據驅動方法改善心血管疾病預防與管理" },
-  { icon: Ribbon, title: "癌症照護", desc: "AI 輔助癌症篩檢、診斷及個人化治療方案" },
-  { icon: Brain, title: "心理健康", desc: "利用科技改善心理健康服務的可及性與品質" },
-  { icon: ShieldAlert, title: "傳染病防治", desc: "AI 驅動的流行病監測與因應策略" },
+  { icon: FileText, title: "電子病歷 (EHR) 分析", desc: "利用 AI 分析電子病歷，建立預測模型改善臨床決策" },
+  { icon: Stethoscope, title: "診斷與監測改善", desc: "開發 AI 驅動的診斷與病情監測工具，提升早期偵測能力" },
+  { icon: MessageSquare, title: "智慧對話機器人", desc: "運用 AI 與大型語言模型開發輔助病患與醫療人員的聊天機器人" },
+  { icon: Link2, title: "照護碎片化", desc: "解決不同醫療系統間電子病歷不相容與照護不連續的問題" },
+  { icon: Database, title: "資訊過量", desc: "協助使用者從大量健康資訊與應用程式中找到可靠且適合的資源" },
+  { icon: UserCog, title: "醫療人力短缺", desc: "運用 AI 緩解醫護人力不足，優化人力配置與工作負擔" },
+  { icon: Route, title: "照護路徑碎片化", desc: "用 AI 改善跨機構的照護協調、溝通與連續性" },
+  { icon: BookOpen, title: "健康素養", desc: "利用 AI 提升民眾的健康知識，幫助正確理解症狀與就醫決策" },
+  { icon: HeartPulse, title: "預防健康參與", desc: "用 AI 建立個人化預防健康計畫，結合個人數據與環境因素" },
+  { icon: Languages, title: "打破溝通障礙", desc: "用 AI 將複雜醫療資訊轉化為易懂語言，提供多語言支援" },
+  { icon: Baby, title: "兒科 AI 應用", desc: "針對兒童不同發展階段，整合多元數據來源以改善兒科照護" },
 ];
 
 const ThemeSection = () => {
@@ -37,7 +40,7 @@ const ThemeSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {challenges.map(({ icon: Icon, title, desc }) => (
             <div
               key={title}

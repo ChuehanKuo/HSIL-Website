@@ -1,12 +1,12 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const criteria = [
-  { name: "創新性", en: "Innovation", score: 5, desc: "方案是否具有原創性與創新思維？" },
-  { name: "可行性", en: "Feasibility", score: 5, desc: "方案在技術和資源上是否可行？" },
-  { name: "健康影響力", en: "Health Impact", score: 5, desc: "對健康系統的改善潛力有多大？" },
-  { name: "可擴展性", en: "Scalability", score: 5, desc: "方案能否推廣到更大規模？" },
-  { name: "簡報品質", en: "Presentation", score: 5, desc: "團隊的表達與展示是否清晰有力？" },
-  { name: "AI 應用", en: "AI Integration", score: 5, desc: "AI 技術是否被有效且合理地應用？" },
+  { name: "問題定義", en: "Challenge", score: 5, desc: "是否清楚描述問題、根本原因，以及為何需要緊急解決？" },
+  { name: "技術與創新", en: "Technology & Innovation", score: 5, desc: "是否提出新穎的技術解方？方案是否具有改善健康系統的潛力？" },
+  { name: "實施可行性", en: "Implementation", score: 5, desc: "是否考慮實施障礙、商業模式與關鍵利害關係人？" },
+  { name: "團隊", en: "Team", score: 5, desc: "團隊是否具備適當的技能組合與執行態度？" },
+  { name: "簡報", en: "Pitch", score: 5, desc: "是否清楚表達挑戰與解方？視覺輔助是否有效？" },
+  { name: "問答", en: "Q&A", score: 5, desc: "團隊能否回應評審提問並有效捍衛方案？" },
 ];
 
 const JudgingSection = () => {
