@@ -109,6 +109,19 @@ const HeroSection = () => {
           </a>
         </motion.div>
 
+        {/* Social proof */}
+        <motion.div {...fadeUp(0.53)} className="mb-5">
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/15 rounded-full px-4 py-2 text-xs md:text-sm font-medium">
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[hsl(170_85%_55%)] opacity-75" />
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[hsl(170_85%_55%)]" />
+            </span>
+            <span>全球 <strong className="text-[hsl(170_85%_60%)]">12,000+</strong> 人報名中</span>
+            <span className="w-px h-3.5 bg-white/20" />
+            <span>台灣站 <strong className="text-[hsl(37_90%_70%)]">50+</strong> 人</span>
+          </div>
+        </motion.div>
+
         {/* Date / Location / Free — prominent treatment */}
         <motion.div {...fadeUp(0.55)} className="flex flex-wrap items-center justify-center gap-2 md:gap-3 text-xs md:text-base font-medium opacity-75 mb-6 px-2">
           <span>📅 2026 年 4 月 10–11 日</span>
