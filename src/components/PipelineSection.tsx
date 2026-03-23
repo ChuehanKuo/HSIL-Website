@@ -60,7 +60,7 @@ const PipelineSection = () => {
             Post-Hackathon
           </p>
           <h2 className="text-3xl md:text-5xl font-black text-white mb-3">
-            從台大到哈佛的路徑
+            黑客松之後的旅程
           </h2>
           <p className="text-white/50 max-w-2xl mx-auto text-sm md:text-base">
             黑客松只是起點。HSIL 提供完整的八週全球培訓計畫，帶你從一個想法走到向投資人發表的舞台。
