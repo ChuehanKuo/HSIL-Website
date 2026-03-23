@@ -62,8 +62,8 @@ const PipelineSection = () => {
           <h2 className="text-3xl md:text-5xl font-black text-white mb-3">
             黑客松之後的旅程
           </h2>
-          <p className="text-white/50 max-w-2xl mx-auto text-sm md:text-base">
-            黑客松只是起點。HSIL 提供完整的八週全球培訓計畫，帶你從一個想法走到向投資人發表的舞台。
+          <p className="text-white/40 max-w-3xl mx-auto text-xs md:text-sm tracking-wide">
+            黑客松只是起點 — HSIL 提供完整八週全球培訓，帶你從想法走到向投資人發表的舞台
           </p>
         </div>
 
