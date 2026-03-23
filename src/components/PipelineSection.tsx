@@ -1,3 +1,4 @@
+import React from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Trophy, GraduationCap, Rocket, Presentation } from "lucide-react";
 
