@@ -67,17 +67,10 @@ const PipelineSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-4 md:gap-3">
+        <div className="grid md:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] gap-y-4 md:gap-x-2 md:items-stretch">
           {stages.map((stage, i) => (
-            <div key={stage.num} className="relative flex flex-col">
-              {/* Connector arrow (desktop only) */}
-              {i < stages.length - 1 && (
-                <div className="hidden md:block absolute top-12 -right-3 z-10 text-white/20 text-lg">
-                  →
-                </div>
-              )}
-
-              <div className="glass-card rounded-2xl p-6 flex-1 hover:bg-[hsl(0_0%_100%/0.08)] transition-all duration-300 group">
+            <React.Fragment key={stage.num}>
+              <div className="glass-card rounded-2xl p-6 flex flex-col hover:bg-[hsl(0_0%_100%/0.08)] transition-all duration-300 group">
                 <div className={`w-10 h-10 rounded-xl ${stage.iconBg} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
                   <stage.icon className={`w-5 h-5 ${stage.iconColor}`} />
                 </div>
@@ -92,7 +85,12 @@ const PipelineSection = () => {
                 <p className="text-xs text-white/40 mb-3 font-medium">{stage.subtitle}</p>
                 <p className="text-xs text-white/55 leading-relaxed">{stage.desc}</p>
               </div>
-            </div>
+              {i < stages.length - 1 && (
+                <div className="hidden md:flex items-center justify-center text-white/20 text-lg">
+                  →
+                </div>
+              )}
+            </React.Fragment>
           ))}
         </div>
 
