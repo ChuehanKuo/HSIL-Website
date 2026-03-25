@@ -54,7 +54,7 @@ const schedule: TimelineGroup[] = [
       { time: "10:15–12:30", title: "方案精煉、導師諮詢與簡報準備" },
       { time: "12:45–13:45", title: "午餐" },
       { time: "13:45–14:15", title: "評審介紹" },
-      { time: "14:15–16:15", title: "團隊 Pitch 簡報（3 分鐘 + 2 分鐘 Q&A）" },
+      { time: "14:15–16:15", title: "團隊 Pitch 簡報（3 分鐘 + 1 分鐘 Q&A）" },
       { time: "16:15–16:45", title: "頒獎典禮與優勝公布" },
       { time: "16:45–17:00", title: "閉幕致詞與大合照" },
     ],
@@ -63,8 +63,10 @@ const schedule: TimelineGroup[] = [
     label: "活動後",
     dotColor: "bg-accent",
     items: [
-      { time: "2026 年 5 月", title: "優勝隊伍方案精煉" },
-      { time: "2026/6/19", title: "哈佛 Demo Day — 向全球評審展示方案" },
+      { time: "4/20–5/1", title: "Bootcamp I — 全球 ~100 團隊，1:1 導師指導" },
+      { time: "5/4–5/15", title: "Bootcamp II — 全球 ~50 團隊" },
+      { time: "5/18–6/12", title: "Venture Building Immersion — 全球前 10 強" },
+      { time: "2026/6/19", title: "哈佛 Demo Day — 向投資人與產業領袖發表方案" },
     ],
   },
 ];
