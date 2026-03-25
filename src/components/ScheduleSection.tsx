@@ -23,7 +23,7 @@ const schedule: TimelineGroup[] = [
     items: [
       { time: "2026 年 4/1~4/2", title: "公布錄取名單、發送確認信與 Slack 邀請" },
       { time: "4/7 & 4/8", title: "線上行前說明會（Zoom，兩場內容相同，擇一參加）" },
-      { time: "4/9（三）23:00", title: "HSIL 全球直播（Zoom）— 所有 Hub 連線，台灣站亮相" },
+      { time: "4/10（五）23:00", title: "HSIL 全球直播（Zoom）— 所有 Hub 連線，台灣站亮相（Day 1 結束後）" },
     ],
   },
   {
@@ -32,7 +32,7 @@ const schedule: TimelineGroup[] = [
     items: [
       { time: "08:00–09:00", title: "報到與入場" },
       { time: "09:00–09:15", title: "開幕式與歡迎致詞" },
-      { time: "09:15–09:45", title: "HSIL 全球直播回顧 + 台灣站介紹" },
+      { time: "09:15–09:45", title: "HSIL 介紹與台灣站簡介" },
       { time: "09:45–10:30", title: "Keynote: AI 驅動的數位健康解決方案" },
       { time: "10:30–10:45", title: "休息" },
       { time: "10:45–11:05", title: "Hack 101：規則、評分標準與簡報格式說明" },
