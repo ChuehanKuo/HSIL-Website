@@ -36,7 +36,7 @@ const ThemeSection = () => {
             Building High-Value Health Systems: Leveraging AI
           </p>
           <p className="text-white/60 max-w-5xl mx-auto">
-            今年的黑客松聚焦於如何運用人工智慧 (AI) 技術來改善健康系統。參賽團隊將針對以下領域的挑戰提出創新解方：
+            今年的黑客松聚焦於如何運用人工智慧 (AI) 技術來改善健康系統。參賽團隊可自由選擇任何健康議題提出創新解方，以下為參考方向：
           </p>
         </div>
 
