@@ -5,7 +5,7 @@ const highlights = [
   { icon: DollarSign, title: "完全免費", desc: "無任何報名費或參加費用", accent: "from-secondary to-secondary/70" },
   { icon: Code, title: "不需要會寫程式", desc: "重視創意思維與跨領域合作，不需會寫程式", accent: "from-primary to-primary/70" },
   { icon: GraduationCap, title: "哈佛 Bootcamp 機會", desc: "獲勝團隊進入哈佛 HSIL 全球 Bootcamp 培訓計畫，表現優異者晉級 Demo Day", accent: "from-accent to-accent/70" },
-  { icon: Users, title: "專業導師指導", desc: "活動期間配有來自醫療、科技、商業領域的專業導師全程指導", accent: "from-secondary to-secondary/70" },
+  { icon: Users, title: "專業指導老師", desc: "活動期間邀請來自醫療、科技、商業領域的專業指導老師現場提供諮詢與回饋", accent: "from-secondary to-secondary/70" },
   { icon: Handshake, title: "跨領域交流", desc: "認識來自醫學、設計、工程、商管、法律等不同領域的優秀夥伴", accent: "from-primary to-primary/70" },
   { icon: HeartPulse, title: "解決真實問題", desc: "針對台灣及全球健康系統面臨的真實挑戰提出解方", accent: "from-accent to-accent/70" },
 ];
