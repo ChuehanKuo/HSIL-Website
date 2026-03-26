@@ -23,7 +23,6 @@ const schedule: TimelineGroup[] = [
     items: [
       { time: "2026 年 4/1~4/2", title: "公布錄取名單、發送確認信與 Slack 邀請" },
       { time: "4/7 & 4/8", title: "線上行前說明會（Zoom，兩場內容相同，擇一參加）" },
-      { time: "活動前一週", title: "寄送行前通知與參賽者指南" },
     ],
   },
   {
@@ -38,7 +37,7 @@ const schedule: TimelineGroup[] = [
       { time: "10:45–11:05", title: "Hack 101：規則、評分標準與簡報格式說明" },
       { time: "11:05–12:30", title: "團隊組成與報名" },
       { time: "12:30–13:30", title: "午餐" },
-      { time: "13:30–17:00", title: "方案發想與導師諮詢" },
+      { time: "13:30–17:00", title: "方案發想與指導老師諮詢" },
       { time: "17:00–17:20", title: "Day 1 總結與公告" },
       { time: "17:20–17:30", title: "簡報順序抽籤" },
       { time: "17:30~", title: "Open Hack Time（自由延續討論）" },
@@ -52,7 +51,7 @@ const schedule: TimelineGroup[] = [
       { time: "09:00–09:15", title: "Day 2 歡迎與流程說明" },
       { time: "09:15–10:00", title: "Keynote: 女性在健康科技的力量" },
       { time: "10:00–10:15", title: "休息" },
-      { time: "10:15–12:30", title: "方案精煉、導師諮詢與簡報準備（12:30 簡報截止）" },
+      { time: "10:15–12:30", title: "方案精煉、指導老師諮詢與簡報準備（12:30 簡報截止）" },
       { time: "12:30–13:30", title: "午餐（簡報測試 + 評審會議）" },
       { time: "13:45–14:15", title: "評審介紹" },
       { time: "14:15–16:15", title: "團隊 Pitch 簡報（3 分鐘 + 1 分鐘 Q&A）" },

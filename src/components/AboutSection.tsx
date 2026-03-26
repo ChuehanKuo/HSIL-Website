@@ -17,7 +17,7 @@ const steps = [
 { num: "2", title: "錄取通知", desc: "4/1–4/2 通知錄取結果，並提供行前資訊" },
 { num: "3", title: "兩天黑客松", desc: "4/10–11 組隊共創、腦力激盪、方案打磨與實作推進" },
 { num: "4", title: "團隊 Pitch", desc: "每組 3 分鐘簡報 + 評審 Q&A" },
-{ num: "5", title: "全球培訓計畫", desc: "前三名獲獎，第一名進入 HSIL Bootcamp I（4/20 起），表現優異者晉級 Venture Building Immersion 與 6/19 Demo Day" }];
+{ num: "5", title: "全球培訓計畫", desc: "前三名獲獎，獲勝團隊進入 HSIL Bootcamp 培訓計畫，表現優異者晉級 Venture Building Immersion 與 6/19 Demo Day" }];
 
 
 const features = [
@@ -46,7 +46,7 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div className="space-y-6">
             <p className="text-foreground/85 text-base md:text-lg leading-[1.85] tracking-wide">
-              HSIL Hackathon 是由哈佛大學陳曾熙公共衛生學院 Health Systems Innovation Lab（HSIL）發起的全球健康系統創新黑客松。今年台灣首度加入，Taiwan Hub 將於國立臺灣大學公共衛生學院舉辦，邀請跨領域團隊在 48 小時內提出可落地的 AI 健康系統解方。
+              HSIL Hackathon 是由哈佛大學陳曾熙公共衛生學院 Health Systems Innovation Lab（HSIL）發起的全球健康系統創新黑客松。今年台灣首度加入，Taiwan Hub 將於國立臺灣大學公共衛生學院舉辦，邀請跨領域團隊在兩天內提出可落地的 AI 健康系統解方。
             </p>
 
             <div className="space-y-4">
@@ -58,7 +58,7 @@ const AboutSection = () => {
                 </li>
                 <li className="flex gap-3 text-foreground/80 text-sm md:text-base leading-relaxed">
                   <span className="mt-1.5 w-2 h-2 rounded-full bg-secondary flex-shrink-0" />
-                  獲勝團隊進入 HSIL 全球 Bootcamp 培訓計畫（八週，全程線上），經三階段篩選後，表現優異者晉級 Venture Building Immersion 與 Demo Day，向投資人與產業領袖發表方案。
+                  前三名獲獎，獲勝團隊進入 HSIL 全球 Bootcamp 培訓計畫（全程線上），經三階段篩選後，表現優異者晉級 Venture Building Immersion 與 Demo Day，向投資人與產業領袖發表方案。
                 </li>
                 <li className="flex gap-3 text-foreground/80 text-sm md:text-base leading-relaxed">
                   <span className="mt-1.5 w-2 h-2 rounded-full bg-secondary flex-shrink-0" />

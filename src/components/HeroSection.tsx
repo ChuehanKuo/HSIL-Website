@@ -79,7 +79,7 @@ const HeroSection = () => {
             主辦｜哈佛大學 Health Systems Innovation Lab
           </p>
           <p className="text-xs md:text-sm font-light opacity-60 tracking-wide">
-            承辦｜台大公衛學院 Health Economics & AI Lab
+            共同主辦｜台大公衛學院 Health Economics & AI Lab
           </p>
         </motion.div>
 
@@ -116,9 +116,9 @@ const HeroSection = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[hsl(170_85%_55%)] opacity-75" />
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[hsl(170_85%_55%)]" />
             </span>
-            <span>全球 <strong className="text-[hsl(170_85%_60%)]">12,000+</strong> 人報名中</span>
+            <span>全球 <strong className="text-[hsl(170_85%_60%)]">13,000+</strong> 人報名中</span>
             <span className="w-px h-3.5 bg-white/20" />
-            <span>台灣站 <strong className="text-[hsl(37_90%_70%)]">50+</strong> 人</span>
+            <span>台灣站 <strong className="text-[hsl(37_90%_70%)]">100+</strong> 人</span>
           </div>
         </motion.div>
 
