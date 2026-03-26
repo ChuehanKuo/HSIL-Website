@@ -8,7 +8,7 @@ const stages = [
     num: "1",
     title: "台灣站黑客松",
     subtitle: "4/10–11",
-    desc: "兩天內組隊、發想、打磨方案，最後上台 Pitch。前三名獲獎，獲勝團隊代表台灣晉級。",
+    desc: "兩天內組隊、發想、打磨方案，最後上台 Pitch。前三名獲獎。",
     color: "bg-primary",
     iconColor: "text-primary",
     iconBg: "bg-primary/15",
