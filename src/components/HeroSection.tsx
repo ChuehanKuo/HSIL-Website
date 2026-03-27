@@ -86,14 +86,6 @@ const HeroSection = () => {
         {/* CTA buttons */}
         <motion.div {...fadeUp(0.5)} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
           <a
-            href={REGISTER_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group bg-accent text-accent-foreground px-6 py-3 rounded-xl text-base font-bold glow-accent hover:scale-105 transition-all duration-300 flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-accent/50">
-            立即報名
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </a>
-          <a
 
             target="_blank"
             rel="noopener noreferrer"
@@ -116,7 +108,7 @@ const HeroSection = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[hsl(170_85%_55%)] opacity-75" />
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[hsl(170_85%_55%)]" />
             </span>
-            <span>全球 <strong className="text-[hsl(170_85%_60%)]">13,000+</strong> 人報名中</span>
+            <span>全球 <strong className="text-[hsl(170_85%_60%)]">13,000+</strong> 人報名</span>
             <span className="w-px h-3.5 bg-white/20" />
             <span>台灣站 <strong className="text-[hsl(37_90%_70%)]">100+</strong> 人</span>
           </div>
@@ -131,12 +123,10 @@ const HeroSection = () => {
           <span className="text-[hsl(170_85%_60%)] font-semibold">免費參加</span>
         </motion.div>
 
-        {/* Countdown / deadline urgency strip */}
+        {/* Status strip */}
         <motion.div {...fadeUp(0.6)} className="flex items-center gap-2 text-xs md:text-sm opacity-60">
           <CalendarClock className="w-4 h-4" />
-          <span>報名截止：3/27</span>
-          <span className="mx-1">—</span>
-          <span>倒數 <strong className="text-[hsl(37_90%_70%)] opacity-100">{countdown.days}</strong> 天 <strong className="text-[hsl(37_90%_70%)] opacity-100">{countdown.hours}</strong> 時 <strong className="text-[hsl(37_90%_70%)] opacity-100">{countdown.mins}</strong> 分</span>
+          <span>報名已截止 — 錄取通知將於 4/1–4/2 發送</span>
         </motion.div>
 
       </div>

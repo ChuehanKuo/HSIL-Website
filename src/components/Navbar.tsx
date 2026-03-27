@@ -53,14 +53,6 @@ const Navbar = () => {
               {l.label}
             </a>
           )}
-          <a
-            href={REGISTER_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ml-2 bg-accent text-accent-foreground px-5 py-2.5 rounded-xl text-sm font-bold hover:opacity-90 transition-all shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-accent/50">
-
-            立即報名
-          </a>
         </div>
 
         {/* Mobile toggle */}
@@ -90,14 +82,6 @@ const Navbar = () => {
               {l.label}
             </a>
         )}
-          <a
-          href={REGISTER_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block mt-4 text-center bg-accent text-accent-foreground px-5 py-3 rounded-xl text-sm font-bold">
-
-            立即報名
-          </a>
         </div>
       }
     </nav>);
