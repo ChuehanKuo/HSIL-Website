@@ -1,4 +1,7 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { ArrowRight } from "lucide-react";
+
+const REGISTER_URL = "https://airtable.com/app06PiI7r4PVqBdt/pagFJFqJW3xFqnRFw/form";
 
 const CTASection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -18,11 +21,20 @@ const CTASection = () => {
         className={`container mx-auto px-4 text-center relative z-10 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
 
         <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-5">
-          報名已截止
+          延長報名中
         </h2>
         <p className="text-lg text-white/70 mb-5">
-          感謝所有報名者！錄取通知將於 4/1–4/2 發送
+          延長報名截止：<strong className="text-[hsl(37_90%_75%)]">4/5（六）</strong> — 名額有限，把握最後機會！
         </p>
+        <a
+          href={REGISTER_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 bg-white text-[hsl(352_72%_40%)] px-8 py-4 rounded-xl text-lg font-bold hover:scale-105 transition-all duration-300 shadow-lg mb-6"
+        >
+          立即報名
+          <ArrowRight className="w-5 h-5" />
+        </a>
         <p className="text-sm text-white/40 mt-8">
           如有任何問題，請聯繫主辦單位：hsilhackathon.taiwan@gmail.com
         </p>

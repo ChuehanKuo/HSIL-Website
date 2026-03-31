@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const REGISTER_URL = "https://airtable.com/app06PiI7r4PVqBdt/pagFJFqJW3xFqnRFw/form";
-const DEADLINE = new Date("2026-03-27T23:59:59+08:00");
+const DEADLINE = new Date("2026-04-05T23:59:59+08:00");
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 30 },
@@ -86,7 +86,14 @@ const HeroSection = () => {
         {/* CTA buttons */}
         <motion.div {...fadeUp(0.5)} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
           <a
-
+            href={REGISTER_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group bg-[hsl(352_72%_45%)] text-white px-6 py-3 rounded-xl text-base font-bold hover:scale-105 transition-all duration-300 flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-[hsl(352_72%_60%)]/50 shadow-lg shadow-[hsl(352_72%_40%/0.3)]">
+            立即報名
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </a>
+          <a
             target="_blank"
             rel="noopener noreferrer"
             className="group bg-[hsl(170_85%_32%)] text-white px-6 py-3 rounded-xl text-base font-bold hover:scale-105 transition-all duration-300 flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-[hsl(170_85%_55%)]/50" href="https://hsph.harvard.edu/research/health-systems-innovation-lab/work/hsil-hackathon-2026-building-high-value-health-systems-leveraging-ai/">
@@ -124,9 +131,9 @@ const HeroSection = () => {
         </motion.div>
 
         {/* Status strip */}
-        <motion.div {...fadeUp(0.6)} className="flex items-center gap-2 text-xs md:text-sm opacity-60">
-          <CalendarClock className="w-4 h-4" />
-          <span>報名已截止 — 錄取通知將於 4/1–4/2 發送</span>
+        <motion.div {...fadeUp(0.6)} className="flex items-center gap-2 text-xs md:text-sm">
+          <CalendarClock className="w-4 h-4 text-[hsl(37_90%_70%)]" />
+          <span className="text-[hsl(37_90%_75%)] font-semibold">延長報名至 4/5（六）— 名額有限！</span>
         </motion.div>
 
       </div>
