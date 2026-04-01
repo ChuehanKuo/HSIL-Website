@@ -24,7 +24,7 @@ const CTASection = () => {
           延長報名中
         </h2>
         <p className="text-lg text-white/70 mb-5">
-          延長報名截止：<strong className="text-[hsl(37_90%_75%)]">4/5（六）</strong> — 名額有限，把握最後機會！
+          延長報名截止：<strong className="text-[hsl(37_90%_75%)]">延長報名截止：<strong className="text-[hsl(37_90%_75%)]">4/5（日）</strong> — 名額有限，把握最後機會！</strong> — 名額有限，把握最後機會！
         </p>
         <a
           href={REGISTER_URL}

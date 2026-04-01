@@ -133,7 +133,7 @@ const HeroSection = () => {
         {/* Status strip */}
         <motion.div {...fadeUp(0.6)} className="flex items-center gap-2 text-xs md:text-sm">
           <CalendarClock className="w-4 h-4 text-[hsl(37_90%_70%)]" />
-          <span className="text-[hsl(37_90%_75%)] font-semibold">延長報名至 4/5（六）— 名額有限！</span>
+          <span className="text-[hsl(37_90%_75%)] font-semibold"><span className="text-[hsl(37_90%_75%)] font-semibold">延長報名至 4/5（日）— 名額有限！</span></span>
         </motion.div>
 
       </div>
