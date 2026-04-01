@@ -6,7 +6,7 @@ const UrgencyBanner = () => {
       <div className="container mx-auto flex items-center justify-center gap-2 md:gap-4 text-xs md:text-sm font-medium">
         <span className="animate-pulse">🔥</span>
         <span>
-          延長報名至 <strong className="text-[hsl(37_90%_75%)]">4/5（六）</strong> — 名額有限，把握機會！
+          延長報名至 <strong className="text-[hsl(37_90%_75%)]">延長報名至 <strong className="text-[hsl(37_90%_75%)]">4/5（日）</strong> — 名額有限，把握機會！</strong> — 名額有限，把握機會！
         </span>
         <a
           href={REGISTER_URL}
