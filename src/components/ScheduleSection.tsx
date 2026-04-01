@@ -15,7 +15,7 @@ const schedule: TimelineGroup[] = [
   {
     label: "報名階段",
     dotColor: "bg-accent",
-    items: [{ time: "items: [{ time: "延長報名至 4/5（日）", title: "線上報名（延長報名中 — 名額有限！）" }],", title: "線上報名（延長報名中 — 名額有限！）" }],
+    items: [{ time: "延長報名至 4/5（日）", title: "線上報名（延長報名中 — 名額有限！）" }],
   },
   {
     label: "活動前",
