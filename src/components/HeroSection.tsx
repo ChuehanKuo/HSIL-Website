@@ -1,6 +1,6 @@
 import { ArrowDown, ArrowRight, CalendarClock } from "lucide-react";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 const REGISTER_URL = "https://airtable.com/app06PiI7r4PVqBdt/pagFJFqJW3xFqnRFw/form";
 const DEADLINE = new Date("2026-04-05T23:59:59+08:00");
@@ -28,8 +28,42 @@ const useCountdown = (target: Date) => {
   return t;
 };
 
+const useCountUp = (target: number, duration = 2000, delay = 0) => {
+  const [count, setCount] = useState(0);
+  const ref = useRef<HTMLSpanElement>(null);
+  const started = useRef(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !started.current) {
+          started.current = true;
+          const start = performance.now() + delay;
+          const step = (now: number) => {
+            const elapsed = Math.max(0, now - start);
+            const progress = Math.min(elapsed / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            setCount(Math.floor(eased * target));
+            if (progress < 1) requestAnimationFrame(step);
+          };
+          requestAnimationFrame(step);
+        }
+      },
+      { threshold: 0.5 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [target, duration, delay]);
+
+  return { count, ref };
+};
+
 const HeroSection = () => {
   const countdown = useCountdown(DEADLINE);
+  const global = useCountUp(14000, 2000, 600);
+  const local = useCountUp(150, 1500, 800);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center gradient-hero overflow-hidden">
@@ -115,9 +149,9 @@ const HeroSection = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[hsl(170_85%_55%)] opacity-75" />
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[hsl(170_85%_55%)]" />
             </span>
-            <span>全球 <strong className="text-[hsl(170_85%_60%)]">14,000+</strong> 人報名</span>
+            <span ref={global.ref}>全球 <strong className="text-[hsl(170_85%_60%)]">{global.count.toLocaleString()}+</strong> 人報名</span>
             <span className="w-px h-3.5 bg-white/20" />
-            <span>台灣站 <strong className="text-[hsl(37_90%_70%)]">150+</strong> 人</span>
+            <span ref={local.ref}>台灣站 <strong className="text-[hsl(37_90%_70%)]">{local.count}+</strong> 人</span>
           </div>
         </motion.div>
 
