@@ -62,6 +62,8 @@ const useCountUp = (target: number, duration = 2000, delay = 0) => {
 
 const HeroSection = () => {
   const countdown = useCountdown(DEADLINE);
+  const global = useCountUp(14000, 2000, 600);
+  const local = useCountUp(150, 1500, 800);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center gradient-hero overflow-hidden">
