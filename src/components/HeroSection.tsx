@@ -1,6 +1,6 @@
 import { ArrowDown, ArrowRight, CalendarClock } from "lucide-react";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 const REGISTER_URL = "https://airtable.com/app06PiI7r4PVqBdt/pagFJFqJW3xFqnRFw/form";
 const DEADLINE = new Date("2026-04-05T23:59:59+08:00");
