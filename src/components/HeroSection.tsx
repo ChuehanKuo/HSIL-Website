@@ -115,9 +115,9 @@ const HeroSection = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[hsl(170_85%_55%)] opacity-75" />
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[hsl(170_85%_55%)]" />
             </span>
-            <span>全球 <strong className="text-[hsl(170_85%_60%)]">13,000+</strong> 人報名</span>
+            <span>全球 <strong className="text-[hsl(170_85%_60%)]">14,000+</strong> 人報名</span>
             <span className="w-px h-3.5 bg-white/20" />
-            <span>台灣站 <strong className="text-[hsl(37_90%_70%)]">140+</strong> 人</span>
+            <span>台灣站 <strong className="text-[hsl(37_90%_70%)]">150+</strong> 人</span>
           </div>
         </motion.div>
 
