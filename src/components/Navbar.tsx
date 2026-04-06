@@ -12,7 +12,6 @@ const navLinks = [
 { label: "常見問題", href: "#faq" }];
 
 
-const REGISTER_URL = "https://airtable.com/app06PiI7r4PVqBdt/pagFJFqJW3xFqnRFw/form";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -53,14 +52,6 @@ const Navbar = () => {
               {l.label}
             </a>
           )}
-          <a
-            href={REGISTER_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ml-2 bg-[hsl(352_72%_45%)] text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-[hsl(352_72%_40%)] transition-colors focus:outline-none focus:ring-2 focus:ring-[hsl(352_72%_60%)]/50"
-          >
-            立即報名
-          </a>
         </div>
 
         {/* Mobile toggle */}
@@ -90,15 +81,6 @@ const Navbar = () => {
               {l.label}
             </a>
         )}
-          <a
-            href={REGISTER_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setMobileOpen(false)}
-            className="block mt-3 bg-[hsl(352_72%_45%)] text-white text-center px-4 py-3 rounded-lg text-sm font-bold hover:bg-[hsl(352_72%_40%)] transition-colors"
-          >
-            立即報名
-          </a>
         </div>
       }
     </nav>);

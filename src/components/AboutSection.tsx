@@ -13,7 +13,7 @@ const quickFacts = [
 
 
 const steps = [
-{ num: "1", title: "線上報名", desc: "延長報名中，4/5 截止" },
+{ num: "1", title: "線上報名", desc: "報名已截止" },
 { num: "2", title: "錄取通知", desc: "4/1–4/2 通知錄取結果，並提供行前資訊" },
 { num: "3", title: "兩天黑客松", desc: "4/10–11 組隊共創、腦力激盪、方案打磨與實作推進" },
 { num: "4", title: "團隊 Pitch", desc: "每組 3 分鐘簡報 + 1.5 分鐘評審 Q&A" },
@@ -69,7 +69,7 @@ const AboutSection = () => {
 
             <div className="relative pl-6 border-l-4 border-primary mt-8 py-2">
               <p className="font-bold text-primary text-base md:text-lg leading-loose tracking-wide">
-                免費參加　4/10–4/11（台大公衛）　延長報名至 4/5
+                免費參加　4/10–4/11（台大公衛）　報名已截止
               </p>
               <p className="text-foreground/70 text-sm md:text-base mt-1">
                 不需要程式背景，只需要你對健康議題的熱情和創新思維。
