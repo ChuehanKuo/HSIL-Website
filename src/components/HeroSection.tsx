@@ -151,18 +151,23 @@ const HeroSection = () => {
         style={{ y, opacity }}
         className="relative z-10 flex-1 container mx-auto px-6 md:px-12 py-16 md:py-20 max-w-6xl flex flex-col justify-center"
       >
-        {/* Eyebrow */}
+        {/* HSIL Hackathon lockup */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="flex items-center justify-center gap-3 mb-10 md:mb-14"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="flex flex-col items-center gap-4 mb-10 md:mb-14"
         >
-          <div className="h-px w-10 bg-primary/40" />
-          <span className="font-display italic text-primary tracking-widest text-xs md:text-sm">
-            VII &nbsp;·&nbsp; 7th Edition
-          </span>
-          <div className="h-px w-10 bg-primary/40" />
+          <p className="font-display tracking-[0.35em] text-sm md:text-base text-foreground uppercase">
+            HSIL Hackathon
+          </p>
+          <div className="flex items-center gap-3">
+            <div className="h-px w-8 bg-primary/40" />
+            <span className="font-display italic text-primary tracking-widest text-xs">
+              VII &nbsp;·&nbsp; 7th Edition
+            </span>
+            <div className="h-px w-8 bg-primary/40" />
+          </div>
         </motion.div>
 
         {/* Editorial headline — massive, character-revealed */}
