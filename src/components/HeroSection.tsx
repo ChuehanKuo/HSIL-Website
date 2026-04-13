@@ -130,7 +130,7 @@ const HeroSection = () => {
       {/* Hero content */}
       <motion.div
         style={{ y, opacity }}
-        className="relative z-10 flex-1 container mx-auto px-6 md:px-12 pt-32 md:pt-36 pb-16 md:pb-20 max-w-6xl flex flex-col justify-center items-center text-center"
+        className="relative z-10 flex-1 container mx-auto px-6 md:px-12 pt-24 md:pt-28 pb-16 md:pb-20 max-w-6xl flex flex-col justify-center items-center text-center"
       >
         {/* HSIL HACKATHON lockup — compact, single cluster */}
         <motion.div

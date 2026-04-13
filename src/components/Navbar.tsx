@@ -59,7 +59,7 @@ const Navbar = () => {
   const dividerBg = onDark ? "bg-white/25" : "bg-foreground/20";
 
   return (
-    <nav className={`fixed top-[32px] md:top-[36px] left-0 right-0 z-50 transition-all duration-500 ${navBg}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${navBg}`}>
       <div className="container mx-auto flex items-center justify-between py-3 md:py-4 px-4 sm:px-6">
         {/* Institutional lockup — Harvard HSIL × NTU CPH */}
         <a href="#" className="flex items-center gap-2 md:gap-4 shrink-0">
