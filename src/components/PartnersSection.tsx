@@ -7,11 +7,11 @@ import tntLogo from "@/assets/partners/tnt.png";
 import intersystemsLogo from "@/assets/partners/intersystems.svg";
 
 const partners = [
-  { name: "Microsoft", logo: microsoftLogo, className: "max-h-20 md:max-h-24 scale-[1.3]" },
-  { name: "PATH", logo: pathLogo, className: "max-h-20 md:max-h-24 scale-[0.8]" },
+  { name: "Microsoft", logo: microsoftLogo },
+  { name: "PATH", logo: pathLogo },
   { name: "Discovery", logo: discoveryLogo },
   { name: "Orrick", logo: orrickLogo },
-  { name: "TNT", logo: tntLogo, className: "max-h-16 md:max-h-24" },
+  { name: "TNT", logo: tntLogo },
   { name: "InterSystems", logo: intersystemsLogo },
 ];
 
@@ -19,40 +19,53 @@ const PartnersSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section className="py-24 lg:py-32 section-subtle">
+    <section className="py-28 lg:py-36 bg-background">
       <div
         ref={ref}
-        className={`container mx-auto px-4 max-w-5xl transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        className={`container mx-auto px-6 max-w-6xl transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       >
-        <div className="text-center mb-14">
-          <p className="text-sm font-semibold tracking-wider uppercase text-secondary mb-3">
-            Partners
-          </p>
-          <h2 className="font-display font-normal text-4xl md:text-6xl text-foreground leading-[1.1] mb-4">
-            合作<span className="italic text-primary">夥伴</span>
-          </h2>
-          <p className="text-foreground/70 max-w-2xl mx-auto">
-            攜手全球頂尖產業夥伴，共同推動健康系統創新
-          </p>
+        {/* Editorial header — asymmetric */}
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 mb-20 lg:mb-24">
+          <div className="lg:col-span-5">
+            <p className="text-[10px] md:text-xs font-medium tracking-[0.3em] text-muted-foreground uppercase mb-6">
+              Global Partners
+            </p>
+            <h2 className="font-display font-normal text-5xl md:text-6xl lg:text-7xl text-foreground leading-[1.05]">
+              Supported by <span className="italic text-primary">the best</span> in health innovation.
+            </h2>
+          </div>
+          <div className="lg:col-span-7 lg:pt-6">
+            <p className="font-serif italic text-lg md:text-xl text-muted-foreground leading-relaxed">
+              HSIL Hackathon is made possible through a coalition of twenty+ organizations across healthcare, technology, government, and philanthropy — the global partners whose mentorship and resources anchor every edition.
+            </p>
+          </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-3xl mx-auto">
-          {partners.map(({ name, logo, className }) => (
-            <div
-              key={name}
-              className="card-elevated rounded-2xl px-6 py-8 flex items-center justify-center group hover:scale-105 transition-transform duration-300 aspect-[3/2]"
-            >
-              <img
-                src={logo}
-                alt={name}
-                className={`${className || "max-h-20 md:max-h-24"} w-auto max-w-[85%] object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300`}
-              />
-            </div>
-          ))}
+        {/* Logo strip — borderless, monochrome, hairline dividers */}
+        <div className="border-y border-foreground/10">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+            {partners.map((p, i) => (
+              <div
+                key={p.name}
+                className={`flex items-center justify-center py-12 md:py-16 px-6 ${
+                  i < 3 ? "md:border-b-0 border-b border-foreground/10" : ""
+                } ${
+                  i % 3 !== 2 ? "md:border-r border-foreground/10" : ""
+                } ${i % 2 !== 1 ? "border-r md:border-r" : ""} ${i > 2 ? "lg:border-b-0" : ""} border-foreground/10 group`}
+                style={{ borderRightWidth: i % 6 === 5 ? 0 : undefined }}
+              >
+                <img
+                  src={p.logo}
+                  alt={p.name}
+                  className="max-h-10 md:max-h-12 w-auto max-w-[140px] object-contain grayscale opacity-50 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500"
+                />
+              </div>
+            ))}
+          </div>
         </div>
 
-        <p className="text-center text-xs font-light tracking-wide text-foreground/40 mt-10">
-          及 20+ 全球產業合作夥伴
+        <p className="text-center text-xs tracking-[0.3em] uppercase text-muted-foreground/60 mt-10">
+          + 20 additional global partners
         </p>
       </div>
     </section>

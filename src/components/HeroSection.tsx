@@ -57,20 +57,19 @@ const HeroSection = () => {
 
       <div className="relative z-10 container mx-auto px-6 md:px-12 pt-24 pb-20 md:pt-28 md:pb-24 text-white max-w-6xl">
 
-        {/* Editorial top eyebrow */}
-        <motion.div {...fadeUp(0)} className="mb-8 md:mb-12 flex items-center justify-center gap-3">
-          <div className="h-px w-8 bg-white/40" />
-          <p className="text-[10px] md:text-xs font-medium tracking-[0.3em] opacity-70 uppercase">
-            HSIL Hackathon · 7th Edition · April 10–11, 2026
+        {/* Single lockup — brand + edition + dates */}
+        <motion.div {...fadeUp(0)} className="mb-10 md:mb-14 flex flex-col items-center gap-4">
+          <p className="font-display tracking-[0.35em] text-xs md:text-sm text-[hsl(37_90%_75%)] uppercase">
+            HSIL Hackathon · 7th Edition
           </p>
-          <div className="h-px w-8 bg-white/40" />
+          <div className="h-px w-12 bg-white/30" />
+          <p className="text-[10px] md:text-xs font-medium tracking-[0.3em] text-white/60 uppercase">
+            April 10–11, 2026 · Taipei
+          </p>
         </motion.div>
 
-        {/* Editorial title — large serif, asymmetric balance */}
+        {/* Editorial title */}
         <motion.div {...fadeUp(0.15)} className="text-center mb-10 md:mb-14">
-          <p className="font-display text-lg md:text-2xl tracking-[0.2em] text-white/80 uppercase mb-5">
-            HSIL Hackathon
-          </p>
           <h1 className="font-display font-normal text-white leading-[1.05] tracking-tight">
             <span className="block text-[2.5rem] md:text-[4.5rem] lg:text-[5.5rem]">
               全球健康創新黑客松
@@ -82,9 +81,8 @@ const HeroSection = () => {
 
           <div className="mt-6 md:mt-8 max-w-2xl mx-auto">
             <p className="font-serif italic text-base md:text-xl text-white/70 leading-relaxed">
-              Building High-Value Health Systems
-              <br className="hidden md:block" />
-              <span className="text-white/90"> Leveraging AI</span>
+              Building High-Value Health Systems,
+              <span className="text-white/95"> Leveraging AI.</span>
             </p>
           </div>
         </motion.div>
@@ -147,9 +145,9 @@ const HeroSection = () => {
         {/* CTAs — minimal, editorial */}
         <motion.div {...fadeUp(0.6)} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
           <a
-            href="#about"
+            href="#winners"
             className="group bg-white text-[hsl(220_50%_15%)] px-7 py-3 rounded-full text-sm font-semibold hover:bg-white/90 transition-all duration-300 flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-white/50">
-            Explore the Event
+            View the Winners
             <ArrowDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
           </a>
           <a

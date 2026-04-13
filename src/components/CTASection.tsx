@@ -4,40 +4,54 @@ const CTASection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section className="py-28 gradient-cta relative overflow-hidden">
-      <div className="absolute inset-0 hero-grid" />
+    <section className="py-32 md:py-48 bg-[hsl(220_40%_10%)] relative overflow-hidden">
+      <div className="absolute inset-0 hero-grid opacity-20" />
 
-      {/* Orbs */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-10 right-10 w-80 h-80 rounded-full bg-[hsl(0_0%_100%/0.03)] blur-[60px]" />
-        <div className="absolute bottom-10 left-20 w-60 h-60 rounded-full bg-[hsl(37_90%_44%/0.06)] blur-[80px]" />
-      </div>
+      {/* Single soft glow — crimson */}
+      <div
+        className="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[500px] rounded-full bg-[hsl(352_72%_40%/0.15)] blur-[160px] pointer-events-none"
+        aria-hidden
+      />
 
       <div
         ref={ref}
-        className={`container mx-auto px-4 text-center relative z-10 transition-all duration-700 max-w-3xl ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-
-        <p className="text-[10px] md:text-xs font-medium tracking-[0.3em] text-white/50 uppercase mb-6">
+        className={`container mx-auto px-6 relative z-10 max-w-4xl text-center transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+      >
+        <p className="text-[10px] md:text-xs font-medium tracking-[0.35em] text-[hsl(37_90%_75%)] uppercase mb-10">
           Until Next Year
         </p>
-        <h2 className="font-display font-normal text-4xl md:text-6xl lg:text-7xl text-white mb-6 leading-[1.1]">
-          活動圓滿落幕
+
+        <h2 className="font-display font-normal text-white leading-[1.02] tracking-tight mb-10">
+          <span className="block text-5xl md:text-7xl lg:text-8xl">
+            活動
+          </span>
+          <span className="block text-5xl md:text-7xl lg:text-8xl italic text-[hsl(37_90%_75%)] mt-2">
+            圓滿落幕.
+          </span>
         </h2>
-        <p className="font-serif italic text-lg md:text-xl text-white/70 mb-8 leading-relaxed">
-          Thank you to every participant, mentor, judge, and partner who made
-          <br className="hidden md:block" />
-          Taiwan's first HSIL Hackathon possible.
+
+        <div className="max-w-2xl mx-auto mb-14">
+          <p className="font-serif italic text-xl md:text-2xl text-white/80 leading-[1.5]">
+            Thank you to every participant, mentor, judge, and partner who made Taiwan's first HSIL Hackathon possible.
+          </p>
+        </div>
+
+        <div className="flex items-center justify-center gap-4 mb-14">
+          <div className="h-px w-20 bg-white/25" />
+          <span className="font-display italic text-sm text-white/50">2027</span>
+          <div className="h-px w-20 bg-white/25" />
+        </div>
+
+        <p className="font-display text-2xl md:text-3xl text-white/90 leading-snug mb-3">
+          See you next year — <span className="italic text-[hsl(37_90%_75%)]">bigger, broader, bolder.</span>
         </p>
-        <div className="h-px w-16 bg-white/30 mx-auto mb-8" />
-        <p className="text-sm text-white/50 leading-relaxed">
-          See you in 2027 — bigger, broader, and bolder.
-        </p>
-        <p className="text-xs text-white/30 mt-6">
-          Contact: hsilhackathon.taiwan@gmail.com
+
+        <p className="text-xs tracking-[0.25em] uppercase text-white/40 mt-16">
+          Contact · hsilhackathon.taiwan@gmail.com
         </p>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default CTASection;
