@@ -46,7 +46,7 @@ const Navbar = () => {
             className={`text-sm font-medium px-3 py-2 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-ring/50 ${
             scrolled ?
             "text-muted-foreground hover:text-foreground hover:bg-muted" :
-            "text-white/70 hover:text-white hover:bg-white/10"}`
+            "text-foreground/60 hover:text-foreground hover:bg-foreground/5"}`
             }>
 
               {l.label}
@@ -56,14 +56,14 @@ const Navbar = () => {
 
         {/* Mobile toggle */}
         <button
-          className="lg:hidden shrink-0 ml-2 p-2 rounded-lg hover:bg-white/10 transition-colors"
+          className="lg:hidden shrink-0 ml-2 p-2 rounded-lg hover:bg-foreground/5 transition-colors"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu">
 
           {mobileOpen ?
-          <X className={scrolled ? "text-foreground" : "text-white"} /> :
+          <X className="text-foreground" /> :
 
-          <Menu className={scrolled ? "text-foreground" : "text-white"} />
+          <Menu className="text-foreground" />
           }
         </button>
       </div>

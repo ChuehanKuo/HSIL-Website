@@ -1,5 +1,8 @@
 import Navbar from "@/components/Navbar";
+import SmoothScroll from "@/components/SmoothScroll";
+import ScrollProgress from "@/components/ScrollProgress";
 import HeroSection from "@/components/HeroSection";
+import PartnersMarquee from "@/components/PartnersMarquee";
 import WinnersSection from "@/components/WinnersSection";
 import AboutSection from "@/components/AboutSection";
 import GallerySection from "@/components/GallerySection";
@@ -14,9 +17,12 @@ import Footer from "@/components/Footer";
 
 const Index = () => (
   <>
+    <SmoothScroll />
+    <ScrollProgress />
     <Navbar />
     <main>
       <HeroSection />
+      <PartnersMarquee />
       <WinnersSection />
       <AboutSection />
       <GallerySection />
