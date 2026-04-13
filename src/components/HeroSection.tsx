@@ -1,5 +1,5 @@
 import { ArrowDown, ArrowRight } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { useEffect, useState, useRef } from "react";
 
 const fadeUp = (delay = 0) => ({
