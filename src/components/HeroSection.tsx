@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 const useCountUp = (target: number, duration = 2000, delay = 0) => {
   const [count, setCount] = useState(0);
-  const ref = useRef<HTMLSpanElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
   const started = useRef(false);
 
   useEffect(() => {
