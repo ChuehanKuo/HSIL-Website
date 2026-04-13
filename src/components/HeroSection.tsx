@@ -116,8 +116,11 @@ const HeroSection = () => {
           transition={{ duration: 0.9, delay: 0.3 }}
           className="mb-8 md:mb-10"
         >
-          <p className="font-display tracking-[0.4em] text-sm md:text-lg text-foreground uppercase mb-3">
+          <p className="font-display tracking-[0.4em] text-sm md:text-lg text-foreground uppercase mb-1">
             HSIL Hackathon
+          </p>
+          <p className="font-serif italic text-primary text-xs md:text-sm tracking-wide mb-3">
+            Taiwan Hub
           </p>
           <div className="flex items-center justify-center gap-3 text-foreground/55">
             <div className="h-px w-6 bg-foreground/20" />
