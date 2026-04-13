@@ -173,17 +173,17 @@ const HeroSection = () => {
         {/* Editorial headline — massive, character-revealed */}
         <div className="text-center mb-10 md:mb-14 overflow-hidden">
           <h1 className="font-display font-normal text-foreground leading-[0.95] tracking-tight">
-            <span className="block overflow-hidden">
+            <span className="block overflow-hidden whitespace-nowrap">
               <RevealText
                 text="全球健康創新黑客松"
-                className="text-[3rem] md:text-[6rem] lg:text-[7.5rem]"
+                className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.75rem]"
                 delay={0.5}
               />
             </span>
-            <span className="block overflow-hidden mt-2 md:mt-3">
+            <span className="block overflow-hidden whitespace-nowrap mt-2 md:mt-3">
               <RevealText
                 text="台灣站 2026"
-                className="text-[3rem] md:text-[6rem] lg:text-[7.5rem] italic text-primary"
+                className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.75rem] italic text-primary"
                 delay={0.9}
               />
             </span>
