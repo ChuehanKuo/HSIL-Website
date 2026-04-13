@@ -18,7 +18,7 @@ const PartnersMarquee = () => {
   const items = [...logos, ...logos, ...logos];
 
   return (
-    <section className="py-14 md:py-16 bg-background border-y border-foreground/10 overflow-hidden">
+    <section className="py-14 md:py-16 bg-[hsl(40_35%_97%)] border-y border-foreground/10 overflow-hidden">
       <div className="text-center mb-8">
         <p className="text-[10px] tracking-[0.35em] uppercase text-muted-foreground">
           In partnership with
@@ -27,8 +27,8 @@ const PartnersMarquee = () => {
 
       <div className="relative">
         {/* Fade edges */}
-        <div className="absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-r from-[hsl(40_35%_97%)] to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-[hsl(40_35%_97%)] to-transparent z-10 pointer-events-none" />
 
         <div className="flex gap-16 md:gap-24 animate-marquee whitespace-nowrap">
           {items.map((logo, i) => (
