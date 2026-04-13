@@ -18,7 +18,6 @@ const Index = () => (
   <>
     <SmoothScroll />
     <ScrollProgress />
-    <UrgencyBanner />
     <Navbar />
     <main>
       <HeroSection />
