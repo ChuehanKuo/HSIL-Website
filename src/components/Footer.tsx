@@ -3,7 +3,7 @@ import hsilLogo from "@/assets/hsil-logo.png";
 import ntuCphLogo from "@/assets/ntu-cph-logo.png";
 
 const Footer = () => (
-  <footer className="bg-[hsl(220_45%_7%)] text-white/50 pt-14 pb-10 border-t border-white/5">
+  <footer className="bg-[hsl(220_45%_7%)] text-white/50 pt-24 md:pt-28 pb-12 border-t border-white/5">
     <div className="container mx-auto px-6 max-w-6xl">
       {/* Institutional lockup */}
       <div className="mb-16 text-center">

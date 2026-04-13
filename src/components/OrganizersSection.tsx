@@ -1,5 +1,6 @@
 import Section from "@/components/ui/Section";
 import SectionHeader from "@/components/ui/SectionHeader";
+import SectionOutro from "@/components/ui/SectionOutro";
 import Reveal from "@/components/ui/Reveal";
 
 const lead = {
@@ -82,11 +83,9 @@ const OrganizersSection = () => (
       </div>
     </div>
 
-    <Reveal delay={0.2} className="mt-20 text-center max-w-2xl mx-auto">
-      <p className="font-serif italic text-muted-foreground/80 leading-relaxed">
-        "A hackathon is a conversation between disciplines. We owe this one to everyone who showed up to listen."
-      </p>
-    </Reveal>
+    <SectionOutro>
+      A student-led volunteer team. No agency. No sponsorship firm. Every detail — from the nametag lanyards to the judges' envelopes — assembled by the people listed above.
+    </SectionOutro>
   </Section>
 );
 

@@ -1,5 +1,6 @@
 import Section from "@/components/ui/Section";
 import SectionHeader from "@/components/ui/SectionHeader";
+import SectionOutro from "@/components/ui/SectionOutro";
 import Reveal from "@/components/ui/Reveal";
 
 const stages = [
@@ -66,9 +67,9 @@ const PipelineSection = () => (
       ))}
     </div>
 
-    <p className="mt-12 text-center text-[10px] tracking-[0.3em] uppercase text-white/30">
-      Fully virtual · Per HSIL global program schedule
-    </p>
+    <SectionOutro tone="dark">
+      Fully virtual · Per HSIL global program schedule — culminating in Demo Day at Harvard on June 19, 2026.
+    </SectionOutro>
   </Section>
 );
 

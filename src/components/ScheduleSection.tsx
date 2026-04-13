@@ -1,5 +1,6 @@
 import Section from "@/components/ui/Section";
 import SectionHeader from "@/components/ui/SectionHeader";
+import SectionOutro from "@/components/ui/SectionOutro";
 import Reveal from "@/components/ui/Reveal";
 
 interface Item { time: string; title: string; }
@@ -33,7 +34,7 @@ const days: Day[] = [
 ];
 
 const ScheduleSection = () => (
-  <Section id="schedule" tone="stone">
+  <Section id="schedule" tone="ivory">
     <SectionHeader
       eyebrow="The Schedule"
       title={
@@ -49,7 +50,7 @@ const ScheduleSection = () => (
     <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-px bg-foreground/10 border border-foreground/10">
       {days.map((day, d) => (
         <Reveal key={day.label} delay={d * 0.15}>
-          <div className="bg-[hsl(40_20%_94%)] p-8 md:p-12 h-full">
+          <div className="bg-[hsl(40_35%_97%)] p-8 md:p-12 h-full">
             <div className="mb-10 pb-6 border-b border-foreground/10">
               <p className="text-[10px] font-medium tracking-[0.3em] uppercase text-muted-foreground mb-3">
                 {day.date}
@@ -82,18 +83,9 @@ const ScheduleSection = () => (
       ))}
     </div>
 
-    <Reveal delay={0.3} className="max-w-4xl mx-auto mt-20 grid sm:grid-cols-3 gap-10 text-center">
-      {[
-        { val: "32", label: "Teams Pitched" },
-        { val: "~16h", label: "Total Runtime" },
-        { val: "1", label: "Venue · NTU CPH" },
-      ].map((s) => (
-        <div key={s.label}>
-          <div className="font-display text-4xl text-foreground leading-none mb-2">{s.val}</div>
-          <p className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground">{s.label}</p>
-        </div>
-      ))}
-    </Reveal>
+    <SectionOutro>
+      Every minute — from the opening keynote at 9 AM Friday to the closing group photo Saturday evening — ran in one venue with no session overrun.
+    </SectionOutro>
   </Section>
 );
 

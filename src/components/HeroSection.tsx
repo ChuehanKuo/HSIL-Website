@@ -71,18 +71,6 @@ const HeroSection = () => {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "25%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
-  // Cursor glow
-  const glowRef = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const onMove = (e: MouseEvent) => {
-      if (!glowRef.current) return;
-      glowRef.current.style.setProperty("--mx", `${e.clientX}px`);
-      glowRef.current.style.setProperty("--my", `${e.clientY}px`);
-    };
-    window.addEventListener("mousemove", onMove);
-    return () => window.removeEventListener("mousemove", onMove);
-  }, []);
-
   return (
     <section
       ref={sectionRef}
@@ -104,17 +92,6 @@ const HeroSection = () => {
           transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
         />
       </div>
-
-      {/* Cursor glow */}
-      <div
-        ref={glowRef}
-        className="absolute inset-0 pointer-events-none opacity-50 hidden md:block"
-        style={{
-          background:
-            "radial-gradient(500px circle at var(--mx, 50%) var(--my, 50%), hsl(352 72% 50% / 0.05), transparent 45%)",
-        }}
-        aria-hidden
-      />
 
       {/* Grid */}
       <div
@@ -211,7 +188,7 @@ const HeroSection = () => {
           ].map((s, i) => (
             <div
               key={s.label}
-              className={`text-center ${i === 1 ? "border-l border-r border-foreground/10 px-2" : ""}`}
+              className={`text-center ${i === 1 ? "border-l border-r border-foreground/20 px-2" : ""}`}
             >
               <div
                 ref={s.ref}

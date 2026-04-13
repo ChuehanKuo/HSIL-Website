@@ -1,18 +1,23 @@
 import Section from "@/components/ui/Section";
 import SectionHeader from "@/components/ui/SectionHeader";
+import SectionOutro from "@/components/ui/SectionOutro";
 import Reveal from "@/components/ui/Reveal";
 
 const stats = [
-  { value: "137", label: "Registered Applicants" },
   { value: "32", label: "Competing Teams" },
   { value: "~100", label: "Participants on Site" },
-  { value: "5", label: "Judges" },
-  { value: "3", label: "Mentors" },
-  { value: "2", label: "Days · Apr 10–11" },
+  { value: "8", label: "Judges · Mentors" },
 ];
 
 const AboutSection = () => (
   <Section id="about" tone="stone">
+    {/* Whisper of hero atmosphere — opposite corner from Winners */}
+    <div
+      className="absolute -bottom-40 left-0 w-[600px] h-[600px] rounded-full pointer-events-none"
+      style={{ background: "radial-gradient(circle, hsl(37 90% 60% / 0.08) 0%, transparent 60%)" }}
+      aria-hidden
+    />
+
     <SectionHeader
       eyebrow="About · 活動回顧"
       title={
@@ -29,24 +34,24 @@ const AboutSection = () => (
             <em className="text-primary">Health Systems Innovation Lab</em> brought its seventh annual hackathon to Taipei — the first time the program has been hosted in Taiwan.
           </p>
           <p className="text-sm md:text-base not-italic text-foreground/70 font-sans leading-[1.8]">
-            Co-hosted by National Taiwan University's Health Economics & AI Lab (620 Lab), the two-day event gathered students, clinicians, engineers, designers, and researchers to build AI-driven solutions against eleven reference tracks — from EHR analysis and care fragmentation to pediatric AI and health literacy — under the theme <em className="not-italic font-medium text-foreground">Building High-Value Health Systems, Leveraging AI.</em>
+            Co-hosted by National Taiwan University's Health Economics & AI Lab (620 Lab), the two-day event gathered students, clinicians, engineers, designers, and researchers to build AI-driven solutions against eleven reference tracks — from EHR analysis to pediatric AI — under the theme <em className="not-italic font-medium text-foreground">Building High-Value Health Systems, Leveraging AI.</em>
           </p>
         </>
       }
     />
 
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-5xl mx-auto">
       <Reveal>
         <p className="text-[10px] font-medium tracking-[0.3em] uppercase text-muted-foreground mb-10 border-t border-foreground/10 pt-8">
           By the Numbers
         </p>
       </Reveal>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-12 gap-x-6">
+      <div className="grid grid-cols-3 gap-y-10 gap-x-6">
         {stats.map((s, i) => (
-          <Reveal key={s.label} delay={i * 0.08}>
+          <Reveal key={s.label} delay={i * 0.1}>
             <div>
-              <div className="font-display font-normal text-5xl md:text-6xl text-foreground leading-none mb-3 tabular-nums">
+              <div className="font-display font-normal text-5xl md:text-7xl text-foreground leading-none mb-3 tabular-nums">
                 {s.value}
               </div>
               <p className="text-[11px] tracking-[0.15em] uppercase text-muted-foreground leading-snug">
@@ -58,6 +63,9 @@ const AboutSection = () => (
       </div>
     </div>
 
+    <SectionOutro>
+      Two days of real problems, real teams, and a conversation that didn't end at closing ceremony.
+    </SectionOutro>
   </Section>
 );
 

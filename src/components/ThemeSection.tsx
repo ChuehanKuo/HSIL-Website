@@ -1,5 +1,6 @@
 import Section from "@/components/ui/Section";
 import SectionHeader from "@/components/ui/SectionHeader";
+import SectionOutro from "@/components/ui/SectionOutro";
 import Reveal from "@/components/ui/Reveal";
 
 const challenges = [
@@ -71,9 +72,7 @@ const ThemeSection = () => (
       ))}
     </div>
 
-    <p className="mt-12 text-center text-[10px] tracking-[0.3em] uppercase text-white/30">
-      Reference tracks · from the HSIL 2026 Participant Guide
-    </p>
+    <SectionOutro tone="dark">Reference tracks · from the HSIL 2026 Participant Guide</SectionOutro>
   </Section>
 );
 
