@@ -1,16 +1,15 @@
 import UrgencyBanner from "@/components/UrgencyBanner";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import WinnersSection from "@/components/WinnersSection";
 import AboutSection from "@/components/AboutSection";
-import FlowchartSection from "@/components/FlowchartSection";
-import HighlightsSection from "@/components/HighlightsSection";
-import ThemeSection from "@/components/ThemeSection";
-import ScheduleSection from "@/components/ScheduleSection";
+import GallerySection from "@/components/GallerySection";
+import OrganizersSection from "@/components/OrganizersSection";
 import JudgingSection from "@/components/JudgingSection";
 import PipelineSection from "@/components/PipelineSection";
+import ThemeSection from "@/components/ThemeSection";
+import ScheduleSection from "@/components/ScheduleSection";
 import PartnersSection from "@/components/PartnersSection";
-import EligibilitySection from "@/components/EligibilitySection";
-import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
@@ -20,16 +19,15 @@ const Index = () => (
     <Navbar />
     <main>
       <HeroSection />
+      <WinnersSection />
       <AboutSection />
-      <FlowchartSection />
-      <HighlightsSection />
+      <GallerySection />
       <ThemeSection />
       <ScheduleSection />
       <JudgingSection />
       <PipelineSection />
+      <OrganizersSection />
       <PartnersSection />
-      <EligibilitySection />
-      <FAQSection />
       <CTASection />
     </main>
     <Footer />

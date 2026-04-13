@@ -1,148 +1,77 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Globe, GraduationCap, Users, Trophy, Calendar, MapPin, Clock, UsersRound, Presentation, BrainCircuit } from "lucide-react";
-import posterImg from "@/assets/hackathon-poster.png";
-import globalPosterImg from "@/assets/hsil-hackathon-global.png";
 
-const quickFacts = [
-{ icon: Calendar, label: "活動日期", value: "2026 年 4 月 10–11 日（週五、六）" },
-{ icon: MapPin, label: "活動地點", value: "國立臺灣大學 公共衛生學院" },
-{ icon: Clock, label: "活動時長", value: "兩天（每天約 8 小時）" },
-{ icon: UsersRound, label: "團隊人數", value: "3–5 人一組（可個人報名，活動前透過 Slack 群組認識彼此，現場組隊或調整）" },
-{ icon: Presentation, label: "最終產出", value: "3 分鐘 Pitch 成果發表｜不需可運作成品" },
-{ icon: BrainCircuit, label: "活動語言", value: "中文為主、部分資料為英文" }];
-
-
-const steps = [
-{ num: "1", title: "線上報名", desc: "2026 年 3–4 月報名，共 137 位報名者" },
-{ num: "2", title: "錄取通知", desc: "4/1–4/2 通知錄取結果，並提供行前資訊" },
-{ num: "3", title: "兩天黑客松", desc: "4/10–11 組隊共創、腦力激盪、方案打磨與實作推進" },
-{ num: "4", title: "團隊 Pitch", desc: "每組 3 分鐘簡報 + 1.5 分鐘評審 Q&A" },
-{ num: "5", title: "全球培訓計畫", desc: "前三名獲獎，獲勝團隊進入 HSIL Bootcamp 培訓計畫，表現優異者晉級 Venture Building Immersion 與 6/19 Demo Day" }];
-
-
-const features = [
-{ icon: Globe, title: "全球 36 國家同步舉辦", color: "text-secondary" },
-{ icon: GraduationCap, title: "哈佛大學主辦，頂尖學術支持", color: "text-primary" },
-{ icon: Users, title: "跨領域團隊，不限身份與背景", color: "text-secondary" },
-{ icon: Trophy, title: "優勝隊伍獲哈佛 Bootcamp 培訓機會", color: "text-accent" }];
-
+const stats = [
+  { value: "137", label: "Registered Applicants" },
+  { value: "32", label: "Competing Teams" },
+  { value: "~100", label: "Participants on Site" },
+  { value: "5", label: "Judges" },
+  { value: "3", label: "Mentors" },
+  { value: "2", label: "Days · Apr 10–11" },
+];
 
 const AboutSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section id="about" className="py-24 lg:py-32 section-subtle">
+    <section id="about" className="py-28 lg:py-36 bg-[hsl(220_15%_97%)]">
       <div
         ref={ref}
-        className={`container mx-auto px-4 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-
-        <div className="text-center mb-16">
-          <p className="text-sm font-semibold tracking-wider uppercase text-secondary mb-3">About the Event</p>
-          <h2 className="font-display font-normal text-4xl md:text-6xl text-foreground leading-[1.1]">
-            什麼是 <span className="italic text-primary">HSIL Hackathon</span>？
-          </h2>
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-          <div className="space-y-6">
-            <p className="text-foreground/85 text-base md:text-lg leading-[1.85] tracking-wide">
-              HSIL Hackathon 是由哈佛大學陳曾熙公共衛生學院 Health Systems Innovation Lab（HSIL）發起的全球健康創新黑客松。2026 年台灣首度加入，Taiwan Hub 於國立臺灣大學公共衛生學院舉辦，匯聚跨領域團隊在兩天內提出可落地的 AI 健康系統解方。
+        className={`container mx-auto px-6 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+      >
+        {/* Editorial opening — asymmetric two column */}
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 mb-24 lg:mb-32 max-w-6xl mx-auto">
+          <div className="lg:col-span-5">
+            <p className="text-[10px] md:text-xs font-medium tracking-[0.3em] text-muted-foreground uppercase mb-6">
+              About · 活動回顧
             </p>
-
-            <div className="space-y-4">
-              <h3 className="text-lg md:text-xl font-bold text-foreground">你會得到什麼？</h3>
-              <ul className="space-y-3">
-                <li className="flex gap-3 text-foreground/80 text-sm md:text-base leading-relaxed">
-                  <span className="mt-1.5 w-2 h-2 rounded-full bg-secondary flex-shrink-0" />
-                  參賽者皆可獲得 HSIL Hackathon 證書（可用於履歷）
-                </li>
-                <li className="flex gap-3 text-foreground/80 text-sm md:text-base leading-relaxed">
-                  <span className="mt-1.5 w-2 h-2 rounded-full bg-secondary flex-shrink-0" />
-                  前三名獲獎，獲勝團隊進入 HSIL 全球 Bootcamp 培訓計畫（全程線上），經三階段篩選後，表現優異者晉級 Venture Building Immersion 與 Demo Day，向投資人與產業領袖發表方案。
-                </li>
-                <li className="flex gap-3 text-foreground/80 text-sm md:text-base leading-relaxed">
-                  <span className="mt-1.5 w-2 h-2 rounded-full bg-secondary flex-shrink-0" />
-                  跨域交流與組隊：認識不同領域夥伴，把想法從「點子」推進到「可落地的方案」並上台 Pitch，獲得評審具體回饋
-                </li>
-              </ul>
-            </div>
-
-            <div className="relative pl-6 border-l-4 border-primary mt-8 py-2">
-              <p className="font-bold text-primary text-base md:text-lg leading-loose tracking-wide">
-                2026 年 4 月 10–11 日　台大公衛學院　活動圓滿落幕
-              </p>
-              <p className="text-foreground/70 text-sm md:text-base mt-1">
-                感謝每一位參與者、指導老師、評審與合作夥伴共同成就 Taiwan Hub 首屆活動。
-              </p>
-            </div>
+            <h2 className="font-display font-normal text-5xl md:text-6xl lg:text-7xl text-foreground leading-[1.05]">
+              Taiwan's <span className="italic text-primary">first</span>
+              <br />
+              HSIL Hackathon.
+            </h2>
           </div>
-          <div className="flex justify-center">
-            <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-br from-secondary/20 to-primary/10 rounded-3xl blur-xl" />
-              <img src={posterImg} alt="HSIL Hackathon 7th Edition 海報" className="relative rounded-2xl shadow-2xl max-w-md w-full" loading="lazy" />
-            </div>
+          <div className="lg:col-span-7 lg:pt-10">
+            <p className="font-serif text-lg md:text-xl text-foreground/85 leading-[1.7] mb-6">
+              On April 10 and 11, 2026, the Harvard T.H. Chan School of Public Health's
+              <em className="text-primary"> Health Systems Innovation Lab </em>
+              brought its seventh annual hackathon to Taipei — the first time the program has been hosted in Taiwan.
+            </p>
+            <p className="text-base text-muted-foreground leading-[1.85]">
+              Co-hosted by National Taiwan University's Health Economics & AI Lab (620 Lab) at the College of Public Health, the two-day event gathered students, clinicians, engineers, designers, and researchers to build AI-driven solutions for high-value health systems. Thirty-two teams competed. Three advanced. Two now continue on to the global bootcamp program.
+            </p>
           </div>
         </div>
 
-        {/* Quick facts grid */}
-        <div className="mb-16 mt-16 lg:mt-36">
-          <h3 className="text-xl font-bold text-center mb-6 text-foreground">
-            活動快速資訊
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {quickFacts.map(({ icon: Icon, label, value }) => <div key={label} className="card-elevated rounded-2xl p-5 flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
-                  <Icon className="w-5 h-5 text-secondary" />
+        {/* Stats — editorial grid */}
+        <div className="max-w-6xl mx-auto">
+          <p className="text-[10px] font-medium tracking-[0.3em] uppercase text-muted-foreground mb-10 border-t border-foreground/10 pt-8">
+            By the Numbers
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-10 gap-x-6">
+            {stats.map((s) => (
+              <div key={s.label}>
+                <div className="font-display font-normal text-5xl md:text-6xl text-foreground leading-none mb-3">
+                  {s.value}
                 </div>
-                <div>
-                  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">{label}</p>
-                  <p className="text-sm font-medium text-foreground mt-0.5">{value}</p>
-                </div>
-              </div>)}
-          </div>
-        </div>
-
-        {/* How it works - step by step */}
-        <div className="mb-16">
-          <h3 className="text-xl font-bold text-center mb-8 text-foreground">
-            參賽流程
-          </h3>
-          <div className="flex flex-col md:flex-row gap-3 md:gap-2 items-stretch">
-            {steps.map((step, i) => <div key={step.num} className="flex-1 flex items-center">
-                <div className="card-elevated rounded-2xl p-5 h-full w-full">
-                  <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold mb-3">
-                    {step.num}
-                  </div>
-                  <h4 className="font-bold text-sm mb-1 text-foreground">{step.title}</h4>
-                  <p className="text-xs text-muted-foreground leading-relaxed">{step.desc}</p>
-                </div>
-                {i < steps.length - 1 && <div className="hidden md:flex items-center px-1 text-muted-foreground/40 text-lg shrink-0">
-                    →
-                  </div>}
-              </div>)}
-          </div>
-        </div>
-
-        {/* Global HSIL poster */}
-        <div className="mb-16 flex justify-center">
-          <img
-            src={globalPosterImg}
-            alt="HSIL Hackathon 7th Edition — Global"
-            className="rounded-2xl shadow-xl max-w-3xl w-full"
-            loading="lazy"
-          />
-        </div>
-
-        {/* Feature cards */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {features.map(({ icon: Icon, title, color }) => <div key={title} className="card-elevated rounded-2xl p-6 text-center">
-              <div className={`w-12 h-12 mx-auto mb-4 rounded-xl bg-muted flex items-center justify-center`}>
-                <Icon className={`w-6 h-6 ${color}`} />
+                <p className="text-[11px] tracking-[0.15em] uppercase text-muted-foreground leading-snug">
+                  {s.label}
+                </p>
               </div>
-              <p className="text-sm font-semibold text-foreground">{title}</p>
-            </div>)}
+            ))}
+          </div>
+        </div>
+
+        {/* Pull quote */}
+        <div className="max-w-4xl mx-auto mt-24 lg:mt-32 text-center">
+          <div className="h-px w-16 bg-foreground/20 mx-auto mb-10" />
+          <p className="font-display italic text-3xl md:text-4xl lg:text-5xl text-foreground leading-[1.2]">
+            "Two days of real problems, real teams, and a conversation that didn't end at closing ceremony."
+          </p>
+          <div className="h-px w-16 bg-foreground/20 mx-auto mt-10" />
         </div>
       </div>
-    </section>);};
+    </section>
+  );
+};
 
 export default AboutSection;

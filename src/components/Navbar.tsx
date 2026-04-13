@@ -4,12 +4,12 @@ import hsilLogo from "@/assets/hsil-logo.png";
 import ntuLogo from "@/assets/ntu-logo.svg";
 
 const navLinks = [
-{ label: "關於活動", href: "#about" },
-{ label: "活動亮點", href: "#highlights" },
-{ label: "主題挑戰", href: "#theme" },
-{ label: "時程表", href: "#schedule" },
-{ label: "評審標準", href: "#judging" },
-{ label: "常見問題", href: "#faq" }];
+{ label: "Winners", href: "#winners" },
+{ label: "About", href: "#about" },
+{ label: "Gallery", href: "#gallery" },
+{ label: "Theme", href: "#theme" },
+{ label: "Schedule", href: "#schedule" },
+{ label: "Team", href: "#organizers" }];
 
 
 
