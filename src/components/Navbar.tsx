@@ -59,30 +59,30 @@ const Navbar = () => {
   const dividerBg = onDark ? "bg-white/25" : "bg-foreground/20";
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${navBg}`}>
+    <nav className={`fixed top-[32px] md:top-[36px] left-0 right-0 z-50 transition-all duration-500 ${navBg}`}>
       <div className="container mx-auto flex items-center justify-between py-3 md:py-4 px-4 sm:px-6">
         {/* Institutional lockup — Harvard HSIL × NTU CPH */}
-        <a href="#" className="flex items-center gap-3 md:gap-5 shrink-0">
+        <a href="#" className="flex items-center gap-2 md:gap-4 shrink-0">
           <img
             src={hsilLogo}
             alt="Harvard T.H. Chan · HSIL"
-            className={`h-6 md:h-8 w-auto object-contain transition-all duration-300 ${onDark ? "brightness-200" : ""}`}
+            className={`h-5 md:h-7 w-auto object-contain transition-all duration-300 ${onDark ? "brightness-200" : ""}`}
           />
-          <div className={`h-5 md:h-7 w-px ${dividerBg} shrink-0`} aria-hidden />
+          <div className={`h-4 md:h-6 w-px ${dividerBg} shrink-0`} aria-hidden />
           <img
             src={ntuCphLogo}
             alt="NTU College of Public Health · Health Economics & AI Lab"
-            className={`h-6 md:h-8 w-auto object-contain transition-all duration-300 ${onDark ? "brightness-200" : ""}`}
+            className={`h-5 md:h-7 w-auto object-contain transition-all duration-300 ${onDark ? "brightness-200" : ""}`}
           />
         </a>
 
         {/* Desktop nav */}
-        <div className="hidden lg:flex items-center gap-1">
+        <div className="hidden lg:flex items-center gap-0.5">
           {navLinks.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className={`text-sm font-medium px-3 py-2 rounded-full transition-all duration-300 ${mutedText} ${hoverBg}`}
+              className={`text-[13px] font-medium px-2.5 py-2 rounded-full transition-all duration-300 ${mutedText} ${hoverBg}`}
             >
               {l.label}
             </a>
