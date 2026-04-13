@@ -1,47 +1,37 @@
-import React from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Trophy, GraduationCap, Rocket, Presentation } from "lucide-react";
 
 const stages = [
   {
-    icon: Trophy,
-    num: "1",
-    title: "台灣站黑客松",
-    subtitle: "4/10–11",
-    desc: "兩天內組隊、發想、打磨方案，最後上台 Pitch。前三名獲獎。",
-    color: "bg-primary",
-    iconColor: "text-primary",
-    iconBg: "bg-primary/15",
+    num: "I",
+    title: "Taiwan Hub Hackathon",
+    zh: "台灣站黑客松",
+    dates: "April 10–11, 2026",
+    desc: "Two days of team formation, ideation, and pitching at NTU College of Public Health. Top three teams take the stage; the top two advance.",
+    status: "Completed",
   },
   {
-    icon: GraduationCap,
-    num: "2",
+    num: "II",
     title: "Bootcamp I & II",
-    subtitle: "4/20–5/15",
-    desc: "全球入選團隊接受 1:1 導師指導、精煉方案，向哈佛評審進行簡報。全球前 20 強進入第二階段。",
-    color: "bg-secondary",
-    iconColor: "text-secondary",
-    iconBg: "bg-secondary/15",
+    zh: "全球訓練營",
+    dates: "April 20 – May 15",
+    desc: "Advancing teams join the global cohort for six weeks of 1:1 mentorship, deck refinement, and virtual judging rounds. ~100 teams → ~20.",
+    status: "Upcoming",
   },
   {
-    icon: Rocket,
-    num: "3",
-    title: "Venture Building",
-    subtitle: "5/18–6/12",
-    desc: "全球前 10 強進入高強度培訓，開發可運作的 Demo、驗證實施路徑，準備最終發表。",
-    color: "bg-accent",
-    iconColor: "text-accent",
-    iconBg: "bg-accent/15",
+    num: "III",
+    title: "Venture Building Immersion",
+    zh: "創業深耕",
+    dates: "May 18 – June 12",
+    desc: "Top twenty teams enter intensive build mode — working demos, validation, and investor-ready narratives, guided by HSIL and industry partners.",
+    status: "Upcoming",
   },
   {
-    icon: Presentation,
-    num: "4",
+    num: "IV",
     title: "Demo Day",
-    subtitle: "6/19 哈佛大學",
-    desc: "向投資人、創投、產業領袖與全球創新社群發表方案，爭取資金與合作機會。",
-    color: "bg-[hsl(170_85%_32%)]",
-    iconColor: "text-[hsl(170_85%_45%)]",
-    iconBg: "bg-[hsl(170_85%_32%/0.15)]",
+    zh: "Demo Day · 哈佛大學",
+    dates: "June 19, 2026",
+    desc: "Top ten teams present to investors, venture capitalists, and industry leaders at Harvard. A chance at funding, partnerships, and signal.",
+    status: "Upcoming",
   },
 ];
 
@@ -49,54 +39,74 @@ const PipelineSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section className="py-24 lg:py-32 section-dark relative overflow-hidden">
+    <section className="py-28 lg:py-36 bg-[hsl(220_50%_8%)] relative overflow-hidden">
       <div className="absolute inset-0 hero-grid opacity-30" />
 
       <div
         ref={ref}
-        className={`container mx-auto px-4 max-w-5xl relative z-10 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        className={`container mx-auto px-6 relative z-10 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       >
-        <div className="text-center mb-16">
-          <p className="text-sm font-semibold tracking-wider uppercase text-[hsl(170_85%_55%)] mb-3">
-            Post-Hackathon
-          </p>
-          <h2 className="font-display font-normal text-4xl md:text-6xl text-white leading-[1.1] mb-3">
-            黑客松之後的<span className="italic text-[hsl(37_90%_75%)]">旅程</span>
-          </h2>
-          <p className="text-white/40 max-w-3xl mx-auto text-xs md:text-sm tracking-wide">
-            黑客松只是起點 — HSIL 提供完整八週全球培訓，帶你從想法走到向投資人發表的舞台
-          </p>
+        {/* Editorial header */}
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 mb-20 lg:mb-24 max-w-6xl mx-auto">
+          <div className="lg:col-span-5">
+            <p className="text-[10px] md:text-xs font-medium tracking-[0.3em] text-[hsl(170_85%_65%)] uppercase mb-6">
+              The Journey Continues
+            </p>
+            <h2 className="font-display font-normal text-5xl md:text-6xl lg:text-7xl text-white leading-[1.05]">
+              The hackathon was <span className="italic text-[hsl(37_90%_75%)]">chapter one</span>.
+            </h2>
+          </div>
+          <div className="lg:col-span-7 lg:pt-6">
+            <p className="font-serif italic text-lg md:text-xl text-white/85 leading-relaxed mb-4">
+              黑客松之後的旅程
+            </p>
+            <p className="text-sm md:text-base text-white/60 leading-[1.85]">
+              Two Taiwan teams — <span className="text-white/90">PhenoCDS</span> and <span className="text-white/90">ICBigBoss</span> — now join the HSIL Global Bootcamp, an eight-week fully virtual program running from April 20 through June 19, culminating in Demo Day at Harvard.
+            </p>
+          </div>
         </div>
 
-        <div className="grid md:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] gap-y-4 md:gap-x-2 md:items-stretch">
-          {stages.map((stage, i) => (
-            <React.Fragment key={stage.num}>
-              <div className="glass-card rounded-2xl p-6 flex flex-col hover:bg-[hsl(0_0%_100%/0.08)] transition-all duration-300 group">
-                <div className={`w-10 h-10 rounded-xl ${stage.iconBg} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                  <stage.icon className={`w-5 h-5 ${stage.iconColor}`} />
-                </div>
-
-                <div className="flex items-baseline gap-2 mb-1">
-                  <span className={`text-xs font-bold ${stage.iconColor} uppercase tracking-wider`}>
-                    Stage {stage.num}
-                  </span>
-                </div>
-
-                <h3 className="font-bold text-base mb-0.5 text-white">{stage.title}</h3>
-                <p className="text-xs text-white/40 mb-3 font-medium">{stage.subtitle}</p>
-                <p className="text-xs text-white/55 leading-relaxed">{stage.desc}</p>
+        {/* Editorial list — numbered Roman stages, hairline dividers */}
+        <div className="max-w-5xl mx-auto border-t border-white/10">
+          {stages.map((s) => (
+            <div
+              key={s.num}
+              className="grid grid-cols-12 gap-4 md:gap-8 py-8 md:py-10 border-b border-white/10 group hover:bg-white/[0.02] transition-colors"
+            >
+              <div className="col-span-2 md:col-span-1">
+                <span className="font-display italic text-2xl md:text-3xl text-[hsl(37_90%_75%)]/70 group-hover:text-[hsl(37_90%_75%)] transition-colors">
+                  {s.num}
+                </span>
               </div>
-              {i < stages.length - 1 && (
-                <div className="hidden md:flex items-center justify-center text-white/20 text-lg">
-                  →
-                </div>
-              )}
-            </React.Fragment>
+              <div className="col-span-10 md:col-span-4">
+                <h3 className="font-display text-xl md:text-2xl text-white leading-tight mb-1">
+                  {s.title}
+                </h3>
+                <p className="font-serif italic text-sm text-[hsl(37_90%_75%)]/80 mb-2">
+                  {s.zh}
+                </p>
+                <p className="text-[11px] tracking-[0.15em] uppercase text-white/40">
+                  {s.dates}
+                </p>
+              </div>
+              <div className="col-span-12 md:col-span-6 flex flex-col justify-between gap-3">
+                <p className="text-sm md:text-base text-white/60 leading-[1.75]">
+                  {s.desc}
+                </p>
+                <p
+                  className={`text-[10px] tracking-[0.25em] uppercase self-start ${
+                    s.status === "Completed" ? "text-[hsl(170_85%_65%)]" : "text-white/40"
+                  }`}
+                >
+                  {s.status === "Completed" ? "● Completed" : "○ Upcoming"}
+                </p>
+              </div>
+            </div>
           ))}
         </div>
 
-        <p className="text-center text-xs text-white/30 mt-8">
-          全程線上進行（八週）｜以 HSIL 官方公告為準
+        <p className="mt-12 text-center text-xs tracking-[0.2em] uppercase text-white/30">
+          Fully virtual · Per HSIL global program schedule
         </p>
       </div>
     </section>
