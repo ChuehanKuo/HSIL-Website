@@ -13,7 +13,7 @@ const quickFacts = [
 
 
 const steps = [
-{ num: "1", title: "線上報名", desc: "報名已截止" },
+{ num: "1", title: "線上報名", desc: "2026 年 3–4 月報名，共 137 位報名者" },
 { num: "2", title: "錄取通知", desc: "4/1–4/2 通知錄取結果，並提供行前資訊" },
 { num: "3", title: "兩天黑客松", desc: "4/10–11 組隊共創、腦力激盪、方案打磨與實作推進" },
 { num: "4", title: "團隊 Pitch", desc: "每組 3 分鐘簡報 + 1.5 分鐘評審 Q&A" },
@@ -21,7 +21,7 @@ const steps = [
 
 
 const features = [
-{ icon: Globe, title: "全球 37+ 國家同步舉辦", color: "text-secondary" },
+{ icon: Globe, title: "全球 36 國家同步舉辦", color: "text-secondary" },
 { icon: GraduationCap, title: "哈佛大學主辦，頂尖學術支持", color: "text-primary" },
 { icon: Users, title: "跨領域團隊，不限身份與背景", color: "text-secondary" },
 { icon: Trophy, title: "優勝隊伍獲哈佛 Bootcamp 培訓機會", color: "text-accent" }];
@@ -38,15 +38,15 @@ const AboutSection = () => {
 
         <div className="text-center mb-16">
           <p className="text-sm font-semibold tracking-wider uppercase text-secondary mb-3">About the Event</p>
-          <h2 className="text-3xl md:text-5xl font-black text-gradient-crimson">
-            什麼是 HSIL Hackathon？
+          <h2 className="font-display font-normal text-4xl md:text-6xl text-foreground leading-[1.1]">
+            什麼是 <span className="italic text-primary">HSIL Hackathon</span>？
           </h2>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div className="space-y-6">
             <p className="text-foreground/85 text-base md:text-lg leading-[1.85] tracking-wide">
-              HSIL Hackathon 是由哈佛大學陳曾熙公共衛生學院 Health Systems Innovation Lab（HSIL）發起的全球健康系統創新黑客松。今年台灣首度加入，Taiwan Hub 將於國立臺灣大學公共衛生學院舉辦，邀請跨領域團隊在兩天內提出可落地的 AI 健康系統解方。
+              HSIL Hackathon 是由哈佛大學陳曾熙公共衛生學院 Health Systems Innovation Lab（HSIL）發起的全球健康創新黑客松。2026 年台灣首度加入，Taiwan Hub 於國立臺灣大學公共衛生學院舉辦，匯聚跨領域團隊在兩天內提出可落地的 AI 健康系統解方。
             </p>
 
             <div className="space-y-4">
@@ -69,10 +69,10 @@ const AboutSection = () => {
 
             <div className="relative pl-6 border-l-4 border-primary mt-8 py-2">
               <p className="font-bold text-primary text-base md:text-lg leading-loose tracking-wide">
-                免費參加　4/10–4/11（台大公衛）　報名已截止
+                2026 年 4 月 10–11 日　台大公衛學院　活動圓滿落幕
               </p>
               <p className="text-foreground/70 text-sm md:text-base mt-1">
-                不需要程式背景，只需要你對健康議題的熱情和創新思維。
+                感謝每一位參與者、指導老師、評審與合作夥伴共同成就 Taiwan Hub 首屆活動。
               </p>
             </div>
           </div>

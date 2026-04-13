@@ -29,10 +29,10 @@ const ThemeSection = () => {
       >
         <div className="text-center mb-16">
           <p className="text-sm font-semibold tracking-wider uppercase text-[hsl(170_85%_55%)] mb-3">2026 Theme</p>
-          <h2 className="text-3xl md:text-5xl font-black text-white mb-3">
-            運用 AI 打造高價值醫療體系
+          <h2 className="font-display font-normal text-4xl md:text-6xl text-white leading-[1.1] mb-4">
+            運用 <span className="italic text-[hsl(37_90%_75%)]">AI</span> 打造高價值醫療體系
           </h2>
-          <p className="text-[hsl(170_85%_55%)] italic mb-4 text-sm">
+          <p className="font-serif italic text-[hsl(37_90%_75%)] mb-4 text-base md:text-lg">
             Building High-Value Health Systems: Leveraging AI
           </p>
           <p className="text-white/60 max-w-5xl mx-auto">

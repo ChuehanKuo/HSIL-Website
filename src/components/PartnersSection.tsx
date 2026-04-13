@@ -28,8 +28,8 @@ const PartnersSection = () => {
           <p className="text-sm font-semibold tracking-wider uppercase text-secondary mb-3">
             Partners
           </p>
-          <h2 className="text-3xl md:text-5xl font-black text-gradient-crimson mb-4">
-            合作夥伴
+          <h2 className="font-display font-normal text-4xl md:text-6xl text-foreground leading-[1.1] mb-4">
+            合作<span className="italic text-primary">夥伴</span>
           </h2>
           <p className="text-foreground/70 max-w-2xl mx-auto">
             攜手全球頂尖產業夥伴，共同推動健康系統創新

@@ -21,11 +21,11 @@ const HighlightsSection = () => {
       >
         <div className="text-center mb-16">
           <p className="text-sm font-semibold tracking-wider uppercase text-secondary mb-3">Why Join?</p>
-          <h2 className="text-3xl md:text-5xl font-black text-gradient-crimson mb-4">
-            為什麼要參加？
+          <h2 className="font-display font-normal text-4xl md:text-6xl text-foreground leading-[1.1] mb-4">
+            活動<span className="italic text-primary">亮點</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            HSIL Hackathon 為你提供獨一無二的學習、交流與創新平台
+          <p className="font-serif italic text-muted-foreground max-w-2xl mx-auto text-lg">
+            A unique platform for learning, connection, and health-systems innovation
           </p>
         </div>
 

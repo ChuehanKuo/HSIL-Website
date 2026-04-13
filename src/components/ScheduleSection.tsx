@@ -15,7 +15,7 @@ const schedule: TimelineGroup[] = [
   {
     label: "報名階段",
     dotColor: "bg-accent",
-    items: [{ time: "已截止", title: "線上報名（已截止）" }],
+    items: [{ time: "3–4 月", title: "線上報名（共 137 位報名者）" }],
   },
   {
     label: "活動前",
@@ -81,7 +81,7 @@ const ScheduleSection = () => {
       >
         <div className="text-center mb-16">
           <p className="text-sm font-semibold tracking-wider uppercase text-secondary mb-3">Schedule</p>
-          <h2 className="text-3xl md:text-5xl font-black text-gradient-crimson">活動時程</h2>
+          <h2 className="font-display font-normal text-4xl md:text-6xl text-foreground leading-[1.1]">活動<span className="italic text-primary">時程</span></h2>
         </div>
 
         <div className="relative">

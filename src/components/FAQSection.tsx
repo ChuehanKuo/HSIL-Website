@@ -30,7 +30,7 @@ const FAQSection = () => {
       >
         <div className="text-center mb-16">
           <p className="text-sm font-semibold tracking-wider uppercase text-secondary mb-3">FAQ</p>
-          <h2 className="text-3xl md:text-5xl font-black text-gradient-crimson">常見問題</h2>
+          <h2 className="font-display font-normal text-4xl md:text-6xl text-foreground leading-[1.1]">常見<span className="italic text-primary">問題</span></h2>
         </div>
 
         <Accordion type="single" collapsible className="space-y-3">

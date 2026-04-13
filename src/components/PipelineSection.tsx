@@ -60,8 +60,8 @@ const PipelineSection = () => {
           <p className="text-sm font-semibold tracking-wider uppercase text-[hsl(170_85%_55%)] mb-3">
             Post-Hackathon
           </p>
-          <h2 className="text-3xl md:text-5xl font-black text-white mb-3">
-            黑客松之後的旅程
+          <h2 className="font-display font-normal text-4xl md:text-6xl text-white leading-[1.1] mb-3">
+            黑客松之後的<span className="italic text-[hsl(37_90%_75%)]">旅程</span>
           </h2>
           <p className="text-white/40 max-w-3xl mx-auto text-xs md:text-sm tracking-wide">
             黑客松只是起點 — HSIL 提供完整八週全球培訓，帶你從想法走到向投資人發表的舞台

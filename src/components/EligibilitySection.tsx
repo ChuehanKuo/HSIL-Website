@@ -38,11 +38,11 @@ const EligibilitySection = () => {
           <p className="text-xs font-semibold tracking-widest uppercase text-secondary mb-3">
             Eligibility
           </p>
-          <h2 className="text-3xl md:text-5xl font-black text-gradient-crimson mb-5">
-            誰可以參加？
+          <h2 className="font-display font-normal text-4xl md:text-6xl text-foreground leading-[1.1] mb-5">
+            誰<span className="italic text-primary">參與</span>？
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto text-sm leading-relaxed">
-            歡迎所有對健康系統創新有興趣的人，不限身份、不限領域、不需要會寫程式。
+            這是一場開放給所有對健康系統創新有興趣的人的活動 — 不限身份、不限領域、不需要會寫程式。
           </p>
         </div>
 

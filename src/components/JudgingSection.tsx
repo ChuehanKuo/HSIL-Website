@@ -24,7 +24,7 @@ const JudgingSection = () => {
       >
         <div className="text-center mb-16">
           <p className="text-sm font-semibold tracking-wider uppercase text-secondary mb-3">Judging</p>
-          <h2 className="text-3xl md:text-5xl font-black text-gradient-crimson mb-3">評審標準</h2>
+          <h2 className="font-display font-normal text-4xl md:text-6xl text-foreground leading-[1.1] mb-3">評審<span className="italic text-primary">標準</span></h2>
           <p className="text-muted-foreground">
             總分：<span className="font-bold text-foreground">20 分</span>（每項 0、1 或 2 分）
           </p>
