@@ -5,7 +5,7 @@ import Reveal from "@/components/ui/Reveal";
 
 const stats = [
   { v: "10", l: "Criteria", accent: false },
-  { v: "0 · 1 · 2", l: "Per Criterion", accent: false },
+  { v: "0·1·2", l: "Per Criterion", accent: false },
   { v: "20", l: "Per Judge", accent: true },
   { v: "5", l: "Judges", accent: false },
   { v: "100", l: "Team Total", accent: false },
