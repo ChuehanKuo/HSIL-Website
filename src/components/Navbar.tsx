@@ -60,16 +60,12 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${navBg}`}>
       <div className="container mx-auto flex items-center justify-between py-4 px-4 sm:px-6">
-        <a href="#" className="flex items-center gap-3 shrink-0">
+        <a href="#" className="flex items-center shrink-0">
           <img
             src={hsilLogo}
-            alt="HSIL"
-            className={`h-7 md:h-8 w-auto object-contain transition-all duration-300 ${onDark ? "brightness-200" : ""}`}
+            alt="HSIL Hackathon"
+            className={`h-6 md:h-7 w-auto object-contain transition-all duration-300 ${onDark ? "brightness-200" : ""}`}
           />
-          <div className="hidden md:block h-5 w-px bg-current opacity-20" />
-          <span className={`hidden md:block font-display text-sm tracking-wide ${textColor}`}>
-            Taiwan Hub
-          </span>
         </a>
 
         {/* Desktop nav */}
