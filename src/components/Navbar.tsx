@@ -77,12 +77,12 @@ const Navbar = () => {
         </a>
 
         {/* Desktop nav */}
-        <div className="hidden lg:flex items-center gap-1">
+        <div className="hidden lg:flex items-center gap-0.5">
           {navLinks.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className={`text-sm font-medium px-3 py-2 rounded-full transition-all duration-300 ${mutedText} ${hoverBg}`}
+              className={`text-[13px] font-medium px-2.5 py-2 rounded-full transition-all duration-300 ${mutedText} ${hoverBg}`}
             >
               {l.label}
             </a>

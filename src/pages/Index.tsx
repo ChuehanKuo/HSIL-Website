@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import UrgencyBanner from "@/components/UrgencyBanner";
 import SmoothScroll from "@/components/SmoothScroll";
 import ScrollProgress from "@/components/ScrollProgress";
 import HeroSection from "@/components/HeroSection";
@@ -17,6 +18,7 @@ const Index = () => (
   <>
     <SmoothScroll />
     <ScrollProgress />
+    <UrgencyBanner />
     <Navbar />
     <main>
       <HeroSection />
