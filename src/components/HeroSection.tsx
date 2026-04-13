@@ -41,8 +41,8 @@ const useCountUp = (target: number, duration = 2000, delay = 0) => {
 };
 
 const HeroSection = () => {
-  const global = useCountUp(14000, 2000, 600);
-  const local = useCountUp(150, 1500, 800);
+  const global = useCountUp(14708, 2000, 600);
+  const local = useCountUp(137, 1500, 800);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center gradient-hero overflow-hidden">
@@ -61,13 +61,16 @@ const HeroSection = () => {
         <motion.div {...fadeUp(0)} className="mb-8 md:mb-12 flex items-center justify-center gap-3">
           <div className="h-px w-8 bg-white/40" />
           <p className="text-[10px] md:text-xs font-medium tracking-[0.3em] opacity-70 uppercase">
-            7th Edition · April 10–11, 2026
+            HSIL Hackathon · 7th Edition · April 10–11, 2026
           </p>
           <div className="h-px w-8 bg-white/40" />
         </motion.div>
 
         {/* Editorial title — large serif, asymmetric balance */}
         <motion.div {...fadeUp(0.15)} className="text-center mb-10 md:mb-14">
+          <p className="font-display text-lg md:text-2xl tracking-[0.2em] text-white/80 uppercase mb-5">
+            HSIL Hackathon
+          </p>
           <h1 className="font-display font-normal text-white leading-[1.05] tracking-tight">
             <span className="block text-[2.5rem] md:text-[4.5rem] lg:text-[5.5rem]">
               全球健康創新黑客松
@@ -117,7 +120,7 @@ const HeroSection = () => {
         <motion.div {...fadeUp(0.5)} className="grid grid-cols-3 gap-4 md:gap-12 mb-12 md:mb-16 max-w-3xl mx-auto">
           <div className="text-center">
             <div ref={global.ref} className="font-display text-3xl md:text-5xl font-medium text-white mb-1">
-              {global.count >= 1000 ? `${(global.count / 1000).toFixed(0)}K+` : global.count}
+              {global.count.toLocaleString()}
             </div>
             <div className="text-[10px] md:text-xs uppercase tracking-[0.15em] text-white/50">
               Global Registrants
@@ -133,10 +136,10 @@ const HeroSection = () => {
           </div>
           <div className="text-center">
             <div ref={local.ref} className="font-display text-3xl md:text-5xl font-medium text-[hsl(37_90%_75%)] mb-1">
-              {local.count}+
+              {local.count}
             </div>
             <div className="text-[10px] md:text-xs uppercase tracking-[0.15em] text-white/50">
-              Taiwan Hub
+              Taiwan Applicants
             </div>
           </div>
         </motion.div>
