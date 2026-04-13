@@ -1,8 +1,6 @@
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { motion, useScroll, useTransform } from "motion/react";
 import { useEffect, useRef, useState } from "react";
-import hsilLogo from "@/assets/hsil-logo.png";
-import ntuCphLogo from "@/assets/ntu-cph-logo.png";
 
 // Character reveal
 const RevealText = ({
@@ -134,31 +132,6 @@ const HeroSection = () => {
         style={{ y, opacity }}
         className="relative z-10 flex-1 container mx-auto px-6 md:px-12 pt-24 md:pt-28 pb-16 md:pb-20 max-w-6xl flex flex-col justify-center items-center text-center"
       >
-        {/* Institutional logo lockup — Harvard HSIL × NTU CPH */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.15 }}
-          className="mb-8 md:mb-12 flex flex-col items-center gap-4"
-        >
-          <p className="text-[9px] md:text-[10px] tracking-[0.35em] uppercase text-foreground/40">
-            Hosted by
-          </p>
-          <div className="flex items-center gap-4 md:gap-6">
-            <img
-              src={hsilLogo}
-              alt="Harvard T.H. Chan · HSIL"
-              className="h-6 md:h-8 w-auto object-contain"
-            />
-            <div className="h-5 md:h-7 w-px bg-foreground/20" aria-hidden />
-            <img
-              src={ntuCphLogo}
-              alt="NTU College of Public Health · Health Economics & AI Lab"
-              className="h-6 md:h-8 w-auto object-contain"
-            />
-          </div>
-        </motion.div>
-
         {/* HSIL HACKATHON lockup — compact, single cluster */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}

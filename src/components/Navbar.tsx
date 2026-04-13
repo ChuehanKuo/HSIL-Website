@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import hsilLogo from "@/assets/hsil-logo.png";
+import ntuCphLogo from "@/assets/ntu-cph-logo.png";
 
 const navLinks = [
   { label: "Winners", href: "#winners" },
@@ -22,7 +23,6 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Detect section tone behind the navbar
   useEffect(() => {
     const sections = document.querySelectorAll<HTMLElement>("[data-tone]");
     const probeY = 72;
@@ -53,18 +53,26 @@ const Navbar = () => {
   const hoverBg = onDark ? "hover:bg-white/10" : "hover:bg-foreground/5";
   const navBg = scrolled
     ? onDark
-      ? "bg-[hsl(220_45%_7%/0.7)] backdrop-blur-xl border-b border-white/10"
-      : "bg-[hsl(40_35%_97%/0.7)] backdrop-blur-xl border-b border-foreground/10"
+      ? "bg-[hsl(220_45%_7%/0.75)] backdrop-blur-xl border-b border-white/10"
+      : "bg-[hsl(40_35%_97%/0.75)] backdrop-blur-xl border-b border-foreground/10"
     : "bg-transparent";
+  const dividerBg = onDark ? "bg-white/25" : "bg-foreground/20";
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${navBg}`}>
-      <div className="container mx-auto flex items-center justify-between py-4 px-4 sm:px-6">
-        <a href="#" className="flex items-center shrink-0">
+      <div className="container mx-auto flex items-center justify-between py-3 md:py-4 px-4 sm:px-6">
+        {/* Institutional lockup — Harvard HSIL × NTU CPH */}
+        <a href="#" className="flex items-center gap-3 md:gap-5 shrink-0">
           <img
             src={hsilLogo}
-            alt="HSIL Hackathon"
-            className={`h-6 md:h-7 w-auto object-contain transition-all duration-300 ${onDark ? "brightness-200" : ""}`}
+            alt="Harvard T.H. Chan · HSIL"
+            className={`h-6 md:h-8 w-auto object-contain transition-all duration-300 ${onDark ? "brightness-200" : ""}`}
+          />
+          <div className={`h-5 md:h-7 w-px ${dividerBg} shrink-0`} aria-hidden />
+          <img
+            src={ntuCphLogo}
+            alt="NTU College of Public Health · Health Economics & AI Lab"
+            className={`h-6 md:h-8 w-auto object-contain transition-all duration-300 ${onDark ? "brightness-200" : ""}`}
           />
         </a>
 
