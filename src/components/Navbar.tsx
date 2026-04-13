@@ -62,17 +62,17 @@ const Navbar = () => {
     <nav className={`fixed top-[32px] md:top-[36px] left-0 right-0 z-50 transition-all duration-500 ${navBg}`}>
       <div className="container mx-auto flex items-center justify-between py-3 md:py-4 px-4 sm:px-6">
         {/* Institutional lockup — Harvard HSIL × NTU CPH */}
-        <a href="#" className="flex items-center gap-3 md:gap-5 shrink-0">
+        <a href="#" className="flex items-center gap-2 md:gap-4 shrink-0">
           <img
             src={hsilLogo}
             alt="Harvard T.H. Chan · HSIL"
-            className={`h-6 md:h-8 w-auto object-contain transition-all duration-300 ${onDark ? "brightness-200" : ""}`}
+            className={`h-5 md:h-7 w-auto object-contain transition-all duration-300 ${onDark ? "brightness-200" : ""}`}
           />
-          <div className={`h-5 md:h-7 w-px ${dividerBg} shrink-0`} aria-hidden />
+          <div className={`h-4 md:h-6 w-px ${dividerBg} shrink-0`} aria-hidden />
           <img
             src={ntuCphLogo}
             alt="NTU College of Public Health · Health Economics & AI Lab"
-            className={`h-6 md:h-8 w-auto object-contain transition-all duration-300 ${onDark ? "brightness-200" : ""}`}
+            className={`h-5 md:h-7 w-auto object-contain transition-all duration-300 ${onDark ? "brightness-200" : ""}`}
           />
         </a>
 
