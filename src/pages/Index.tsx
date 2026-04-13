@@ -1,4 +1,3 @@
-import UrgencyBanner from "@/components/UrgencyBanner";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import WinnersSection from "@/components/WinnersSection";
@@ -15,7 +14,6 @@ import Footer from "@/components/Footer";
 
 const Index = () => (
   <>
-    <UrgencyBanner />
     <Navbar />
     <main>
       <HeroSection />
