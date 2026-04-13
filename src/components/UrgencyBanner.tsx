@@ -7,7 +7,7 @@ const UrgencyBanner = () => {
           <span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
         </span>
         <span className="text-white/90">
-          報名已截止 — 感謝所有報名者！活動將於 4/10–4/11 舉行
+          活動圓滿落幕 — 感謝所有參與者！精彩回顧即將上線
         </span>
       </div>
     </div>

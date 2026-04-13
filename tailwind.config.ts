@@ -14,8 +14,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['"Noto Sans TC"', '"Inter"', 'sans-serif'],
-        display: ['"Inter"', '"Noto Sans TC"', 'sans-serif'],
+        sans: ['"Inter"', '"Noto Sans TC"', 'sans-serif'],
+        display: ['"EB Garamond"', '"Noto Serif TC"', 'serif'],
+        serif: ['"Crimson Text"', '"Noto Serif TC"', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",

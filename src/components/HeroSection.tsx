@@ -1,11 +1,11 @@
-import { ArrowDown, ArrowRight, CalendarClock } from "lucide-react";
+import { ArrowDown, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 30 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }
+  transition: { duration: 0.8, delay, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }
 });
 
 const useCountUp = (target: number, duration = 2000, delay = 0) => {
@@ -46,105 +46,134 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center gradient-hero overflow-hidden">
-      {/* Grid overlay */}
-      <div className="absolute inset-0 hero-grid" />
+      {/* Subtle grid overlay */}
+      <div className="absolute inset-0 hero-grid opacity-50" />
 
-      {/* Floating orbs */}
+      {/* Subtle ambient glow — fewer, more refined */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-[hsl(352_72%_40%/0.15)] blur-[120px] animate-float-slow" />
-        <div className="absolute -bottom-48 -right-48 w-[600px] h-[600px] rounded-full bg-[hsl(37_90%_44%/0.1)] blur-[120px] animate-float-slow-reverse" />
-        <div className="absolute top-1/4 right-1/3 w-[400px] h-[400px] rounded-full bg-[hsl(170_85%_32%/0.08)] blur-[100px] animate-float-slow" style={{ animationDelay: '2s' }} />
-        <div className="absolute bottom-1/3 left-1/4 w-[300px] h-[300px] rounded-full bg-[hsl(352_72%_50%/0.06)] blur-[80px] animate-float-slow-reverse" style={{ animationDelay: '4s' }} />
+        <div className="absolute -top-32 -left-32 w-[600px] h-[600px] rounded-full bg-[hsl(352_72%_40%/0.12)] blur-[140px] animate-float-slow" />
+        <div className="absolute -bottom-48 -right-48 w-[700px] h-[700px] rounded-full bg-[hsl(170_85%_32%/0.08)] blur-[140px] animate-float-slow-reverse" />
       </div>
 
-      {/* Geometric shapes */}
-      <div className="absolute inset-0 pointer-events-none opacity-[0.06]">
-        <div className="absolute top-20 left-[8%] w-72 h-72 border border-white rounded-full animate-[spin_60s_linear_infinite]" />
-        <div className="absolute bottom-24 right-[12%] w-96 h-96 border border-white rounded-full animate-[spin_80s_linear_infinite_reverse]" />
-        <div className="absolute top-[45%] left-[35%] w-48 h-48 border border-white rotate-45 animate-[spin_50s_linear_infinite]" />
-      </div>
+      <div className="relative z-10 container mx-auto px-6 md:px-12 pt-24 pb-20 md:pt-28 md:pb-24 text-white max-w-6xl">
 
-      <div className="relative z-10 container mx-auto px-4 pt-20 pb-24 md:pt-24 md:pb-28 text-center text-white flex flex-col items-center min-h-[100svh]">
-
-        <div className="mt-8">
-          <motion.p
-            {...fadeUp(0)}
-            className="text-xs md:text-sm font-medium tracking-[0.2em] opacity-60 mb-12 uppercase">
-            Harvard T.H. Chan School of Public Health — Health Systems Innovation Lab
-          </motion.p>
-
-          <motion.h1
-            {...fadeUp(0.15)}
-            className="text-3xl md:text-6xl lg:text-7xl font-black mb-6 md:mb-8 leading-[1.1] tracking-tight">
-            全球健康創新黑客松 2026
-            <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(37_90%_65%)] via-[hsl(37_90%_75%)] to-[hsl(170_85%_55%)] text-xl md:text-3xl lg:text-4xl">
-              HSIL Hackathon 2026 — Taiwan Hub
-            </span>
-          </motion.h1>
-
-        </div>
-
-        <div className="flex-1" />
-
-        <motion.div {...fadeUp(0.45)} className="max-w-xl mx-auto mb-6 text-center space-y-1">
-          <p className="text-xs md:text-sm font-light opacity-60 tracking-wide">
-            主辦｜哈佛大學 Health Systems Innovation Lab
+        {/* Editorial top eyebrow */}
+        <motion.div {...fadeUp(0)} className="mb-8 md:mb-12 flex items-center justify-center gap-3">
+          <div className="h-px w-8 bg-white/40" />
+          <p className="text-[10px] md:text-xs font-medium tracking-[0.3em] opacity-70 uppercase">
+            7th Edition · April 10–11, 2026
           </p>
-          <p className="text-xs md:text-sm font-light opacity-60 tracking-wide">
-            共同主辦｜台大公衛學院 Health Economics & AI Lab
-          </p>
+          <div className="h-px w-8 bg-white/40" />
         </motion.div>
 
-        {/* CTA buttons */}
-        <motion.div {...fadeUp(0.5)} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group bg-[hsl(170_85%_32%)] text-white px-6 py-3 rounded-xl text-base font-bold hover:scale-105 transition-all duration-300 flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-[hsl(170_85%_55%)]/50" href="https://hsph.harvard.edu/research/health-systems-innovation-lab/work/hsil-hackathon-2026-building-high-value-health-systems-leveraging-ai/">
-            HSIL 官網
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </a>
-          <a
-            href="#about"
-            className="border border-white/30 text-white px-6 py-3 rounded-xl text-base font-medium hover:bg-white/10 transition-all duration-300 flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-white/30">
-            了解更多
-            <ArrowDown className="w-5 h-5" />
-          </a>
-        </motion.div>
-
-        {/* Social proof */}
-        <motion.div {...fadeUp(0.53)} className="mb-5">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/15 rounded-full px-4 py-2 text-xs md:text-sm font-medium">
-            <span className="relative flex h-2.5 w-2.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[hsl(170_85%_55%)] opacity-75" />
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[hsl(170_85%_55%)]" />
+        {/* Editorial title — large serif, asymmetric balance */}
+        <motion.div {...fadeUp(0.15)} className="text-center mb-10 md:mb-14">
+          <h1 className="font-display font-normal text-white leading-[1.05] tracking-tight">
+            <span className="block text-[2.5rem] md:text-[4.5rem] lg:text-[5.5rem]">
+              全球健康創新黑客松
             </span>
-            <span ref={global.ref}>全球 <strong className="text-[hsl(170_85%_60%)]">{global.count.toLocaleString()}+</strong> 人報名</span>
-            <span className="w-px h-3.5 bg-white/20" />
-            <span ref={local.ref}>台灣站 <strong className="text-[hsl(37_90%_70%)]">{local.count}+</strong> 人</span>
+            <span className="block text-[2.5rem] md:text-[4.5rem] lg:text-[5.5rem] italic text-[hsl(37_90%_75%)]">
+              台灣站 2026
+            </span>
+          </h1>
+
+          <div className="mt-6 md:mt-8 max-w-2xl mx-auto">
+            <p className="font-serif italic text-base md:text-xl text-white/70 leading-relaxed">
+              Building High-Value Health Systems
+              <br className="hidden md:block" />
+              <span className="text-white/90"> Leveraging AI</span>
+            </p>
           </div>
         </motion.div>
 
-        {/* Date / Location / Free — prominent treatment */}
-        <motion.div {...fadeUp(0.55)} className="flex flex-wrap items-center justify-center gap-2 md:gap-3 text-xs md:text-base font-medium opacity-75 mb-6 px-2">
-          <span>📅 2026 年 4 月 10–11 日</span>
-          <span className="hidden sm:inline w-1 h-1 rounded-full bg-white/50" />
-          <span>📍 台大公衛學院</span>
-          <span className="hidden sm:inline w-1 h-1 rounded-full bg-white/50" />
-          <span className="text-[hsl(170_85%_60%)] font-semibold">免費參加</span>
+        {/* Subtle divider */}
+        <motion.div {...fadeUp(0.3)} className="flex justify-center mb-10 md:mb-12">
+          <div className="h-px w-24 bg-gradient-to-r from-transparent via-white/40 to-transparent" />
         </motion.div>
 
-        {/* Status strip */}
-        <motion.div {...fadeUp(0.6)} className="flex items-center gap-2 text-xs md:text-sm">
-          <CalendarClock className="w-4 h-4 text-[hsl(37_90%_70%)]" />
-          <span className="text-[hsl(37_90%_75%)] font-semibold">報名已截止 — 4/10–4/11 活動即將開始</span>
+        {/* Institutional credit — top */}
+        <motion.div {...fadeUp(0.4)} className="text-center mb-12 md:mb-16">
+          <p className="text-[10px] md:text-xs font-medium tracking-[0.2em] opacity-50 uppercase mb-3">
+            Hosted by
+          </p>
+          <p className="font-serif text-sm md:text-base text-white/85 leading-relaxed">
+            Harvard T.H. Chan School of Public Health
+            <br />
+            <span className="text-white/60 text-xs md:text-sm">Health Systems Innovation Lab</span>
+          </p>
+          <div className="mt-3 flex items-center justify-center gap-3 text-white/40">
+            <div className="h-px w-6 bg-white/30" />
+            <span className="text-xs">×</span>
+            <div className="h-px w-6 bg-white/30" />
+          </div>
+          <p className="font-serif text-sm md:text-base text-white/85 leading-relaxed mt-3">
+            National Taiwan University
+            <br />
+            <span className="text-white/60 text-xs md:text-sm">Health Economics & AI Lab (620 Lab)</span>
+          </p>
+        </motion.div>
+
+        {/* Stats — editorial / magazine style */}
+        <motion.div {...fadeUp(0.5)} className="grid grid-cols-3 gap-4 md:gap-12 mb-12 md:mb-16 max-w-3xl mx-auto">
+          <div className="text-center">
+            <div ref={global.ref} className="font-display text-3xl md:text-5xl font-medium text-white mb-1">
+              {global.count >= 1000 ? `${(global.count / 1000).toFixed(0)}K+` : global.count}
+            </div>
+            <div className="text-[10px] md:text-xs uppercase tracking-[0.15em] text-white/50">
+              Global Registrants
+            </div>
+          </div>
+          <div className="text-center border-l border-r border-white/15 px-2">
+            <div className="font-display text-3xl md:text-5xl font-medium text-white mb-1">
+              36
+            </div>
+            <div className="text-[10px] md:text-xs uppercase tracking-[0.15em] text-white/50">
+              Countries
+            </div>
+          </div>
+          <div className="text-center">
+            <div ref={local.ref} className="font-display text-3xl md:text-5xl font-medium text-[hsl(37_90%_75%)] mb-1">
+              {local.count}+
+            </div>
+            <div className="text-[10px] md:text-xs uppercase tracking-[0.15em] text-white/50">
+              Taiwan Hub
+            </div>
+          </div>
+        </motion.div>
+
+        {/* CTAs — minimal, editorial */}
+        <motion.div {...fadeUp(0.6)} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+          <a
+            href="#about"
+            className="group bg-white text-[hsl(220_50%_15%)] px-7 py-3 rounded-full text-sm font-semibold hover:bg-white/90 transition-all duration-300 flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-white/50">
+            Explore the Event
+            <ArrowDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group border border-white/30 text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-white/10 transition-all duration-300 flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-white/30"
+            href="https://hsph.harvard.edu/research/health-systems-innovation-lab/work/hsil-hackathon-2026-building-high-value-health-systems-leveraging-ai/">
+            Visit HSIL
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+          </a>
+        </motion.div>
+
+        {/* Date / Venue — minimal footer */}
+        <motion.div {...fadeUp(0.7)} className="flex flex-wrap items-center justify-center gap-3 md:gap-6 text-xs md:text-sm font-medium opacity-60">
+          <span>April 10–11, 2026</span>
+          <span className="hidden sm:inline w-1 h-1 rounded-full bg-white/40" />
+          <span>NTU College of Public Health</span>
+          <span className="hidden sm:inline w-1 h-1 rounded-full bg-white/40" />
+          <span>Taipei, Taiwan</span>
         </motion.div>
 
       </div>
 
       {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[hsl(220_14%_96%)] to-transparent" />
-    </section>);};
+      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[hsl(220_14%_96%)] to-transparent" />
+    </section>
+  );
+};
 
 export default HeroSection;

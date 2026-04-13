@@ -15,16 +15,25 @@ const CTASection = () => {
 
       <div
         ref={ref}
-        className={`container mx-auto px-4 text-center relative z-10 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+        className={`container mx-auto px-4 text-center relative z-10 transition-all duration-700 max-w-3xl ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
 
-        <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-5">
-          報名已截止
-        </h2>
-        <p className="text-lg text-white/70 mb-5">
-          感謝所有報名者！活動將於 4/10–4/11 舉行
+        <p className="text-[10px] md:text-xs font-medium tracking-[0.3em] text-white/50 uppercase mb-6">
+          Until Next Year
         </p>
-        <p className="text-sm text-white/40 mt-8">
-          如有任何問題，請聯繫主辦單位：hsilhackathon.taiwan@gmail.com
+        <h2 className="font-display font-normal text-4xl md:text-6xl lg:text-7xl text-white mb-6 leading-[1.1]">
+          活動圓滿落幕
+        </h2>
+        <p className="font-serif italic text-lg md:text-xl text-white/70 mb-8 leading-relaxed">
+          Thank you to every participant, mentor, judge, and partner who made
+          <br className="hidden md:block" />
+          Taiwan's first HSIL Hackathon possible.
+        </p>
+        <div className="h-px w-16 bg-white/30 mx-auto mb-8" />
+        <p className="text-sm text-white/50 leading-relaxed">
+          See you in 2027 — bigger, broader, and bolder.
+        </p>
+        <p className="text-xs text-white/30 mt-6">
+          Contact: hsilhackathon.taiwan@gmail.com
         </p>
       </div>
     </section>);
