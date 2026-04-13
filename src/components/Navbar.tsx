@@ -7,8 +7,8 @@ const navLinks = [
   { label: "Winners", href: "#winners" },
   { label: "About", href: "#about" },
   { label: "Gallery", href: "#gallery" },
-  { label: "Theme", href: "#theme" },
   { label: "Schedule", href: "#schedule" },
+  { label: "Judging", href: "#judging" },
   { label: "Team", href: "#organizers" },
 ];
 

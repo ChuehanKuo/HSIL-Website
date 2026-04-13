@@ -5,12 +5,12 @@ import ScrollProgress from "@/components/ScrollProgress";
 import HeroSection from "@/components/HeroSection";
 import WinnersSection from "@/components/WinnersSection";
 import AboutSection from "@/components/AboutSection";
+import TestimonialSection from "@/components/TestimonialSection";
 import GallerySection from "@/components/GallerySection";
-import OrganizersSection from "@/components/OrganizersSection";
+import ScheduleSection from "@/components/ScheduleSection";
 import JudgingSection from "@/components/JudgingSection";
 import PipelineSection from "@/components/PipelineSection";
-import ThemeSection from "@/components/ThemeSection";
-import ScheduleSection from "@/components/ScheduleSection";
+import OrganizersSection from "@/components/OrganizersSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
@@ -23,8 +23,8 @@ const Index = () => (
       <HeroSection />
       <WinnersSection />
       <AboutSection />
+      <TestimonialSection />
       <GallerySection />
-      <ThemeSection />
       <ScheduleSection />
       <JudgingSection />
       <PipelineSection />

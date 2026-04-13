@@ -29,7 +29,7 @@ const AboutSection = () => (
             <em className="text-primary">Health Systems Innovation Lab</em> brought its seventh annual hackathon to Taipei — the first time the program has been hosted in Taiwan.
           </p>
           <p className="text-sm md:text-base not-italic text-foreground/70 font-sans leading-[1.8]">
-            Co-hosted by National Taiwan University's Health Economics & AI Lab (620 Lab), the two-day event gathered students, clinicians, engineers, designers, and researchers to build AI-driven solutions for high-value health systems.
+            Co-hosted by National Taiwan University's Health Economics & AI Lab (620 Lab), the two-day event gathered students, clinicians, engineers, designers, and researchers to build AI-driven solutions against eleven reference tracks — from EHR analysis and care fragmentation to pediatric AI and health literacy — under the theme <em className="not-italic font-medium text-foreground">Building High-Value Health Systems, Leveraging AI.</em>
           </p>
         </>
       }
@@ -58,13 +58,6 @@ const AboutSection = () => (
       </div>
     </div>
 
-    <Reveal delay={0.2} className="max-w-4xl mx-auto mt-28 lg:mt-36 text-center">
-      <div className="h-px w-16 bg-foreground/20 mx-auto mb-10" />
-      <p className="font-display italic text-3xl md:text-4xl lg:text-5xl text-foreground leading-[1.2]">
-        "Two days of real problems, real teams, and a conversation that didn't end at closing ceremony."
-      </p>
-      <div className="h-px w-16 bg-foreground/20 mx-auto mt-10" />
-    </Reveal>
   </Section>
 );
 
