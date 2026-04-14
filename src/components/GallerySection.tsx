@@ -1,17 +1,36 @@
-import { ImageIcon } from "lucide-react";
 import Section from "@/components/ui/Section";
 import SectionHeader from "@/components/ui/SectionHeader";
 import SectionOutro from "@/components/ui/SectionOutro";
 import Reveal from "@/components/ui/Reveal";
 import ParallaxTitle from "@/components/ParallaxTitle";
 
-const placeholders = [
-  { span: "md:col-span-2", label: "Opening ceremony · Day 1", ratio: "aspect-[16/10]", drift: 70 },
-  { span: "md:col-span-2", label: "Award ceremony · Day 2", ratio: "aspect-[16/10]", drift: 30 },
-  { span: "md:col-span-1", label: "Mentor consultation", ratio: "aspect-[4/3]", drift: 55 },
-  { span: "md:col-span-1", label: "Pitch presentation", ratio: "aspect-[4/3]", drift: 20 },
-  { span: "md:col-span-1", label: "Judging panel", ratio: "aspect-[4/3]", drift: 45 },
-  { span: "md:col-span-1", label: "Group photo", ratio: "aspect-[4/3]", drift: 15 },
+import opening from "@/assets/gallery/01-opening-ceremony.jpg?w=640;1024;1600&format=avif;webp;jpg&as=picture";
+import healthorithm from "@/assets/gallery/02-healthorithm-pitch.jpg?w=640;1024;1600&format=avif;webp;jpg&as=picture";
+import mentor from "@/assets/gallery/03-mentor-consultation.jpg?w=640;1024&format=avif;webp;jpg&as=picture";
+import podium from "@/assets/gallery/04-pitch-podium.jpg?w=640;1024&format=avif;webp;jpg&as=picture";
+import judges from "@/assets/gallery/05-judging-panel.jpg?w=640;1024&format=avif;webp;jpg&as=picture";
+import pitchProblem from "@/assets/gallery/06-pitch-problem.jpg?w=640;1024&format=avif;webp;jpg&as=picture";
+
+interface Picture {
+  sources: { srcset: string; type: string }[];
+  img: { src: string; w: number; h: number };
+}
+
+interface Tile {
+  span: string;
+  ratio: string;
+  pic: Picture;
+  label: string;
+  drift: number;
+}
+
+const tiles: Tile[] = [
+  { span: "md:col-span-2", ratio: "aspect-[16/10]", pic: opening as Picture,      label: "Opening ceremony · April 10",   drift: 70 },
+  { span: "md:col-span-2", ratio: "aspect-[16/10]", pic: healthorithm as Picture, label: "The Healthorithm · pitch, 3rd place",  drift: 30 },
+  { span: "md:col-span-1", ratio: "aspect-[4/3]",   pic: mentor as Picture,       label: "Mentor consultation",           drift: 55 },
+  { span: "md:col-span-1", ratio: "aspect-[4/3]",   pic: podium as Picture,       label: "Team pitch · NTU CPH",           drift: 20 },
+  { span: "md:col-span-1", ratio: "aspect-[4/3]",   pic: judges as Picture,       label: "The judging panel",              drift: 45 },
+  { span: "md:col-span-1", ratio: "aspect-[4/3]",   pic: pitchProblem as Picture, label: "Problem statement",              drift: 15 },
 ];
 
 const GallerySection = () => (
@@ -23,19 +42,33 @@ const GallerySection = () => (
           Two days, <span className="italic text-primary">one community</span>.
         </>
       }
-      lede="From the opening keynote Friday morning to the final group photo Saturday evening — a visual record of Taiwan's first HSIL Hackathon."
+      lede="From the opening keynote Friday morning to the final Saturday pitches — a visual record of Taiwan's first HSIL Hackathon."
     />
 
     <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 max-w-5xl mx-auto">
-      {placeholders.map((p, i) => (
-        <Reveal key={i} delay={i * 0.05} className={p.span}>
-          <ParallaxTitle distance={p.drift}>
-            <div className={`${p.ratio} relative bg-[hsl(40_15%_90%)] overflow-hidden group cursor-pointer transition-colors duration-500 hover:bg-[hsl(40_20%_86%)]`}>
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-foreground/30 group-hover:text-foreground/50 transition-colors duration-500">
-                <ImageIcon className="w-8 h-8" strokeWidth={1} />
-                <p className="text-[10px] tracking-[0.2em] uppercase">{p.label}</p>
-              </div>
-            </div>
+      {tiles.map((t, i) => (
+        <Reveal key={i} delay={i * 0.05} className={t.span}>
+          <ParallaxTitle distance={t.drift}>
+            <figure className={`${t.ratio} relative overflow-hidden group bg-[hsl(40_15%_90%)]`}>
+              <picture>
+                {t.pic.sources.map((src, k) => (
+                  <source key={k} type={src.type} srcSet={src.srcset} />
+                ))}
+                <img
+                  src={t.pic.img.src}
+                  width={t.pic.img.w}
+                  height={t.pic.img.h}
+                  alt={t.label}
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                />
+              </picture>
+              <figcaption className="absolute inset-x-0 bottom-0 p-4 md:p-5 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <p className="text-[10px] md:text-xs tracking-[0.2em] uppercase text-white/90 font-medium">
+                  {t.label}
+                </p>
+              </figcaption>
+            </figure>
           </ParallaxTitle>
         </Reveal>
       ))}
