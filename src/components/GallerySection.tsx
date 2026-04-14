@@ -4,33 +4,28 @@ import SectionOutro from "@/components/ui/SectionOutro";
 import Reveal from "@/components/ui/Reveal";
 import ParallaxTitle from "@/components/ParallaxTitle";
 
-import opening from "@/assets/gallery/01-opening-ceremony.jpg?w=640;1024;1600&format=avif;webp;jpg&as=picture";
-import healthorithm from "@/assets/gallery/02-healthorithm-pitch.jpg?w=640;1024;1600&format=avif;webp;jpg&as=picture";
-import mentor from "@/assets/gallery/03-mentor-consultation.jpg?w=640;1024&format=avif;webp;jpg&as=picture";
-import podium from "@/assets/gallery/04-pitch-podium.jpg?w=640;1024&format=avif;webp;jpg&as=picture";
-import judges from "@/assets/gallery/05-judging-panel.jpg?w=640;1024&format=avif;webp;jpg&as=picture";
-import pitchProblem from "@/assets/gallery/06-pitch-problem.jpg?w=640;1024&format=avif;webp;jpg&as=picture";
-
-interface Picture {
-  sources: { srcset: string; type: string }[];
-  img: { src: string; w: number; h: number };
-}
+import opening from "@/assets/gallery/01-opening-ceremony.jpg";
+import healthorithm from "@/assets/gallery/02-healthorithm-pitch.jpg";
+import mentor from "@/assets/gallery/03-mentor-consultation.jpg";
+import podium from "@/assets/gallery/04-pitch-podium.jpg";
+import judges from "@/assets/gallery/05-judging-panel.jpg";
+import pitchProblem from "@/assets/gallery/06-pitch-problem.jpg";
 
 interface Tile {
   span: string;
   ratio: string;
-  pic: Picture;
+  src: string;
   label: string;
   drift: number;
 }
 
 const tiles: Tile[] = [
-  { span: "md:col-span-2", ratio: "aspect-[16/10]", pic: opening as Picture,      label: "Opening ceremony · April 10",   drift: 70 },
-  { span: "md:col-span-2", ratio: "aspect-[16/10]", pic: healthorithm as Picture, label: "The Healthorithm · pitch, 3rd place",  drift: 30 },
-  { span: "md:col-span-1", ratio: "aspect-[4/3]",   pic: mentor as Picture,       label: "Mentor consultation",           drift: 55 },
-  { span: "md:col-span-1", ratio: "aspect-[4/3]",   pic: podium as Picture,       label: "Team pitch · NTU CPH",           drift: 20 },
-  { span: "md:col-span-1", ratio: "aspect-[4/3]",   pic: judges as Picture,       label: "The judging panel",              drift: 45 },
-  { span: "md:col-span-1", ratio: "aspect-[4/3]",   pic: pitchProblem as Picture, label: "Problem statement",              drift: 15 },
+  { span: "md:col-span-2", ratio: "aspect-[16/10]", src: opening,        label: "Opening ceremony · April 10",          drift: 70 },
+  { span: "md:col-span-2", ratio: "aspect-[16/10]", src: healthorithm,   label: "The Healthorithm · pitch, 3rd place",  drift: 30 },
+  { span: "md:col-span-1", ratio: "aspect-[4/3]",   src: mentor,         label: "Mentor consultation",                  drift: 55 },
+  { span: "md:col-span-1", ratio: "aspect-[4/3]",   src: podium,         label: "Team pitch · NTU CPH",                 drift: 20 },
+  { span: "md:col-span-1", ratio: "aspect-[4/3]",   src: judges,         label: "The judging panel",                    drift: 45 },
+  { span: "md:col-span-1", ratio: "aspect-[4/3]",   src: pitchProblem,   label: "Problem statement",                    drift: 15 },
 ];
 
 const GallerySection = () => (
