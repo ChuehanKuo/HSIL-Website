@@ -45,19 +45,12 @@ const GallerySection = () => (
         <Reveal key={i} delay={i * 0.05} className={t.span}>
           <ParallaxTitle distance={t.drift}>
             <figure className={`${t.ratio} relative overflow-hidden group bg-[hsl(40_15%_90%)]`}>
-              <picture>
-                {t.pic.sources.map((src, k) => (
-                  <source key={k} type={src.type} srcSet={src.srcset} />
-                ))}
-                <img
-                  src={t.pic.img.src}
-                  width={t.pic.img.w}
-                  height={t.pic.img.h}
-                  alt={t.label}
-                  loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-                />
-              </picture>
+              <img
+                src={t.src}
+                alt={t.label}
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+              />
               <figcaption className="absolute inset-x-0 bottom-0 p-4 md:p-5 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <p className="text-[10px] md:text-xs tracking-[0.2em] uppercase text-white/90 font-medium">
                   {t.label}
