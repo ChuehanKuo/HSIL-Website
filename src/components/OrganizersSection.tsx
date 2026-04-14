@@ -53,20 +53,15 @@ const OrganizersSection = () => (
       lede="A student-led volunteer team under NTU College of Public Health's Health Economics & AI Lab, operating the first HSIL Hackathon ever hosted in Taiwan."
     />
 
-    {/* Director's note — a personal voice */}
+    {/* Warm intro — no self-reference */}
     <Reveal delay={0.1}>
-      <div className="max-w-4xl mx-auto mb-24 md:mb-28">
-        <div className="border-l-2 border-primary/40 pl-8 md:pl-10 py-2">
-          <p className="text-[10px] md:text-xs font-medium tracking-[0.3em] uppercase text-muted-foreground mb-5">
-            A note from the Executive Director
-          </p>
-          <p className="font-serif italic text-xl md:text-2xl text-foreground leading-[1.55] mb-6">
-            "I took this on as a first-year undergraduate, and it worked because seven other people decided it would. Every nametag, every meal box, every slide loaded — none of it happened because of me. It happened around me. This page exists to correct the record."
-          </p>
-          <p className="text-sm text-muted-foreground">
-            — Arthur Chueh-An Kuo · Executive Director
-          </p>
-        </div>
+      <div className="max-w-3xl mx-auto mb-24 md:mb-28 text-center">
+        <p className="text-[10px] md:text-xs font-medium tracking-[0.3em] uppercase text-muted-foreground mb-6">
+          With gratitude
+        </p>
+        <p className="font-serif italic text-xl md:text-2xl text-foreground/85 leading-[1.55]">
+          Every small detail of these two days — every nametag, every meal box, every slide loaded — belonged to someone on this page. Thank you.
+        </p>
       </div>
     </Reveal>
 
