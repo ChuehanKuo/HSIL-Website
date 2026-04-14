@@ -140,8 +140,8 @@ const HeroSection = () => {
 
         {/* Chinese + gold title */}
         <div className="mb-6 md:mb-8">
-          <h1 className="font-display font-normal text-foreground leading-[0.95] tracking-tight">
-            <span className="block overflow-hidden whitespace-nowrap">
+          <h1 className="font-display font-normal text-foreground leading-[1.1] tracking-tight">
+            <span className="block overflow-hidden whitespace-nowrap py-1">
               <RevealText
                 text="全球健康創新黑客松"
                 className="text-[2.25rem] sm:text-5xl md:text-[3.75rem] lg:text-[4.5rem] xl:text-[5.25rem]"
