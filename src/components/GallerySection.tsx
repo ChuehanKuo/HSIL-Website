@@ -4,17 +4,12 @@ import SectionOutro from "@/components/ui/SectionOutro";
 import Reveal from "@/components/ui/Reveal";
 import ParallaxTitle from "@/components/ParallaxTitle";
 
-import opening from "@/assets/gallery/01-opening-ceremony.jpg?w=640;1024;1600&format=avif;webp;jpg&as=picture";
-import groupPhoto from "@/assets/gallery/02-group-photo.jpg?w=640;1024;1600&format=avif;webp;jpg&as=picture";
-import mentor from "@/assets/gallery/03-mentor-consultation.jpg?w=640;1024&format=avif;webp;jpg&as=picture";
-import podium from "@/assets/gallery/04-pitch-podium.jpg?w=640;1024&format=avif;webp;jpg&as=picture";
-import judges from "@/assets/gallery/05-judging-panel.jpg?w=640;1024&format=avif;webp;jpg&as=picture";
-import healthorithm from "@/assets/gallery/06-healthorithm-pitch.jpg?w=640;1024&format=avif;webp;jpg&as=picture";
-
-interface Picture {
-  sources: { srcset: string; type: string }[];
-  img: { src: string; w: number; h: number };
-}
+import opening from "@/assets/gallery/01-opening-ceremony.jpg";
+import groupPhoto from "@/assets/gallery/02-group-photo.jpg";
+import mentor from "@/assets/gallery/03-mentor-consultation.jpg";
+import podium from "@/assets/gallery/04-pitch-podium.jpg";
+import judges from "@/assets/gallery/05-judging-panel.jpg";
+import healthorithm from "@/assets/gallery/06-healthorithm-pitch.jpg";
 
 interface Tile {
   span: string;
