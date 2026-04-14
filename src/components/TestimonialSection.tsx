@@ -1,5 +1,6 @@
 import Section from "@/components/ui/Section";
 import Reveal from "@/components/ui/Reveal";
+import SplitReveal from "@/components/SplitReveal";
 
 const TestimonialSection = () => (
   <Section tone="ivory">
@@ -10,14 +11,13 @@ const TestimonialSection = () => (
         </p>
       </Reveal>
 
-      <Reveal delay={0.1}>
-        <blockquote className="font-display italic text-3xl md:text-5xl lg:text-6xl text-foreground leading-[1.2] tracking-tight">
-          "The quality of the pitches rivaled what I see from funded startups.
-          This is a glimpse of Taiwan's next decade in health innovation."
-        </blockquote>
-      </Reveal>
+      <blockquote className="font-display italic text-3xl md:text-5xl lg:text-6xl text-foreground leading-[1.2] tracking-tight">
+        <SplitReveal by="word" stagger={0.06} duration={1.1}>
+          "The quality of the pitches rivaled what I see from funded startups. This is a glimpse of Taiwan's next decade in health innovation."
+        </SplitReveal>
+      </blockquote>
 
-      <Reveal delay={0.3} className="mt-14">
+      <Reveal delay={0.8} className="mt-14">
         <div className="h-px w-12 bg-foreground/20 mx-auto mb-6" />
         <p className="text-sm md:text-base text-foreground font-medium">
           Judge · HSIL Hackathon 2026, Taiwan Hub

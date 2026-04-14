@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import Section from "@/components/ui/Section";
 import Reveal from "@/components/ui/Reveal";
+import SplitReveal from "@/components/SplitReveal";
 
 const CTASection = () => (
   <Section tone="dark">
@@ -20,14 +21,14 @@ const CTASection = () => (
         </p>
       </Reveal>
 
-      <Reveal delay={0.1}>
-        <h2 className="font-display font-normal text-white leading-[1] tracking-tight mb-12">
-          <span className="block text-6xl md:text-8xl lg:text-9xl">活動</span>
-          <span className="block text-6xl md:text-8xl lg:text-9xl italic text-[hsl(37_90%_75%)] mt-3">
-            圓滿落幕.
-          </span>
-        </h2>
-      </Reveal>
+      <h2 className="font-display font-normal text-white leading-[1] tracking-tight mb-12">
+        <SplitReveal by="char" stagger={0.05} duration={1} className="block text-6xl md:text-8xl lg:text-9xl">
+          活動
+        </SplitReveal>
+        <SplitReveal by="char" stagger={0.05} delay={0.2} duration={1} className="block text-6xl md:text-8xl lg:text-9xl italic text-[hsl(37_90%_75%)] mt-3">
+          圓滿落幕.
+        </SplitReveal>
+      </h2>
 
       <Reveal delay={0.2}>
         <p className="font-serif italic text-xl md:text-2xl text-white/80 leading-[1.5] max-w-2xl mx-auto mb-16">

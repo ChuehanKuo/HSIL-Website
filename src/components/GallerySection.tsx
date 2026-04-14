@@ -3,14 +3,15 @@ import Section from "@/components/ui/Section";
 import SectionHeader from "@/components/ui/SectionHeader";
 import SectionOutro from "@/components/ui/SectionOutro";
 import Reveal from "@/components/ui/Reveal";
+import ParallaxTitle from "@/components/ParallaxTitle";
 
 const placeholders = [
-  { span: "md:col-span-2", label: "Opening ceremony · Day 1", ratio: "aspect-[16/10]" },
-  { span: "md:col-span-2", label: "Award ceremony · Day 2", ratio: "aspect-[16/10]" },
-  { span: "md:col-span-1", label: "Mentor consultation", ratio: "aspect-[4/3]" },
-  { span: "md:col-span-1", label: "Pitch presentation", ratio: "aspect-[4/3]" },
-  { span: "md:col-span-1", label: "Judging panel", ratio: "aspect-[4/3]" },
-  { span: "md:col-span-1", label: "Group photo", ratio: "aspect-[4/3]" },
+  { span: "md:col-span-2", label: "Opening ceremony · Day 1", ratio: "aspect-[16/10]", drift: 70 },
+  { span: "md:col-span-2", label: "Award ceremony · Day 2", ratio: "aspect-[16/10]", drift: 30 },
+  { span: "md:col-span-1", label: "Mentor consultation", ratio: "aspect-[4/3]", drift: 55 },
+  { span: "md:col-span-1", label: "Pitch presentation", ratio: "aspect-[4/3]", drift: 20 },
+  { span: "md:col-span-1", label: "Judging panel", ratio: "aspect-[4/3]", drift: 45 },
+  { span: "md:col-span-1", label: "Group photo", ratio: "aspect-[4/3]", drift: 15 },
 ];
 
 const GallerySection = () => (
@@ -28,12 +29,14 @@ const GallerySection = () => (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 max-w-5xl mx-auto">
       {placeholders.map((p, i) => (
         <Reveal key={i} delay={i * 0.05} className={p.span}>
-          <div className={`${p.ratio} relative bg-[hsl(40_15%_90%)] overflow-hidden group cursor-pointer transition-colors duration-500 hover:bg-[hsl(40_20%_86%)]`}>
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-foreground/30 group-hover:text-foreground/50 transition-colors duration-500">
-              <ImageIcon className="w-8 h-8" strokeWidth={1} />
-              <p className="text-[10px] tracking-[0.2em] uppercase">{p.label}</p>
+          <ParallaxTitle distance={p.drift}>
+            <div className={`${p.ratio} relative bg-[hsl(40_15%_90%)] overflow-hidden group cursor-pointer transition-colors duration-500 hover:bg-[hsl(40_20%_86%)]`}>
+              <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-foreground/30 group-hover:text-foreground/50 transition-colors duration-500">
+                <ImageIcon className="w-8 h-8" strokeWidth={1} />
+                <p className="text-[10px] tracking-[0.2em] uppercase">{p.label}</p>
+              </div>
             </div>
-          </div>
+          </ParallaxTitle>
         </Reveal>
       ))}
     </div>
