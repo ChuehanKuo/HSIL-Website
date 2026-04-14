@@ -140,7 +140,7 @@ const HeroSection = () => {
 
         {/* Chinese + gold title */}
         <div className="mb-6 md:mb-8">
-          <h1 className="font-display font-normal text-foreground leading-[1] tracking-tight">
+          <h1 className="font-display font-normal text-foreground leading-[0.95] tracking-tight">
             <span className="block overflow-hidden whitespace-nowrap">
               <RevealText
                 text="全球健康創新黑客松"
@@ -148,10 +148,10 @@ const HeroSection = () => {
                 delay={0.45}
               />
             </span>
-            <span className="block overflow-hidden whitespace-nowrap mt-2 md:mt-3">
+            <span className="block overflow-hidden whitespace-nowrap mt-1 md:mt-1.5">
               <RevealText
                 text="台灣站 2026"
-                className="text-[2.25rem] sm:text-5xl md:text-[3.75rem] lg:text-[4.5rem] xl:text-[5.25rem] italic text-primary"
+                className="text-[1.85rem] sm:text-4xl md:text-[3rem] lg:text-[3.75rem] xl:text-[4.25rem] italic text-primary"
                 delay={0.85}
               />
             </span>
