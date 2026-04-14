@@ -2,11 +2,12 @@ import Section from "@/components/ui/Section";
 import SectionHeader from "@/components/ui/SectionHeader";
 import SectionOutro from "@/components/ui/SectionOutro";
 import Reveal from "@/components/ui/Reveal";
+import ScrubNumber from "@/components/ScrubNumber";
 
 const stats = [
-  { value: "32", label: "Competing Teams" },
-  { value: "~100", label: "Participants on Site" },
-  { value: "8", label: "Judges · Mentors" },
+  { target: 32, prefix: "", label: "Competing Teams" },
+  { target: 100, prefix: "~", label: "Participants on Site" },
+  { target: 8, prefix: "", label: "Judges · Mentors" },
 ];
 
 const AboutSection = () => (
@@ -52,7 +53,8 @@ const AboutSection = () => (
           <Reveal key={s.label} delay={i * 0.1}>
             <div>
               <div className="font-display font-normal text-5xl md:text-7xl text-foreground leading-none mb-3 tabular-nums">
-                {s.value}
+                {s.prefix}
+                <ScrubNumber target={s.target} />
               </div>
               <p className="text-[11px] tracking-[0.15em] uppercase text-muted-foreground leading-snug">
                 {s.label}
