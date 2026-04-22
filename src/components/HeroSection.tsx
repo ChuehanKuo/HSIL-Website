@@ -148,7 +148,7 @@ const HeroSection = () => {
                 delay={0.45}
               />
             </span>
-            <span className="block overflow-hidden whitespace-nowrap mt-1 md:mt-1.5">
+            <span className="block overflow-hidden whitespace-nowrap mt-1 md:mt-1.5 leading-[1.25] py-[0.15em]">
               <RevealText
                 text="台灣站 2026"
                 className="text-[1.85rem] sm:text-4xl md:text-[3rem] lg:text-[3.75rem] xl:text-[4.25rem] italic text-primary"
