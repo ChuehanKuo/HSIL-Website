@@ -29,30 +29,39 @@ const quotes = [
   },
 ];
 
-const TestimonialSection = () => (
-  <Section tone="ivory">
-    <div className="max-w-6xl mx-auto">
+const QuoteCard = ({ q }: { q: typeof quotes[0] }) => (
+  <div className="w-[320px] md:w-[400px] flex-shrink-0 border-t border-foreground/10 pt-6 px-4">
+    <blockquote className="font-serif italic text-lg md:text-xl text-foreground leading-relaxed mb-6">
+      &ldquo;{q.text}&rdquo;
+    </blockquote>
+    <p className="text-sm font-medium text-foreground">{q.name}</p>
+    <p className="text-xs text-muted-foreground mt-0.5">{q.org}</p>
+  </div>
+);
+
+const TestimonialSection = () => {
+  const doubled = [...quotes, ...quotes];
+
+  return (
+    <Section tone="ivory">
       <Reveal>
         <p className="text-[10px] md:text-xs font-medium tracking-[0.3em] text-muted-foreground uppercase mb-14 text-center">
           In Their Words
         </p>
       </Reveal>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
-        {quotes.map((q, i) => (
-          <Reveal key={i} delay={i * 0.08}>
-            <div className="border-t border-foreground/10 pt-6">
-              <blockquote className="font-serif italic text-lg md:text-xl text-foreground leading-relaxed mb-6">
-                "{q.text}"
-              </blockquote>
-              <p className="text-sm font-medium text-foreground">{q.name}</p>
-              <p className="text-xs text-muted-foreground mt-0.5">{q.org}</p>
-            </div>
-          </Reveal>
-        ))}
+      <div className="overflow-hidden">
+        <div
+          className="flex gap-6 animate-marquee"
+          style={{ width: "max-content" }}
+        >
+          {doubled.map((q, i) => (
+            <QuoteCard key={i} q={q} />
+          ))}
+        </div>
       </div>
-    </div>
-  </Section>
-);
+    </Section>
+  );
+};
 
 export default TestimonialSection;
