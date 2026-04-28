@@ -62,6 +62,7 @@ const useCountUp = (target: number, duration = 2000, delay = 0) => {
 
 const HeroSection = () => {
   const global = useCountUp(14708, 2000, 1800);
+  const countries = useCountUp(41, 1400, 1850);
   const local = useCountUp(137, 1600, 1900);
   const sectionRef = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
@@ -189,7 +190,7 @@ const HeroSection = () => {
         >
           {[
             { ref: global.ref, val: global.count.toLocaleString(), label: "Global Registrants", italic: false },
-            { val: "41", label: "Countries", italic: false },
+            { ref: countries.ref, val: countries.count.toString(), label: "Countries", italic: false },
             { ref: local.ref, val: local.count, label: "Taiwan Applicants", italic: true },
           ].map((s, i) => (
             <div
