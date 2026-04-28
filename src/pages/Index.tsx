@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 
-import ScrollProgress from "@/components/ScrollProgress";
 import HeroSection from "@/components/HeroSection";
 import PhotoMarquee from "@/components/PhotoMarquee";
 import PhotoMarquee2 from "@/components/PhotoMarquee2";
@@ -18,7 +17,6 @@ import Footer from "@/components/Footer";
 
 const Index = () => (
   <>
-    <ScrollProgress />
     <Navbar />
     <main>
       <HeroSection />
