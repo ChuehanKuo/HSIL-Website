@@ -30,12 +30,12 @@ const quotes = [
 ];
 
 const QuoteCard = ({ q }: { q: typeof quotes[0] }) => (
-  <div className="w-[320px] md:w-[400px] flex-shrink-0 border-t border-foreground/10 pt-6 px-4">
-    <blockquote className="font-serif italic text-lg md:text-xl text-foreground leading-relaxed mb-6">
+  <div className="w-[340px] md:w-[500px] flex-shrink-0 border-t border-foreground/10 pt-8 px-6">
+    <blockquote className="font-serif italic text-xl md:text-2xl text-foreground leading-relaxed mb-8">
       &ldquo;{q.text}&rdquo;
     </blockquote>
-    <p className="text-sm font-medium text-foreground">{q.name}</p>
-    <p className="text-xs text-muted-foreground mt-0.5">{q.org}</p>
+    <p className="text-base font-medium text-foreground">{q.name}</p>
+    <p className="text-sm text-muted-foreground mt-0.5">{q.org}</p>
   </div>
 );
 
