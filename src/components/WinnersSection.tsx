@@ -30,8 +30,7 @@ const WinnersSection = () => (
         </p>
         <h2 className="font-display font-normal text-5xl md:text-6xl lg:text-7xl leading-[1.02] tracking-tight text-foreground">
           <SplitReveal by="word" stagger={0.08}>Meet the </SplitReveal>
-          <SplitReveal by="word" stagger={0.08} delay={0.15} className="italic text-primary whitespace-nowrap">top three</SplitReveal>
-          <span>.</span>
+          <SplitReveal by="word" stagger={0.08} delay={0.15} className="italic text-primary">top three<span className="text-foreground">.</span></SplitReveal>
         </h2>
       </Reveal>
       <Reveal delay={0.25} className="lg:col-span-7 lg:pt-6">
