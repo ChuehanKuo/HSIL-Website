@@ -35,7 +35,7 @@ const MarqueeRow = ({ images, reverse = false }: { images: string[]; reverse?: b
 };
 
 const PhotoMarquee2 = () => (
-  <div className="space-y-3 py-8">
+  <div className="space-y-3 py-8 overflow-hidden">
     <MarqueeRow images={row1} reverse />
     <MarqueeRow images={row2} />
   </div>
