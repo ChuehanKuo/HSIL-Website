@@ -117,7 +117,7 @@ const HeroSection = () => {
           className="mb-8 md:mb-10"
         >
           <div className="flex items-center justify-center gap-4 md:gap-6 mb-3">
-            <span className="font-display tracking-[0.4em] text-sm md:text-lg text-foreground uppercase">
+            <span className="font-display font-medium md:font-normal tracking-[0.4em] text-sm md:text-lg text-foreground uppercase">
               HSIL Hackathon
             </span>
             <span className="h-4 md:h-5 w-px bg-foreground/25" aria-hidden />
