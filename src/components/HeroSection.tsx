@@ -141,14 +141,14 @@ const HeroSection = () => {
         {/* Chinese + gold title */}
         <div className="mb-6 md:mb-8">
           <h1 className="font-display font-normal text-foreground leading-[1.3] tracking-tight">
-            <span className="block overflow-hidden whitespace-nowrap py-4">
+            <span className="block overflow-hidden whitespace-nowrap py-2 md:py-4">
               <RevealText
                 text="全球健康創新黑客松"
                 className="text-[2.25rem] sm:text-5xl md:text-[3.75rem] lg:text-[4.5rem] xl:text-[5.25rem]"
                 delay={0.45}
               />
             </span>
-            <span className="block overflow-hidden whitespace-nowrap py-4">
+            <span className="block overflow-hidden whitespace-nowrap py-2 md:py-4">
               <RevealText
                 text="台灣站 2026"
                 className="text-[1.85rem] sm:text-4xl md:text-[3rem] lg:text-[3.75rem] xl:text-[4.25rem] italic text-primary"
@@ -161,7 +161,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 1.25 }}
-            className="font-serif italic text-base md:text-xl text-foreground/70 leading-[1.5] mt-6 md:mt-8 max-w-2xl mx-auto"
+            className="font-serif italic text-base md:text-xl text-foreground/70 leading-[1.5] mt-3 md:mt-8 max-w-2xl mx-auto"
           >
             Building High-Value Health Systems,{" "}
             <span className="text-foreground">Leveraging AI</span>.
