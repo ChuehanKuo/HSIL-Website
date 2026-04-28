@@ -109,6 +109,7 @@ const OrganizersSection = () => (
             <p className="font-display text-base text-foreground leading-tight">{m.name}</p>
             {m.nameZh && <p className="text-sm text-muted-foreground">{m.nameZh}</p>}
             <p className="text-xs font-medium text-primary mt-1">{m.role}</p>
+            <p className="text-xs text-muted-foreground mt-2 leading-relaxed">{m.bio}</p>
           </div>
         </Reveal>
       ))}
