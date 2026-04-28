@@ -41,7 +41,7 @@ export default defineConfig(({ mode }) => ({
       output: {
         manualChunks: {
           vendor: ["react", "react-dom", "react-router-dom"],
-          animation: ["motion", "gsap", "lenis"],
+          animation: ["motion", "gsap"],
         },
       },
     },
