@@ -5,7 +5,8 @@ import { gsap, ScrollTrigger } from "@/hooks/useGsap";
 const SmoothScroll = () => {
   useEffect(() => {
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduce) return;
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+    if (reduce || isMobile) return;
 
     const lenis = new Lenis({
       duration: 1.2,
