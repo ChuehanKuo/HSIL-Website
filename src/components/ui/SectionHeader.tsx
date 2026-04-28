@@ -33,7 +33,7 @@ const SectionHeader = ({
           <p className={`text-[10px] md:text-xs font-medium tracking-[0.3em] uppercase mb-6 ${eyebrowColor}`}>
             {eyebrow}
           </p>
-          <h2 className={`font-display font-normal text-5xl md:text-6xl lg:text-7xl leading-[1.02] tracking-tight ${titleColor}`}>
+          <h2 className={`font-display font-normal text-5xl md:text-6xl lg:text-7xl leading-[1.2] tracking-tight ${titleColor}`}>
             {title}
           </h2>
         </motion.div>
@@ -43,7 +43,7 @@ const SectionHeader = ({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-            className="lg:col-span-7 lg:pt-6"
+            className="lg:col-span-7 lg:pt-10"
           >
             <div className={`font-serif italic text-lg md:text-xl leading-[1.6] ${ledeColor}`}>
               {lede}
@@ -65,7 +65,7 @@ const SectionHeader = ({
       <p className={`text-[10px] md:text-xs font-medium tracking-[0.3em] uppercase mb-6 ${eyebrowColor}`}>
         {eyebrow}
       </p>
-      <h2 className={`font-display font-normal text-5xl md:text-6xl lg:text-7xl leading-[1.02] tracking-tight mb-6 ${titleColor}`}>
+      <h2 className={`font-display font-normal text-5xl md:text-6xl lg:text-7xl leading-[1.2] tracking-tight mb-6 ${titleColor}`}>
         {title}
       </h2>
       {lede && (

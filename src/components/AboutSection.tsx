@@ -5,9 +5,10 @@ import Reveal from "@/components/ui/Reveal";
 import ScrubNumber from "@/components/ScrubNumber";
 
 const stats = [
-  { target: 32, prefix: "", label: "Competing Teams" },
-  { target: 100, prefix: "~", label: "Participants on Site" },
-  { target: 8, prefix: "", label: "Judges · Mentors" },
+  { target: 31, prefix: "", label: "Competing Teams" },
+  { target: 130, prefix: "", label: "Participants on Site" },
+  { target: 3, prefix: "", label: "Mentors" },
+  { target: 5, prefix: "", label: "Judges" },
 ];
 
 const AboutSection = () => (
@@ -23,9 +24,8 @@ const AboutSection = () => (
       eyebrow="About · 活動回顧"
       title={
         <>
-          Taiwan's <span className="italic text-primary">first</span>
-          <br />
-          HSIL Hackathon.
+          <span className="block mb-3">Taiwan's <span className="italic text-primary">first</span></span>
+          <span className="whitespace-nowrap">HSIL Hackathon</span>.
         </>
       }
       lede={
@@ -48,7 +48,7 @@ const AboutSection = () => (
         </p>
       </Reveal>
 
-      <div className="grid grid-cols-3 gap-y-10 gap-x-6">
+      <div className="grid grid-cols-4 gap-y-10 gap-x-6">
         {stats.map((s, i) => (
           <Reveal key={s.label} delay={i * 0.1}>
             <div>
@@ -66,7 +66,7 @@ const AboutSection = () => (
     </div>
 
     <SectionOutro>
-      Two days of real problems, real teams, and a conversation that didn't end at closing ceremony.
+      Two days of real problems, real teams, and a conversation that's still going.
     </SectionOutro>
   </Section>
 );

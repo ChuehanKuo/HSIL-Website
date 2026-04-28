@@ -4,12 +4,13 @@ import hsilLogo from "@/assets/hsil-logo.png";
 import ntuCphLogo from "@/assets/ntu-cph-logo.png";
 
 const navLinks = [
-  { label: "Winners", href: "#winners" },
   { label: "About", href: "#about" },
+  { label: "Winners", href: "#winners" },
   { label: "Gallery", href: "#gallery" },
   { label: "Schedule", href: "#schedule" },
   { label: "Judging", href: "#judging" },
   { label: "Team", href: "#organizers" },
+  { label: "Press", href: "#media" },
 ];
 
 const Navbar = () => {

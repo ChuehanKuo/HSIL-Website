@@ -3,76 +3,134 @@ import SectionHeader from "@/components/ui/SectionHeader";
 import SectionOutro from "@/components/ui/SectionOutro";
 import Reveal from "@/components/ui/Reveal";
 
-import opening from "@/assets/gallery/01-opening-ceremony.jpg";
-import groupPhoto from "@/assets/gallery/02-group-photo.jpg";
-import mentor from "@/assets/gallery/03-mentor-consultation.jpg";
-import podium from "@/assets/gallery/04-pitch-podium.jpg";
-import judges from "@/assets/gallery/05-judging-panel.jpg";
-import healthorithm from "@/assets/gallery/06-healthorithm-pitch.jpg";
-import phenocds from "@/assets/gallery/07-phenocds-pitch.jpg";
-import teamRoom from "@/assets/gallery/08-team-in-room.jpg";
-import keynote from "@/assets/gallery/09-keynote-speaker.jpg";
-import profLee from "@/assets/gallery/10-prof-lee.jpg";
+import d1_group from "@/assets/gallery/_MG_5219.jpg";
+import d1_keynote from "@/assets/gallery/_MG_4608.jpg";
+import d1_opening from "@/assets/gallery/_MG_4738.jpg";
+import d1_mentor from "@/assets/gallery/_MG_5070.jpg";
+import d1_teams from "@/assets/gallery/_MG_5086.jpg";
+import d1_proflee from "@/assets/gallery/_MG_5158.jpg";
+import d1_network from "@/assets/gallery/_MG_5216.jpg";
 
-interface Tile {
-  span: string;
-  ratio: string;
-  src: string;
-  label: string;
-}
+import d2_group from "@/assets/gallery/_MG_5326.jpg";
+import d2_pitch from "@/assets/gallery/_MG_5460.jpg";
+import d2_judges from "@/assets/gallery/_MG_5655.jpg";
+import d2_phenocds from "@/assets/gallery/_MG_6095.jpg";
+import d2_discuss from "@/assets/gallery/_MG_5666.jpg";
+import d2_pitch2 from "@/assets/gallery/_MG_5625.jpg";
+import d2_victoria from "@/assets/gallery/_MG_6152.jpg";
+import d2_judge_q from "@/assets/gallery/_MG_6113.jpg";
+import d2_judges_side from "@/assets/gallery/_MG_5399.jpg";
+import d2_team_pitch from "@/assets/gallery/_MG_6047.jpg";
+import d2_audience from "@/assets/gallery/_MG_5251.jpg";
 
-const tiles: Tile[] = [
-  // Row 1 — two heroes
-  { span: "md:col-span-2", ratio: "aspect-[16/10]", src: opening, label: "Opening ceremony · April 10" },
-  { span: "md:col-span-2", ratio: "aspect-[16/10]", src: groupPhoto, label: "大合照 · The whole room, Day 1" },
+interface Tile { src: string; gc: string; gr: string }
 
-  // Row 2 — 4 standards (winners prominent)
-  { span: "md:col-span-1", ratio: "aspect-[4/3]", src: phenocds, label: "PhenoCDS · 1st place" },
-  { span: "md:col-span-1", ratio: "aspect-[4/3]", src: healthorithm, label: "The Healthorithm · 3rd place" },
-  { span: "md:col-span-1", ratio: "aspect-[4/3]", src: judges, label: "The judging panel" },
-  { span: "md:col-span-1", ratio: "aspect-[4/3]", src: mentor, label: "Mentor consultation" },
+// Layout:
+// [ 1  1  2  3 ]  row 1
+// [ 1  1  4  5 ]  row 2
+// [ 6  7  8  8 ]  row 3
+// [ 6  7  9  9 ]  row 4
 
-  // Row 3 — 4 standards (the day-of texture)
-  { span: "md:col-span-1", ratio: "aspect-[4/3]", src: keynote, label: "Keynote · HSIL 7th Edition" },
-  { span: "md:col-span-1", ratio: "aspect-[4/3]", src: podium, label: "Team pitch · NTU CPH podium" },
-  { span: "md:col-span-1", ratio: "aspect-[4/3]", src: teamRoom, label: "Teams in the room · Day 1" },
-  { span: "md:col-span-1", ratio: "aspect-[4/3]", src: profLee, label: "Prof. 李達宇 · faculty advisor" },
+const day1: Tile[] = [
+  { src: d1_group,   gc: "1 / 3", gr: "1 / 3" },
+  { src: d1_keynote, gc: "3 / 4", gr: "1 / 2" },
+  { src: d1_opening, gc: "4 / 5", gr: "1 / 2" },
+  { src: d1_mentor,  gc: "3 / 4", gr: "2 / 3" },
+  { src: d2_victoria, gc: "4 / 5", gr: "2 / 3" },
+  { src: d1_proflee, gc: "1 / 2", gr: "3 / 5" },
+  { src: d1_network, gc: "2 / 3", gr: "3 / 5" },
+  { src: d1_teams,   gc: "3 / 5", gr: "3 / 4" },
+  { src: d2_discuss,  gc: "3 / 5", gr: "4 / 5" },
 ];
 
-const GallerySection = () => (
-  <Section id="gallery" tone="stone">
-    <SectionHeader
-      eyebrow="Moments · 兩天回顧"
-      title={
-        <>
-          Two days, <span className="italic text-primary">one community</span>.
-        </>
-      }
-      lede="From the opening keynote Friday morning to the final Saturday pitches — a visual record of Taiwan's first HSIL Hackathon."
-    />
+const day2: Tile[] = [
+  { src: d2_group,    gc: "1 / 3", gr: "1 / 3" },
+  { src: d2_pitch,    gc: "3 / 4", gr: "1 / 2" },
+  { src: d2_judges,   gc: "4 / 5", gr: "1 / 2" },
+  { src: d2_phenocds, gc: "3 / 4", gr: "2 / 3" },
+  { src: d2_pitch2,   gc: "4 / 5", gr: "2 / 3" },
+  { src: d2_judge_q,  gc: "1 / 2", gr: "3 / 5" },
+  { src: d2_audience,  gc: "2 / 3", gr: "3 / 5" },
+  { src: d2_team_pitch, gc: "3 / 5", gr: "3 / 4" },
+  { src: d2_judges_side, gc: "3 / 5", gr: "4 / 5" },
+];
 
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 max-w-6xl mx-auto">
+const MosaicGrid = ({ tiles, delay = 0 }: { tiles: Tile[]; delay?: number }) => (
+  <>
+    {/* Desktop mosaic */}
+    <div
+      className="hidden md:grid gap-[6px]"
+      style={{ gridTemplateColumns: "repeat(4, 1fr)", gridAutoRows: "14vw" }}
+    >
       {tiles.map((t, i) => (
-        <Reveal key={i} delay={i * 0.05} className={t.span}>
-          <figure className={`${t.ratio} relative overflow-hidden group bg-[hsl(40_15%_90%)]`}>
+        <Reveal
+          key={i}
+          delay={delay + i * 0.04}
+          style={{ gridColumn: t.gc, gridRow: t.gr }}
+        >
+          <div className="relative overflow-hidden w-full h-full group">
             <img
               src={t.src}
-              alt={t.label}
+              alt=""
+              loading="lazy"
+              decoding="async"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+            />
+          </div>
+        </Reveal>
+      ))}
+    </div>
+    {/* Mobile: simple 2-col */}
+    <div className="grid grid-cols-2 gap-2 md:hidden">
+      {tiles.map((t, i) => (
+        <Reveal key={i} delay={i * 0.03}>
+          <figure className="aspect-[3/2] relative overflow-hidden">
+            <img
+              src={t.src}
+              alt=""
               loading="lazy"
               decoding="async"
               className="absolute inset-0 w-full h-full object-cover"
             />
-            <figcaption className="absolute inset-x-0 bottom-0 p-4 md:p-5 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <p className="text-[10px] md:text-xs tracking-[0.2em] uppercase text-white/90 font-medium">
-                {t.label}
-              </p>
-            </figcaption>
           </figure>
         </Reveal>
       ))}
     </div>
+  </>
+);
 
-    <SectionOutro>Full photo archive available upon request — hsilhackathon.taiwan@gmail.com</SectionOutro>
+const GallerySection = () => (
+  <Section id="gallery" tone="stone">
+    <SectionHeader
+      eyebrow="Gallery · 活動紀實"
+      title={
+        <>
+          The event,{" "}<span className="italic text-primary whitespace-nowrap">in frames</span>.
+        </>
+      }
+      lede="Two days at NTU — in pictures."
+    />
+
+    <div className="max-w-7xl mx-auto space-y-12">
+      <div>
+        <Reveal>
+          <p className="font-display text-2xl md:text-3xl text-foreground mb-8">
+            Day 1 · April 10
+          </p>
+        </Reveal>
+        <MosaicGrid tiles={day1} />
+      </div>
+
+      <div>
+        <Reveal>
+          <p className="font-display text-2xl md:text-3xl text-foreground mb-8">
+            Day 2 · April 11
+          </p>
+        </Reveal>
+        <MosaicGrid tiles={day2} delay={0.2} />
+      </div>
+    </div>
+
   </Section>
 );
 

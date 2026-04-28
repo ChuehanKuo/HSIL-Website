@@ -12,11 +12,11 @@ const days: Day[] = [
     date: "Friday · April 10",
     subtitle: "Opening · Team Formation · Ideation",
     items: [
-      { time: "09:00", title: "Opening ceremony & keynote: AI-Driven Digital Solutions for Health Systems" },
-      { time: "10:00", title: "HSIL Global Live Session — all 36 hubs connect" },
+      { time: "09:00", title: "Opening ceremony" },
+      { time: "10:00", title: "HSIL Global Live Session — all hubs connect worldwide" },
       { time: "11:05", title: "Team formation & registration" },
       { time: "13:30", title: "Ideation & mentor consultations" },
-      { time: "17:30", title: "Open hack time" },
+      { time: "17:30", title: "Day 1 wrap-up & pitch order lottery" },
     ],
   },
   {
@@ -26,7 +26,7 @@ const days: Day[] = [
     items: [
       { time: "09:15", title: "Solution refinement & pitch preparation" },
       { time: "12:00", title: "Slide deadline · judges arrive" },
-      { time: "13:10", title: "Team pitches · 32 teams · 3-min + 1.5-min Q&A" },
+      { time: "13:10", title: "Team pitches · 31 teams · 3-min pitch + Q&A" },
       { time: "17:30", title: "Awards ceremony — 1st · 2nd · 3rd" },
       { time: "17:50", title: "Closing remarks & group photo" },
     ],
@@ -41,10 +41,10 @@ const ScheduleSection = () => (
         <>
           Two days,
           <br />
-          <span className="italic text-primary">one rhythm</span>.
+          <span className="italic text-primary whitespace-nowrap">start to finish</span>.
         </>
       }
-      lede="A retrospective look at how the two days unfolded — from the opening keynote to the closing photo, with the HSIL global live session, mentor consultations, and 32 team pitches in between."
+      lede="How the two days unfolded — from opening ceremony to closing group photo."
     />
 
     <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-px bg-foreground/10 border border-foreground/10">
@@ -84,7 +84,7 @@ const ScheduleSection = () => (
     </div>
 
     <SectionOutro>
-      Every minute — from the opening keynote at 9 AM Friday to the closing group photo Saturday evening — ran in one venue with no session overrun.
+      Two days, one venue — NTU College of Public Health, Room 201.
     </SectionOutro>
   </Section>
 );

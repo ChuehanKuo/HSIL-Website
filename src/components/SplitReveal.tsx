@@ -59,7 +59,7 @@ const SplitReveal = ({
     return units.map((u, i) => {
       if (/^\s+$/.test(u)) return <span key={i}>{u}</span>;
       return (
-        <span key={i} className="inline-block overflow-hidden align-top">
+        <span key={i} className="inline-block overflow-hidden align-top px-[0.05em] py-1">
           <span data-split className="inline-block will-change-transform">
             {u}
           </span>

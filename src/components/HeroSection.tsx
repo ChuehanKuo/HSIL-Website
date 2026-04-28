@@ -140,15 +140,15 @@ const HeroSection = () => {
 
         {/* Chinese + gold title */}
         <div className="mb-6 md:mb-8">
-          <h1 className="font-display font-normal text-foreground leading-[1.1] tracking-tight">
-            <span className="block overflow-hidden whitespace-nowrap py-1">
+          <h1 className="font-display font-normal text-foreground leading-[1.3] tracking-tight">
+            <span className="block overflow-hidden whitespace-nowrap py-3">
               <RevealText
                 text="全球健康創新黑客松"
                 className="text-[2.25rem] sm:text-5xl md:text-[3.75rem] lg:text-[4.5rem] xl:text-[5.25rem]"
                 delay={0.45}
               />
             </span>
-            <span className="block overflow-hidden whitespace-nowrap mt-1 md:mt-1.5 leading-[1.25] py-[0.15em]">
+            <span className="block overflow-hidden whitespace-nowrap py-2">
               <RevealText
                 text="台灣站 2026"
                 className="text-[1.85rem] sm:text-4xl md:text-[3rem] lg:text-[3.75rem] xl:text-[4.25rem] italic text-primary"
@@ -189,7 +189,7 @@ const HeroSection = () => {
         >
           {[
             { ref: global.ref, val: global.count.toLocaleString(), label: "Global Registrants", italic: false },
-            { val: "36", label: "Countries", italic: false },
+            { val: "41", label: "Countries", italic: false },
             { ref: local.ref, val: local.count, label: "Taiwan Applicants", italic: true },
           ].map((s, i) => (
             <div
@@ -236,22 +236,6 @@ const HeroSection = () => {
         </motion.div>
       </motion.div>
 
-      {/* Scroll indicator — pinned inside hero, not overlapping */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 2 }}
-        className="relative z-10 pb-6 flex flex-col items-center gap-1 text-foreground/35"
-      >
-        <span className="text-[9px] tracking-[0.3em] uppercase">Scroll</span>
-        <div className="w-px h-8 bg-foreground/15 overflow-hidden">
-          <motion.div
-            className="w-full h-full bg-primary origin-top"
-            animate={{ scaleY: [0, 1, 0], y: ["0%", "0%", "100%"] }}
-            transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
-          />
-        </div>
-      </motion.div>
     </section>
   );
 };
