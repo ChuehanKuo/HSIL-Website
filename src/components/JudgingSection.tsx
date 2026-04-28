@@ -68,7 +68,7 @@ const JudgingSection = () => (
         <p className="text-[10px] font-medium tracking-[0.3em] uppercase text-muted-foreground mb-8 border-t border-foreground/10 pt-6">
           Mentors · Day 1
         </p>
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
           {mentors.map((m) => <PersonCard key={m.en} person={m} />)}
         </div>
       </Reveal>
@@ -77,7 +77,7 @@ const JudgingSection = () => (
         <p className="text-[10px] font-medium tracking-[0.3em] uppercase text-muted-foreground mb-8 border-t border-foreground/10 pt-6">
           Judges · Day 2
         </p>
-        <div className="grid grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           {judges.map((j) => <PersonCard key={j.en + j.title} person={j} />)}
         </div>
       </Reveal>
