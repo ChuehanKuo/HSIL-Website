@@ -99,17 +99,16 @@ const OrganizersSection = () => (
       </Reveal>
     </div>
 
-    <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10">
+    <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-10">
       {team.map((m, i) => (
         <Reveal key={m.name} delay={i * 0.04}>
           <div className="text-center">
-            <div className="w-28 h-28 bg-foreground/5 border border-foreground/10 flex items-center justify-center rounded-full mx-auto mb-4">
-              <span className="font-display text-3xl text-foreground/40">{m.initials}</span>
+            <div className="w-20 h-20 bg-foreground/5 border border-foreground/10 flex items-center justify-center rounded-full mx-auto mb-3">
+              <span className="font-display text-xl text-foreground/40">{m.initials}</span>
             </div>
-            <h4 className="font-display text-lg text-foreground leading-tight">{m.name}</h4>
+            <p className="font-display text-base text-foreground leading-tight">{m.name}</p>
             {m.nameZh && <p className="text-sm text-muted-foreground">{m.nameZh}</p>}
             <p className="text-xs font-medium text-primary mt-1">{m.role}</p>
-            <p className="text-xs text-muted-foreground mt-2 leading-relaxed">{m.bio}</p>
           </div>
         </Reveal>
       ))}
