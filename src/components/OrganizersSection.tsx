@@ -22,7 +22,7 @@ const team = [
   },
   {
     name: "Dr. Hsiao-Hui Chen",
-    nameZh: "陳曉慧",
+    nameZh: "",
     role: "Advisor · Pre-Event Planning",
     initials: "陳",
     bio: "[Bio placeholder]",
